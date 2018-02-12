@@ -133,7 +133,7 @@
   }
 }
 @mixin hvr-animation($name){
-  [hvr-a~="#{$name}"]{
+  [hvr-animation~="#{$name}"]{
     &:hover,&:focus,&:active{
       @include prefixed(animation-name, $name);
     }

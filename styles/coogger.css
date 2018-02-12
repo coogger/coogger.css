@@ -1206,546 +1206,546 @@ input[type="submit"] {
   animation-iteration-count: 4; }
 
 /* animation */
-[hvr-a~="rebound"]:hover, [hvr-a~="rebound"]:focus, [hvr-a~="rebound"]:active {
+[hvr-animation~="rebound"]:hover, [hvr-animation~="rebound"]:focus, [hvr-animation~="rebound"]:active {
   -webkit-animation-name: rebound;
   -moz-animation-name: rebound;
   -ms-animation-name: rebound;
   -o-animation-name: rebound;
   animation-name: rebound; }
 
-[hvr-a~="blink"]:hover, [hvr-a~="blink"]:focus, [hvr-a~="blink"]:active {
+[hvr-animation~="blink"]:hover, [hvr-animation~="blink"]:focus, [hvr-animation~="blink"]:active {
   -webkit-animation-name: blink;
   -moz-animation-name: blink;
   -ms-animation-name: blink;
   -o-animation-name: blink;
   animation-name: blink; }
 
-[hvr-a~="flash"]:hover, [hvr-a~="flash"]:focus, [hvr-a~="flash"]:active {
+[hvr-animation~="flash"]:hover, [hvr-animation~="flash"]:focus, [hvr-animation~="flash"]:active {
   -webkit-animation-name: flash;
   -moz-animation-name: flash;
   -ms-animation-name: flash;
   -o-animation-name: flash;
   animation-name: flash; }
 
-[hvr-a~="pulse"]:hover, [hvr-a~="pulse"]:focus, [hvr-a~="pulse"]:active {
+[hvr-animation~="pulse"]:hover, [hvr-animation~="pulse"]:focus, [hvr-animation~="pulse"]:active {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
   -ms-animation-name: pulse;
   -o-animation-name: pulse;
   animation-name: pulse; }
 
-[hvr-a~="rubberBand"]:hover, [hvr-a~="rubberBand"]:focus, [hvr-a~="rubberBand"]:active {
+[hvr-animation~="rubberBand"]:hover, [hvr-animation~="rubberBand"]:focus, [hvr-animation~="rubberBand"]:active {
   -webkit-animation-name: rubberBand;
   -moz-animation-name: rubberBand;
   -ms-animation-name: rubberBand;
   -o-animation-name: rubberBand;
   animation-name: rubberBand; }
 
-[hvr-a~="shake"]:hover, [hvr-a~="shake"]:focus, [hvr-a~="shake"]:active {
+[hvr-animation~="shake"]:hover, [hvr-animation~="shake"]:focus, [hvr-animation~="shake"]:active {
   -webkit-animation-name: shake;
   -moz-animation-name: shake;
   -ms-animation-name: shake;
   -o-animation-name: shake;
   animation-name: shake; }
 
-[hvr-a~="headShake"]:hover, [hvr-a~="headShake"]:focus, [hvr-a~="headShake"]:active {
+[hvr-animation~="headShake"]:hover, [hvr-animation~="headShake"]:focus, [hvr-animation~="headShake"]:active {
   -webkit-animation-name: headShake;
   -moz-animation-name: headShake;
   -ms-animation-name: headShake;
   -o-animation-name: headShake;
   animation-name: headShake; }
 
-[hvr-a~="swing"]:hover, [hvr-a~="swing"]:focus, [hvr-a~="swing"]:active {
+[hvr-animation~="swing"]:hover, [hvr-animation~="swing"]:focus, [hvr-animation~="swing"]:active {
   -webkit-animation-name: swing;
   -moz-animation-name: swing;
   -ms-animation-name: swing;
   -o-animation-name: swing;
   animation-name: swing; }
 
-[hvr-a~="tada"]:hover, [hvr-a~="tada"]:focus, [hvr-a~="tada"]:active {
+[hvr-animation~="tada"]:hover, [hvr-animation~="tada"]:focus, [hvr-animation~="tada"]:active {
   -webkit-animation-name: tada;
   -moz-animation-name: tada;
   -ms-animation-name: tada;
   -o-animation-name: tada;
   animation-name: tada; }
 
-[hvr-a~="wobble"]:hover, [hvr-a~="wobble"]:focus, [hvr-a~="wobble"]:active {
+[hvr-animation~="wobble"]:hover, [hvr-animation~="wobble"]:focus, [hvr-animation~="wobble"]:active {
   -webkit-animation-name: wobble;
   -moz-animation-name: wobble;
   -ms-animation-name: wobble;
   -o-animation-name: wobble;
   animation-name: wobble; }
 
-[hvr-a~="jello"]:hover, [hvr-a~="jello"]:focus, [hvr-a~="jello"]:active {
+[hvr-animation~="jello"]:hover, [hvr-animation~="jello"]:focus, [hvr-animation~="jello"]:active {
   -webkit-animation-name: jello;
   -moz-animation-name: jello;
   -ms-animation-name: jello;
   -o-animation-name: jello;
   animation-name: jello; }
 
-[hvr-a~="bounceIn"]:hover, [hvr-a~="bounceIn"]:focus, [hvr-a~="bounceIn"]:active {
+[hvr-animation~="bounceIn"]:hover, [hvr-animation~="bounceIn"]:focus, [hvr-animation~="bounceIn"]:active {
   -webkit-animation-name: bounceIn;
   -moz-animation-name: bounceIn;
   -ms-animation-name: bounceIn;
   -o-animation-name: bounceIn;
   animation-name: bounceIn; }
 
-[hvr-a~="bounceInDown"]:hover, [hvr-a~="bounceInDown"]:focus, [hvr-a~="bounceInDown"]:active {
+[hvr-animation~="bounceInDown"]:hover, [hvr-animation~="bounceInDown"]:focus, [hvr-animation~="bounceInDown"]:active {
   -webkit-animation-name: bounceInDown;
   -moz-animation-name: bounceInDown;
   -ms-animation-name: bounceInDown;
   -o-animation-name: bounceInDown;
   animation-name: bounceInDown; }
 
-[hvr-a~="bounceInLeft"]:hover, [hvr-a~="bounceInLeft"]:focus, [hvr-a~="bounceInLeft"]:active {
+[hvr-animation~="bounceInLeft"]:hover, [hvr-animation~="bounceInLeft"]:focus, [hvr-animation~="bounceInLeft"]:active {
   -webkit-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
   -ms-animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
   animation-name: bounceInLeft; }
 
-[hvr-a~="bounceInRight"]:hover, [hvr-a~="bounceInRight"]:focus, [hvr-a~="bounceInRight"]:active {
+[hvr-animation~="bounceInRight"]:hover, [hvr-animation~="bounceInRight"]:focus, [hvr-animation~="bounceInRight"]:active {
   -webkit-animation-name: bounceInRight;
   -moz-animation-name: bounceInRight;
   -ms-animation-name: bounceInRight;
   -o-animation-name: bounceInRight;
   animation-name: bounceInRight; }
 
-[hvr-a~="bounceInUp"]:hover, [hvr-a~="bounceInUp"]:focus, [hvr-a~="bounceInUp"]:active {
+[hvr-animation~="bounceInUp"]:hover, [hvr-animation~="bounceInUp"]:focus, [hvr-animation~="bounceInUp"]:active {
   -webkit-animation-name: bounceInUp;
   -moz-animation-name: bounceInUp;
   -ms-animation-name: bounceInUp;
   -o-animation-name: bounceInUp;
   animation-name: bounceInUp; }
 
-[hvr-a~="bounceOut"]:hover, [hvr-a~="bounceOut"]:focus, [hvr-a~="bounceOut"]:active {
+[hvr-animation~="bounceOut"]:hover, [hvr-animation~="bounceOut"]:focus, [hvr-animation~="bounceOut"]:active {
   -webkit-animation-name: bounceOut;
   -moz-animation-name: bounceOut;
   -ms-animation-name: bounceOut;
   -o-animation-name: bounceOut;
   animation-name: bounceOut; }
 
-[hvr-a~="bounceOutDown"]:hover, [hvr-a~="bounceOutDown"]:focus, [hvr-a~="bounceOutDown"]:active {
+[hvr-animation~="bounceOutDown"]:hover, [hvr-animation~="bounceOutDown"]:focus, [hvr-animation~="bounceOutDown"]:active {
   -webkit-animation-name: bounceOutDown;
   -moz-animation-name: bounceOutDown;
   -ms-animation-name: bounceOutDown;
   -o-animation-name: bounceOutDown;
   animation-name: bounceOutDown; }
 
-[hvr-a~="bounceOutLeft"]:hover, [hvr-a~="bounceOutLeft"]:focus, [hvr-a~="bounceOutLeft"]:active {
+[hvr-animation~="bounceOutLeft"]:hover, [hvr-animation~="bounceOutLeft"]:focus, [hvr-animation~="bounceOutLeft"]:active {
   -webkit-animation-name: bounceOutLeft;
   -moz-animation-name: bounceOutLeft;
   -ms-animation-name: bounceOutLeft;
   -o-animation-name: bounceOutLeft;
   animation-name: bounceOutLeft; }
 
-[hvr-a~="bounceOutRight"]:hover, [hvr-a~="bounceOutRight"]:focus, [hvr-a~="bounceOutRight"]:active {
+[hvr-animation~="bounceOutRight"]:hover, [hvr-animation~="bounceOutRight"]:focus, [hvr-animation~="bounceOutRight"]:active {
   -webkit-animation-name: bounceOutRight;
   -moz-animation-name: bounceOutRight;
   -ms-animation-name: bounceOutRight;
   -o-animation-name: bounceOutRight;
   animation-name: bounceOutRight; }
 
-[hvr-a~="bounceOutUp"]:hover, [hvr-a~="bounceOutUp"]:focus, [hvr-a~="bounceOutUp"]:active {
+[hvr-animation~="bounceOutUp"]:hover, [hvr-animation~="bounceOutUp"]:focus, [hvr-animation~="bounceOutUp"]:active {
   -webkit-animation-name: bounceOutUp;
   -moz-animation-name: bounceOutUp;
   -ms-animation-name: bounceOutUp;
   -o-animation-name: bounceOutUp;
   animation-name: bounceOutUp; }
 
-[hvr-a~="fadeIn"]:hover, [hvr-a~="fadeIn"]:focus, [hvr-a~="fadeIn"]:active {
+[hvr-animation~="fadeIn"]:hover, [hvr-animation~="fadeIn"]:focus, [hvr-animation~="fadeIn"]:active {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
   -ms-animation-name: fadeIn;
   -o-animation-name: fadeIn;
   animation-name: fadeIn; }
 
-[hvr-a~="fadeInDown"]:hover, [hvr-a~="fadeInDown"]:focus, [hvr-a~="fadeInDown"]:active {
+[hvr-animation~="fadeInDown"]:hover, [hvr-animation~="fadeInDown"]:focus, [hvr-animation~="fadeInDown"]:active {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
   -ms-animation-name: fadeInDown;
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown; }
 
-[hvr-a~="fadeInDownBig"]:hover, [hvr-a~="fadeInDownBig"]:focus, [hvr-a~="fadeInDownBig"]:active {
+[hvr-animation~="fadeInDownBig"]:hover, [hvr-animation~="fadeInDownBig"]:focus, [hvr-animation~="fadeInDownBig"]:active {
   -webkit-animation-name: fadeInDownBig;
   -moz-animation-name: fadeInDownBig;
   -ms-animation-name: fadeInDownBig;
   -o-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig; }
 
-[hvr-a~="fadeInLeft"]:hover, [hvr-a~="fadeInLeft"]:focus, [hvr-a~="fadeInLeft"]:active {
+[hvr-animation~="fadeInLeft"]:hover, [hvr-animation~="fadeInLeft"]:focus, [hvr-animation~="fadeInLeft"]:active {
   -webkit-animation-name: fadeInLeft;
   -moz-animation-name: fadeInLeft;
   -ms-animation-name: fadeInLeft;
   -o-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
 
-[hvr-a~="fadeInLeftBig"]:hover, [hvr-a~="fadeInLeftBig"]:focus, [hvr-a~="fadeInLeftBig"]:active {
+[hvr-animation~="fadeInLeftBig"]:hover, [hvr-animation~="fadeInLeftBig"]:focus, [hvr-animation~="fadeInLeftBig"]:active {
   -webkit-animation-name: fadeInLeftBig;
   -moz-animation-name: fadeInLeftBig;
   -ms-animation-name: fadeInLeftBig;
   -o-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig; }
 
-[hvr-a~="fadeInRight"]:hover, [hvr-a~="fadeInRight"]:focus, [hvr-a~="fadeInRight"]:active {
+[hvr-animation~="fadeInRight"]:hover, [hvr-animation~="fadeInRight"]:focus, [hvr-animation~="fadeInRight"]:active {
   -webkit-animation-name: fadeInRight;
   -moz-animation-name: fadeInRight;
   -ms-animation-name: fadeInRight;
   -o-animation-name: fadeInRight;
   animation-name: fadeInRight; }
 
-[hvr-a~="fadeInRightBig"]:hover, [hvr-a~="fadeInRightBig"]:focus, [hvr-a~="fadeInRightBig"]:active {
+[hvr-animation~="fadeInRightBig"]:hover, [hvr-animation~="fadeInRightBig"]:focus, [hvr-animation~="fadeInRightBig"]:active {
   -webkit-animation-name: fadeInRightBig;
   -moz-animation-name: fadeInRightBig;
   -ms-animation-name: fadeInRightBig;
   -o-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig; }
 
-[hvr-a~="fadeInUp"]:hover, [hvr-a~="fadeInUp"]:focus, [hvr-a~="fadeInUp"]:active {
+[hvr-animation~="fadeInUp"]:hover, [hvr-animation~="fadeInUp"]:focus, [hvr-animation~="fadeInUp"]:active {
   -webkit-animation-name: fadeInUp;
   -moz-animation-name: fadeInUp;
   -ms-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
-[hvr-a~="fadeInUpBig"]:hover, [hvr-a~="fadeInUpBig"]:focus, [hvr-a~="fadeInUpBig"]:active {
+[hvr-animation~="fadeInUpBig"]:hover, [hvr-animation~="fadeInUpBig"]:focus, [hvr-animation~="fadeInUpBig"]:active {
   -webkit-animation-name: fadeInUpBig;
   -moz-animation-name: fadeInUpBig;
   -ms-animation-name: fadeInUpBig;
   -o-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig; }
 
-[hvr-a~="fadeOut"]:hover, [hvr-a~="fadeOut"]:focus, [hvr-a~="fadeOut"]:active {
+[hvr-animation~="fadeOut"]:hover, [hvr-animation~="fadeOut"]:focus, [hvr-animation~="fadeOut"]:active {
   -webkit-animation-name: fadeOut;
   -moz-animation-name: fadeOut;
   -ms-animation-name: fadeOut;
   -o-animation-name: fadeOut;
   animation-name: fadeOut; }
 
-[hvr-a~="fadeOutDown"]:hover, [hvr-a~="fadeOutDown"]:focus, [hvr-a~="fadeOutDown"]:active {
+[hvr-animation~="fadeOutDown"]:hover, [hvr-animation~="fadeOutDown"]:focus, [hvr-animation~="fadeOutDown"]:active {
   -webkit-animation-name: fadeOutDown;
   -moz-animation-name: fadeOutDown;
   -ms-animation-name: fadeOutDown;
   -o-animation-name: fadeOutDown;
   animation-name: fadeOutDown; }
 
-[hvr-a~="fadeOutDownBig"]:hover, [hvr-a~="fadeOutDownBig"]:focus, [hvr-a~="fadeOutDownBig"]:active {
+[hvr-animation~="fadeOutDownBig"]:hover, [hvr-animation~="fadeOutDownBig"]:focus, [hvr-animation~="fadeOutDownBig"]:active {
   -webkit-animation-name: fadeOutDownBig;
   -moz-animation-name: fadeOutDownBig;
   -ms-animation-name: fadeOutDownBig;
   -o-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig; }
 
-[hvr-a~="fadeOutLeft"]:hover, [hvr-a~="fadeOutLeft"]:focus, [hvr-a~="fadeOutLeft"]:active {
+[hvr-animation~="fadeOutLeft"]:hover, [hvr-animation~="fadeOutLeft"]:focus, [hvr-animation~="fadeOutLeft"]:active {
   -webkit-animation-name: fadeOutLeft;
   -moz-animation-name: fadeOutLeft;
   -ms-animation-name: fadeOutLeft;
   -o-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft; }
 
-[hvr-a~="fadeOutLeftBig"]:hover, [hvr-a~="fadeOutLeftBig"]:focus, [hvr-a~="fadeOutLeftBig"]:active {
+[hvr-animation~="fadeOutLeftBig"]:hover, [hvr-animation~="fadeOutLeftBig"]:focus, [hvr-animation~="fadeOutLeftBig"]:active {
   -webkit-animation-name: fadeOutLeftBig;
   -moz-animation-name: fadeOutLeftBig;
   -ms-animation-name: fadeOutLeftBig;
   -o-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig; }
 
-[hvr-a~="fadeOutRight"]:hover, [hvr-a~="fadeOutRight"]:focus, [hvr-a~="fadeOutRight"]:active {
+[hvr-animation~="fadeOutRight"]:hover, [hvr-animation~="fadeOutRight"]:focus, [hvr-animation~="fadeOutRight"]:active {
   -webkit-animation-name: fadeOutRight;
   -moz-animation-name: fadeOutRight;
   -ms-animation-name: fadeOutRight;
   -o-animation-name: fadeOutRight;
   animation-name: fadeOutRight; }
 
-[hvr-a~="fadeOutRightBig"]:hover, [hvr-a~="fadeOutRightBig"]:focus, [hvr-a~="fadeOutRightBig"]:active {
+[hvr-animation~="fadeOutRightBig"]:hover, [hvr-animation~="fadeOutRightBig"]:focus, [hvr-animation~="fadeOutRightBig"]:active {
   -webkit-animation-name: fadeOutRightBig;
   -moz-animation-name: fadeOutRightBig;
   -ms-animation-name: fadeOutRightBig;
   -o-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig; }
 
-[hvr-a~="fadeOutUp"]:hover, [hvr-a~="fadeOutUp"]:focus, [hvr-a~="fadeOutUp"]:active {
+[hvr-animation~="fadeOutUp"]:hover, [hvr-animation~="fadeOutUp"]:focus, [hvr-animation~="fadeOutUp"]:active {
   -webkit-animation-name: fadeOutUp;
   -moz-animation-name: fadeOutUp;
   -ms-animation-name: fadeOutUp;
   -o-animation-name: fadeOutUp;
   animation-name: fadeOutUp; }
 
-[hvr-a~="fadeOutUpBig"]:hover, [hvr-a~="fadeOutUpBig"]:focus, [hvr-a~="fadeOutUpBig"]:active {
+[hvr-animation~="fadeOutUpBig"]:hover, [hvr-animation~="fadeOutUpBig"]:focus, [hvr-animation~="fadeOutUpBig"]:active {
   -webkit-animation-name: fadeOutUpBig;
   -moz-animation-name: fadeOutUpBig;
   -ms-animation-name: fadeOutUpBig;
   -o-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig; }
 
-[hvr-a~="flip"]:hover, [hvr-a~="flip"]:focus, [hvr-a~="flip"]:active {
+[hvr-animation~="flip"]:hover, [hvr-animation~="flip"]:focus, [hvr-animation~="flip"]:active {
   -webkit-animation-name: flip;
   -moz-animation-name: flip;
   -ms-animation-name: flip;
   -o-animation-name: flip;
   animation-name: flip; }
 
-[hvr-a~="flipInX"]:hover, [hvr-a~="flipInX"]:focus, [hvr-a~="flipInX"]:active {
+[hvr-animation~="flipInX"]:hover, [hvr-animation~="flipInX"]:focus, [hvr-animation~="flipInX"]:active {
   -webkit-animation-name: flipInX;
   -moz-animation-name: flipInX;
   -ms-animation-name: flipInX;
   -o-animation-name: flipInX;
   animation-name: flipInX; }
 
-[hvr-a~="flipInY"]:hover, [hvr-a~="flipInY"]:focus, [hvr-a~="flipInY"]:active {
+[hvr-animation~="flipInY"]:hover, [hvr-animation~="flipInY"]:focus, [hvr-animation~="flipInY"]:active {
   -webkit-animation-name: flipInY;
   -moz-animation-name: flipInY;
   -ms-animation-name: flipInY;
   -o-animation-name: flipInY;
   animation-name: flipInY; }
 
-[hvr-a~="flipOutX"]:hover, [hvr-a~="flipOutX"]:focus, [hvr-a~="flipOutX"]:active {
+[hvr-animation~="flipOutX"]:hover, [hvr-animation~="flipOutX"]:focus, [hvr-animation~="flipOutX"]:active {
   -webkit-animation-name: flipOutX;
   -moz-animation-name: flipOutX;
   -ms-animation-name: flipOutX;
   -o-animation-name: flipOutX;
   animation-name: flipOutX; }
 
-[hvr-a~="flipOutY"]:hover, [hvr-a~="flipOutY"]:focus, [hvr-a~="flipOutY"]:active {
+[hvr-animation~="flipOutY"]:hover, [hvr-animation~="flipOutY"]:focus, [hvr-animation~="flipOutY"]:active {
   -webkit-animation-name: flipOutY;
   -moz-animation-name: flipOutY;
   -ms-animation-name: flipOutY;
   -o-animation-name: flipOutY;
   animation-name: flipOutY; }
 
-[hvr-a~="lightSpeedIn"]:hover, [hvr-a~="lightSpeedIn"]:focus, [hvr-a~="lightSpeedIn"]:active {
+[hvr-animation~="lightSpeedIn"]:hover, [hvr-animation~="lightSpeedIn"]:focus, [hvr-animation~="lightSpeedIn"]:active {
   -webkit-animation-name: lightSpeedIn;
   -moz-animation-name: lightSpeedIn;
   -ms-animation-name: lightSpeedIn;
   -o-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn; }
 
-[hvr-a~="lightSpeedOut"]:hover, [hvr-a~="lightSpeedOut"]:focus, [hvr-a~="lightSpeedOut"]:active {
+[hvr-animation~="lightSpeedOut"]:hover, [hvr-animation~="lightSpeedOut"]:focus, [hvr-animation~="lightSpeedOut"]:active {
   -webkit-animation-name: lightSpeedOut;
   -moz-animation-name: lightSpeedOut;
   -ms-animation-name: lightSpeedOut;
   -o-animation-name: lightSpeedOut;
   animation-name: lightSpeedOut; }
 
-[hvr-a~="rotateIn"]:hover, [hvr-a~="rotateIn"]:focus, [hvr-a~="rotateIn"]:active {
+[hvr-animation~="rotateIn"]:hover, [hvr-animation~="rotateIn"]:focus, [hvr-animation~="rotateIn"]:active {
   -webkit-animation-name: rotateIn;
   -moz-animation-name: rotateIn;
   -ms-animation-name: rotateIn;
   -o-animation-name: rotateIn;
   animation-name: rotateIn; }
 
-[hvr-a~="rotateInDownLeft"]:hover, [hvr-a~="rotateInDownLeft"]:focus, [hvr-a~="rotateInDownLeft"]:active {
+[hvr-animation~="rotateInDownLeft"]:hover, [hvr-animation~="rotateInDownLeft"]:focus, [hvr-animation~="rotateInDownLeft"]:active {
   -webkit-animation-name: rotateInDownLeft;
   -moz-animation-name: rotateInDownLeft;
   -ms-animation-name: rotateInDownLeft;
   -o-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft; }
 
-[hvr-a~="rotateInDownRight"]:hover, [hvr-a~="rotateInDownRight"]:focus, [hvr-a~="rotateInDownRight"]:active {
+[hvr-animation~="rotateInDownRight"]:hover, [hvr-animation~="rotateInDownRight"]:focus, [hvr-animation~="rotateInDownRight"]:active {
   -webkit-animation-name: rotateInDownRight;
   -moz-animation-name: rotateInDownRight;
   -ms-animation-name: rotateInDownRight;
   -o-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight; }
 
-[hvr-a~="rotateInUpLeft"]:hover, [hvr-a~="rotateInUpLeft"]:focus, [hvr-a~="rotateInUpLeft"]:active {
+[hvr-animation~="rotateInUpLeft"]:hover, [hvr-animation~="rotateInUpLeft"]:focus, [hvr-animation~="rotateInUpLeft"]:active {
   -webkit-animation-name: rotateInUpLeft;
   -moz-animation-name: rotateInUpLeft;
   -ms-animation-name: rotateInUpLeft;
   -o-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft; }
 
-[hvr-a~="rotateInUpRight"]:hover, [hvr-a~="rotateInUpRight"]:focus, [hvr-a~="rotateInUpRight"]:active {
+[hvr-animation~="rotateInUpRight"]:hover, [hvr-animation~="rotateInUpRight"]:focus, [hvr-animation~="rotateInUpRight"]:active {
   -webkit-animation-name: rotateInUpRight;
   -moz-animation-name: rotateInUpRight;
   -ms-animation-name: rotateInUpRight;
   -o-animation-name: rotateInUpRight;
   animation-name: rotateInUpRight; }
 
-[hvr-a~="rotateOut"]:hover, [hvr-a~="rotateOut"]:focus, [hvr-a~="rotateOut"]:active {
+[hvr-animation~="rotateOut"]:hover, [hvr-animation~="rotateOut"]:focus, [hvr-animation~="rotateOut"]:active {
   -webkit-animation-name: rotateOut;
   -moz-animation-name: rotateOut;
   -ms-animation-name: rotateOut;
   -o-animation-name: rotateOut;
   animation-name: rotateOut; }
 
-[hvr-a~="rotateOutDownLeft"]:hover, [hvr-a~="rotateOutDownLeft"]:focus, [hvr-a~="rotateOutDownLeft"]:active {
+[hvr-animation~="rotateOutDownLeft"]:hover, [hvr-animation~="rotateOutDownLeft"]:focus, [hvr-animation~="rotateOutDownLeft"]:active {
   -webkit-animation-name: rotateOutDownLeft;
   -moz-animation-name: rotateOutDownLeft;
   -ms-animation-name: rotateOutDownLeft;
   -o-animation-name: rotateOutDownLeft;
   animation-name: rotateOutDownLeft; }
 
-[hvr-a~="rotateOutDownRight"]:hover, [hvr-a~="rotateOutDownRight"]:focus, [hvr-a~="rotateOutDownRight"]:active {
+[hvr-animation~="rotateOutDownRight"]:hover, [hvr-animation~="rotateOutDownRight"]:focus, [hvr-animation~="rotateOutDownRight"]:active {
   -webkit-animation-name: rotateOutDownRight;
   -moz-animation-name: rotateOutDownRight;
   -ms-animation-name: rotateOutDownRight;
   -o-animation-name: rotateOutDownRight;
   animation-name: rotateOutDownRight; }
 
-[hvr-a~="rotateOutUpLeft"]:hover, [hvr-a~="rotateOutUpLeft"]:focus, [hvr-a~="rotateOutUpLeft"]:active {
+[hvr-animation~="rotateOutUpLeft"]:hover, [hvr-animation~="rotateOutUpLeft"]:focus, [hvr-animation~="rotateOutUpLeft"]:active {
   -webkit-animation-name: rotateOutUpLeft;
   -moz-animation-name: rotateOutUpLeft;
   -ms-animation-name: rotateOutUpLeft;
   -o-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft; }
 
-[hvr-a~="rotateOutUpRight"]:hover, [hvr-a~="rotateOutUpRight"]:focus, [hvr-a~="rotateOutUpRight"]:active {
+[hvr-animation~="rotateOutUpRight"]:hover, [hvr-animation~="rotateOutUpRight"]:focus, [hvr-animation~="rotateOutUpRight"]:active {
   -webkit-animation-name: rotateOutUpRight;
   -moz-animation-name: rotateOutUpRight;
   -ms-animation-name: rotateOutUpRight;
   -o-animation-name: rotateOutUpRight;
   animation-name: rotateOutUpRight; }
 
-[hvr-a~="hinge"]:hover, [hvr-a~="hinge"]:focus, [hvr-a~="hinge"]:active {
+[hvr-animation~="hinge"]:hover, [hvr-animation~="hinge"]:focus, [hvr-animation~="hinge"]:active {
   -webkit-animation-name: hinge;
   -moz-animation-name: hinge;
   -ms-animation-name: hinge;
   -o-animation-name: hinge;
   animation-name: hinge; }
 
-[hvr-a~="jackInTheBox"]:hover, [hvr-a~="jackInTheBox"]:focus, [hvr-a~="jackInTheBox"]:active {
+[hvr-animation~="jackInTheBox"]:hover, [hvr-animation~="jackInTheBox"]:focus, [hvr-animation~="jackInTheBox"]:active {
   -webkit-animation-name: jackInTheBox;
   -moz-animation-name: jackInTheBox;
   -ms-animation-name: jackInTheBox;
   -o-animation-name: jackInTheBox;
   animation-name: jackInTheBox; }
 
-[hvr-a~="rollIn"]:hover, [hvr-a~="rollIn"]:focus, [hvr-a~="rollIn"]:active {
+[hvr-animation~="rollIn"]:hover, [hvr-animation~="rollIn"]:focus, [hvr-animation~="rollIn"]:active {
   -webkit-animation-name: rollIn;
   -moz-animation-name: rollIn;
   -ms-animation-name: rollIn;
   -o-animation-name: rollIn;
   animation-name: rollIn; }
 
-[hvr-a~="rollOut"]:hover, [hvr-a~="rollOut"]:focus, [hvr-a~="rollOut"]:active {
+[hvr-animation~="rollOut"]:hover, [hvr-animation~="rollOut"]:focus, [hvr-animation~="rollOut"]:active {
   -webkit-animation-name: rollOut;
   -moz-animation-name: rollOut;
   -ms-animation-name: rollOut;
   -o-animation-name: rollOut;
   animation-name: rollOut; }
 
-[hvr-a~="zoomIn"]:hover, [hvr-a~="zoomIn"]:focus, [hvr-a~="zoomIn"]:active {
+[hvr-animation~="zoomIn"]:hover, [hvr-animation~="zoomIn"]:focus, [hvr-animation~="zoomIn"]:active {
   -webkit-animation-name: zoomIn;
   -moz-animation-name: zoomIn;
   -ms-animation-name: zoomIn;
   -o-animation-name: zoomIn;
   animation-name: zoomIn; }
 
-[hvr-a~="zoomInDown"]:hover, [hvr-a~="zoomInDown"]:focus, [hvr-a~="zoomInDown"]:active {
+[hvr-animation~="zoomInDown"]:hover, [hvr-animation~="zoomInDown"]:focus, [hvr-animation~="zoomInDown"]:active {
   -webkit-animation-name: zoomInDown;
   -moz-animation-name: zoomInDown;
   -ms-animation-name: zoomInDown;
   -o-animation-name: zoomInDown;
   animation-name: zoomInDown; }
 
-[hvr-a~="zoomInLeft"]:hover, [hvr-a~="zoomInLeft"]:focus, [hvr-a~="zoomInLeft"]:active {
+[hvr-animation~="zoomInLeft"]:hover, [hvr-animation~="zoomInLeft"]:focus, [hvr-animation~="zoomInLeft"]:active {
   -webkit-animation-name: zoomInLeft;
   -moz-animation-name: zoomInLeft;
   -ms-animation-name: zoomInLeft;
   -o-animation-name: zoomInLeft;
   animation-name: zoomInLeft; }
 
-[hvr-a~="zoomInRight"]:hover, [hvr-a~="zoomInRight"]:focus, [hvr-a~="zoomInRight"]:active {
+[hvr-animation~="zoomInRight"]:hover, [hvr-animation~="zoomInRight"]:focus, [hvr-animation~="zoomInRight"]:active {
   -webkit-animation-name: zoomInRight;
   -moz-animation-name: zoomInRight;
   -ms-animation-name: zoomInRight;
   -o-animation-name: zoomInRight;
   animation-name: zoomInRight; }
 
-[hvr-a~="zoomInUp"]:hover, [hvr-a~="zoomInUp"]:focus, [hvr-a~="zoomInUp"]:active {
+[hvr-animation~="zoomInUp"]:hover, [hvr-animation~="zoomInUp"]:focus, [hvr-animation~="zoomInUp"]:active {
   -webkit-animation-name: zoomInUp;
   -moz-animation-name: zoomInUp;
   -ms-animation-name: zoomInUp;
   -o-animation-name: zoomInUp;
   animation-name: zoomInUp; }
 
-[hvr-a~="zoomOut"]:hover, [hvr-a~="zoomOut"]:focus, [hvr-a~="zoomOut"]:active {
+[hvr-animation~="zoomOut"]:hover, [hvr-animation~="zoomOut"]:focus, [hvr-animation~="zoomOut"]:active {
   -webkit-animation-name: zoomOut;
   -moz-animation-name: zoomOut;
   -ms-animation-name: zoomOut;
   -o-animation-name: zoomOut;
   animation-name: zoomOut; }
 
-[hvr-a~="zoomOutDown"]:hover, [hvr-a~="zoomOutDown"]:focus, [hvr-a~="zoomOutDown"]:active {
+[hvr-animation~="zoomOutDown"]:hover, [hvr-animation~="zoomOutDown"]:focus, [hvr-animation~="zoomOutDown"]:active {
   -webkit-animation-name: zoomOutDown;
   -moz-animation-name: zoomOutDown;
   -ms-animation-name: zoomOutDown;
   -o-animation-name: zoomOutDown;
   animation-name: zoomOutDown; }
 
-[hvr-a~="zoomOutLeft"]:hover, [hvr-a~="zoomOutLeft"]:focus, [hvr-a~="zoomOutLeft"]:active {
+[hvr-animation~="zoomOutLeft"]:hover, [hvr-animation~="zoomOutLeft"]:focus, [hvr-animation~="zoomOutLeft"]:active {
   -webkit-animation-name: zoomOutLeft;
   -moz-animation-name: zoomOutLeft;
   -ms-animation-name: zoomOutLeft;
   -o-animation-name: zoomOutLeft;
   animation-name: zoomOutLeft; }
 
-[hvr-a~="zoomOutRight"]:hover, [hvr-a~="zoomOutRight"]:focus, [hvr-a~="zoomOutRight"]:active {
+[hvr-animation~="zoomOutRight"]:hover, [hvr-animation~="zoomOutRight"]:focus, [hvr-animation~="zoomOutRight"]:active {
   -webkit-animation-name: zoomOutRight;
   -moz-animation-name: zoomOutRight;
   -ms-animation-name: zoomOutRight;
   -o-animation-name: zoomOutRight;
   animation-name: zoomOutRight; }
 
-[hvr-a~="zoomOutUp"]:hover, [hvr-a~="zoomOutUp"]:focus, [hvr-a~="zoomOutUp"]:active {
+[hvr-animation~="zoomOutUp"]:hover, [hvr-animation~="zoomOutUp"]:focus, [hvr-animation~="zoomOutUp"]:active {
   -webkit-animation-name: zoomOutUp;
   -moz-animation-name: zoomOutUp;
   -ms-animation-name: zoomOutUp;
   -o-animation-name: zoomOutUp;
   animation-name: zoomOutUp; }
 
-[hvr-a~="slideInDown"]:hover, [hvr-a~="slideInDown"]:focus, [hvr-a~="slideInDown"]:active {
+[hvr-animation~="slideInDown"]:hover, [hvr-animation~="slideInDown"]:focus, [hvr-animation~="slideInDown"]:active {
   -webkit-animation-name: slideInDown;
   -moz-animation-name: slideInDown;
   -ms-animation-name: slideInDown;
   -o-animation-name: slideInDown;
   animation-name: slideInDown; }
 
-[hvr-a~="slideInLeft"]:hover, [hvr-a~="slideInLeft"]:focus, [hvr-a~="slideInLeft"]:active {
+[hvr-animation~="slideInLeft"]:hover, [hvr-animation~="slideInLeft"]:focus, [hvr-animation~="slideInLeft"]:active {
   -webkit-animation-name: slideInLeft;
   -moz-animation-name: slideInLeft;
   -ms-animation-name: slideInLeft;
   -o-animation-name: slideInLeft;
   animation-name: slideInLeft; }
 
-[hvr-a~="slideInRight"]:hover, [hvr-a~="slideInRight"]:focus, [hvr-a~="slideInRight"]:active {
+[hvr-animation~="slideInRight"]:hover, [hvr-animation~="slideInRight"]:focus, [hvr-animation~="slideInRight"]:active {
   -webkit-animation-name: slideInRight;
   -moz-animation-name: slideInRight;
   -ms-animation-name: slideInRight;
   -o-animation-name: slideInRight;
   animation-name: slideInRight; }
 
-[hvr-a~="slideInUp"]:hover, [hvr-a~="slideInUp"]:focus, [hvr-a~="slideInUp"]:active {
+[hvr-animation~="slideInUp"]:hover, [hvr-animation~="slideInUp"]:focus, [hvr-animation~="slideInUp"]:active {
   -webkit-animation-name: slideInUp;
   -moz-animation-name: slideInUp;
   -ms-animation-name: slideInUp;
   -o-animation-name: slideInUp;
   animation-name: slideInUp; }
 
-[hvr-a~="slideOutDown"]:hover, [hvr-a~="slideOutDown"]:focus, [hvr-a~="slideOutDown"]:active {
+[hvr-animation~="slideOutDown"]:hover, [hvr-animation~="slideOutDown"]:focus, [hvr-animation~="slideOutDown"]:active {
   -webkit-animation-name: slideOutDown;
   -moz-animation-name: slideOutDown;
   -ms-animation-name: slideOutDown;
   -o-animation-name: slideOutDown;
   animation-name: slideOutDown; }
 
-[hvr-a~="slideOutLeft"]:hover, [hvr-a~="slideOutLeft"]:focus, [hvr-a~="slideOutLeft"]:active {
+[hvr-animation~="slideOutLeft"]:hover, [hvr-animation~="slideOutLeft"]:focus, [hvr-animation~="slideOutLeft"]:active {
   -webkit-animation-name: slideOutLeft;
   -moz-animation-name: slideOutLeft;
   -ms-animation-name: slideOutLeft;
   -o-animation-name: slideOutLeft;
   animation-name: slideOutLeft; }
 
-[hvr-a~="slideOutRight"]:hover, [hvr-a~="slideOutRight"]:focus, [hvr-a~="slideOutRight"]:active {
+[hvr-animation~="slideOutRight"]:hover, [hvr-animation~="slideOutRight"]:focus, [hvr-animation~="slideOutRight"]:active {
   -webkit-animation-name: slideOutRight;
   -moz-animation-name: slideOutRight;
   -ms-animation-name: slideOutRight;
   -o-animation-name: slideOutRight;
   animation-name: slideOutRight; }
 
-[hvr-a~="slideOutUp"]:hover, [hvr-a~="slideOutUp"]:focus, [hvr-a~="slideOutUp"]:active {
+[hvr-animation~="slideOutUp"]:hover, [hvr-animation~="slideOutUp"]:focus, [hvr-animation~="slideOutUp"]:active {
   -webkit-animation-name: slideOutUp;
   -moz-animation-name: slideOutUp;
   -ms-animation-name: slideOutUp;
