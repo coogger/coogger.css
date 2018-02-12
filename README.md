@@ -17,7 +17,6 @@ css framework
 
 ### to do
 
-+ [hvr-animation](https://github.com/hakancelik96/coogger.css/blob/master/sass/hvr-animation.scss) other animations need to be added
 + documentation need to be prepared
 + more colors need to be add. color.scss 
 + screen sizes need to be customized, 
