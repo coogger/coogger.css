@@ -67,3 +67,14 @@
 /* metin seçmeyi engellemek için */
 [gnrl~="unselectable"]{@include prefixed(user-select,none)}
 /* general operations */
+[gnrl~="center"]{
+  @extend [flx];
+  @extend [flx~="jc-c"];
+  margin: auto;
+}
+[gnrl~="ewcenter"]{
+  @extend [flx];
+  @extend [flx~="jc-c"];
+  @extend [flx~="ai-c"];
+  margin: auto;
+}

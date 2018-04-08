@@ -11,8 +11,6 @@
     overflow-x: auto;
     width: 50%;
     margin: auto;
-  /*  @extend [flx];
-    @extend [flx~="jc-c"];*/
     @media screen and (max-width: 900px) {
         width: 80%;
     }
@@ -26,17 +24,29 @@
         width: 98%;
     }
 }
+[default~="media2"]{
+    width: 30%;
+    @media screen and (max-width: 900px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 700px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 98%;
+    }
+}
 [default~="paragraph"]{
-    @extend [flx];
-    @extend [flx~="jc-c"];
-    @extend [flx~="ai-c"];
-    @extend [gnrl~="b-1"];
-    @extend [gnrl~="br-3"];
-    @extend [gnrl~="txt-m"];
-    @extend [gnrl~="bg-white"];
-    @extend [gnrl~="brc-muted"];
-    @extend [default~="media"];
-    padding: 0px 12px;
+    // @extend [flx];
+    // @extend [flx~="jc-c"];
+    // @extend [flx~="ai-c"];
+    // @extend [gnrl~="b-1"];
+    // @extend [gnrl~="br-3"];
+    // @extend [gnrl~="txt-m"];
+    // @extend [gnrl~="bg-white"];
+    // @extend [gnrl~="brc-muted"];
+    // @extend [default~="media"];
+    // padding: 0px 12px;
     word-wrap: break-word;
     a{
       @extend [gnrl~="c-info"];
@@ -50,6 +60,7 @@
     img{
       max-height: 100%;
       max-width: 100%;
+      @extend [gnrl~="center"];
     }
 }
 [default~="forminput"]{
@@ -93,9 +104,6 @@
   }
 }
 [default~="form"]{
-  /*@extend [flx];
-  @extend [flx~="ai-c"];
-  @extend [flx~="jc-c"];*/
   @extend [gnrl~="b-1"];
   @extend [gnrl~="br-2"];
   @extend [gnrl~="bg-white"];
@@ -108,4 +116,24 @@
   li{
     list-style: none;
   }
+}
+/* another default settings */
+title{
+  @extend [flx];
+  @extend [flx~="jc-c"];
+  @extend [flx~="ai-c"];
+  @extend [gnrl~="txt-m"];
+  @extend [gnrl~="b-1"];
+  @extend [gnrl~="brc-muted"];
+  @extend [gnrl~="c-private"];
+  text-align: center;
+  word-break: break-all;
+  padding: 3px 6px;
+}
+.helptext{
+  @extend [flx];
+  @extend [gnrl~="bg-danger"];
+  @extend [gnrl~="c-white"];
+  @extend [gnrl~="br-2"];
+  @extend [default~="pm"];
 }
