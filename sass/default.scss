@@ -8,9 +8,7 @@
 }
 /* diğer default özellikler bunlar tam isimleri ile yazılacaktır */
 [default~="media"]{
-    overflow-x: auto;
     width: 50%;
-    margin: auto;
     @media screen and (max-width: 900px) {
         width: 80%;
     }
@@ -26,27 +24,20 @@
 }
 [default~="media2"]{
     width: 30%;
+    @media screen and (max-width: 1024px) {
+      width: 40%;
+    }
     @media screen and (max-width: 900px) {
-        width: 40%;
+        width: 60%;
     }
     @media screen and (max-width: 700px) {
-        width: 50%;
+        width: 80%;
     }
     @media screen and (max-width: 500px) {
         width: 98%;
     }
 }
 [default~="paragraph"]{
-    // @extend [flx];
-    // @extend [flx~="jc-c"];
-    // @extend [flx~="ai-c"];
-    // @extend [gnrl~="b-1"];
-    // @extend [gnrl~="br-3"];
-    // @extend [gnrl~="txt-m"];
-    // @extend [gnrl~="bg-white"];
-    // @extend [gnrl~="brc-muted"];
-    // @extend [default~="media"];
-    // padding: 0px 12px;
     word-wrap: break-word;
     a{
       @extend [gnrl~="c-info"];
@@ -54,13 +45,10 @@
         color:$c-success;
       }
     }
-    li{
-      list-style: unset;
-    }
     img{
       max-height: 100%;
       max-width: 100%;
-      @extend [gnrl~="center"];
+      margin: auto;
     }
 }
 [default~="forminput"]{
@@ -73,9 +61,9 @@
     @extend [flx~="as-fs"];
   }
   input,select{
-    width: 66%;
+    width: 96%;
     min-width: 200px;
-    min-height: 16px;
+    min-height: 24px;
     padding: 4px 12px;
     @extend [gnrl~="txt-m"];
     @extend [gnrl~="b-1"];
@@ -104,10 +92,6 @@
   }
 }
 [default~="form"]{
-  @extend [gnrl~="b-1"];
-  @extend [gnrl~="br-2"];
-  @extend [gnrl~="bg-white"];
-  @extend [gnrl~="brc-muted"];
   @extend [default~="forminput"];
   p input,li input{
     @extend [flx];
@@ -132,8 +116,9 @@ title{
 }
 .helptext{
   @extend [flx];
-  @extend [gnrl~="bg-danger"];
+  @extend [gnrl~="bg-warning"];
   @extend [gnrl~="c-white"];
   @extend [gnrl~="br-2"];
   @extend [default~="pm"];
+  padding: 4px 12px;
 }

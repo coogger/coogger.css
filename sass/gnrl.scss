@@ -78,3 +78,13 @@
   @extend [flx~="ai-c"];
   margin: auto;
 }
+[gnrl~="right"]{
+  @extend [flx];
+  @extend [flx~="jc-fe"];
+  margin-left: auto;
+}
+[gnrl~="left"]{
+  @extend [flx];
+  @extend [flx~="jc-fs"];
+  margin-right: auto;
+}
