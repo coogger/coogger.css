@@ -339,17 +339,6 @@
 @include general-prefixed(color, brc-dark, border-color, $c-dark);
 @include general-prefixed(color, brc-muted, border-color, $c-muted);
 
-@include general-prefixed(color, brc-private, border-color, $c-private);
-@include general-prefixed(color, brc-primary, border-color, $c-primary);
-@include general-prefixed(color, brc-secondary, border-color, $c-secondary);
-@include general-prefixed(color, brc-success, border-color, $c-success);
-@include general-prefixed(color, brc-danger, border-color, $c-danger);
-@include general-prefixed(color, brc-warning, border-color, $c-warning);
-@include general-prefixed(color, brc-info, border-color, $c-info);
-@include general-prefixed(color, brc-white, border-color, $c-white);
-@include general-prefixed(color, brc-dark, border-color, $c-dark);
-@include general-prefixed(color, brc-muted, border-color, $c-muted);
-
 @include general-prefixed(color, brc-yellow, border-color, $c-yellow);
 @include general-prefixed(color, brc-yellow2, border-color, $c-yellow2);
 @include general-prefixed(color, brc-yellow3, border-color, $c-yellow3);
