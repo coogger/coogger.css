@@ -1,11 +1,12 @@
-/*  COOGGER.CSS  */
+@import "variables.scss";
+
+@import "mixins.scss";
+
 @import "font.scss";
 
-@import "options.scss";
+@import "colors.scss";
 
-@import "another-settings.scss";
-
-@import "mixin.scss";
+@import "general.scss";
 
 @import "default.scss";
 

@@ -1,0 +1,181 @@
+$padding:4px 12px;
+$margin:2px 6px;
+$font-size:16px;
+/* flex default settings */
+$fd:row; /* flex-direction */
+$fw:wrap; /* flex-wrap */
+$jc:flex-start;  /* justify-content */
+$ai:stretch; /* align-items */
+$ac:stretch; /* align-content */
+/* animations op */
+$a-fill-mode: both;
+$a-duration :.45s;
+$animation-duration :.75s;
+/* colors */
+/* private  settings*/
+$c-private: #0f391d !important;
+$bg-private: #0f391d !important;
+$brc-private: #0f391d !important;
+// https://github.com/omergulcicek/turkuaz/blob/master/turkuaz.css#L1569
+$c-primary: #3498db !important;
+$c-secondary: #99a3a4 !important;
+$c-success: #1abc9c !important;
+$c-danger: #e74c3c !important;
+$c-warning: #f1c40f !important;
+$c-info: #85c1e9 !important;
+$c-dark: #17202a !important;
+$c-muted: #eaecee !important;
+$c-white: #fff !important;
+
+$c-yellow: #ffeb3b !important;
+$c-yellow6: $c-yellow;
+$c-yellow2: #fff9c4 !important;
+$c-yellow3: #fff59d !important;
+$c-yellow4: #fff176 !important;
+$c-yellow5: #ffee58 !important;
+$c-yellow7: #fdd835 !important;
+$c-yellow8: #fbc02d !important;
+$c-yellow9: #f9a825 !important;
+$c-yellow10: #f57f17 !important;
+
+$c-orange: #ff9800 !important;
+$c-orange6: $c-orange;
+$c-orange2: #ffe0b2 !important;
+$c-orange3: #ffcc80 !important;
+$c-orange4: #ffb74d !important;
+$c-orange5: #ffa726 !important;
+$c-orange7: #fb8c00 !important;
+$c-orange8: #f57c00 !important;
+$c-orange9: #ef6c00 !important;
+$c-orange10: #e65100 !important;
+
+$c-dark-orange: #ff5722 !important;
+$c-dark-orange6: $c-dark-orange;
+$c-dark-orange2: #ffccbc !important;
+$c-dark-orange3: #ffab91 !important;
+$c-dark-orange4: #ff8a65 !important;
+$c-dark-orange5: #ff7043 !important;
+$c-dark-orange7: #f4511e !important;
+$c-dark-orange8: #e64a19 !important;
+$c-dark-orange9: #d84315 !important;
+$c-dark-orange10: #bf360c !important;
+
+$c-red: #f44336 !important;
+$c-red6: $c-red;
+$c-red2: #ffcdd2 !important;
+$c-red3: #ef9a9a !important;
+$c-red4: #e57373 !important;
+$c-red5: #ef5350 !important;
+$c-red7: #e53935 !important;
+$c-red8: #d32f2f !important;
+$c-red9: #c62828 !important;
+$c-red10: #b71c1c !important;
+
+$c-pink: #e91e63 !important;
+$c-pink6: $c-pink;
+$c-pink2: #f8bbd0 !important;
+$c-pink3:#f48fb1 !important;
+$c-pink4:#f06292 !important;
+$c-pink5:#ec407a !important;
+$c-pink7:#d81b60 !important;
+$c-pink8:#c2185b !important;
+$c-pink9:#ad1457 !important;
+$c-pink10:#880e4f !important;
+
+$c-dark-purple: #673ab7 !important;
+$c-dark-purple6: $c-dark-purple;
+$c-dark-purple2: #d1c4e9 !important;
+$c-dark-purple3: #b39ddb !important;
+$c-dark-purple4: #9575cd !important;
+$c-dark-purple5: #7e57c2 !important;
+$c-dark-purple7: #5e35b1 !important;
+$c-dark-purple8: #512da8 !important;
+$c-dark-purple9: #4527a0 !important;
+$c-dark-purple10: #311b92 !important;
+
+$c-blue: #2196f3 !important;
+$c-blue6: $c-blue;
+$c-blue2: #bbdefb !important;
+$c-blue3: #90caf9 !important;
+$c-blue4: #64b5f6 !important;
+$c-blue5: #42a5f5 !important;
+$c-blue7: #1e88e5 !important;
+$c-blue8: #1976d2 !important;
+$c-blue9: #1565c0 !important;
+$c-blue10: #0d47a1 !important;
+
+$c-light-blue: #03a9f4 !important;
+$c-light-blue6: $c-light-blue;
+$c-light-blue2: #b3e5fc !important;
+$c-light-blue3: #81d4fa !important;
+$c-light-blue4: #4fc3f7 !important;
+$c-light-blue5: #29b6f6 !important;
+$c-light-blue7: #039be5 !important;
+$c-light-blue8: #0288d1 !important;
+$c-light-blue9: #0277bd !important;
+$c-light-blue10: #01579b !important;
+
+$c-turquoise: #1ac5b8 !important;
+$c-turquoise6: $c-turquoise;
+$c-turquoise2: #c1fdf8 !important;
+$c-turquoise3: #56f7eb !important;
+$c-turquoise4: #36eadd !important;
+$c-turquoise5: #2ed8cb !important;
+$c-turquoise7: #12b9ac !important;
+$c-turquoise8: #0cab9e !important;
+$c-turquoise9: #03968a !important;
+$c-turquoise10: #038075 !important;
+
+$c-green: #4caf50 !important;
+$c-green6: $c-green;
+$c-green2: #c8e6c9 !important;
+$c-green3: #a5d6a7 !important;
+$c-green4: #81c784 !important;
+$c-green5: #66bb6a !important;
+$c-green7: #43a047 !important;
+$c-green8: #388e3c !important;
+$c-green9: #2e7d32 !important;
+$c-green10: #1b5e20 !important;
+
+$c-light-green: #8bc34a !important;
+$c-light-green6: $c-light-green;
+$c-light-green2: #dcedc8 !important;
+$c-light-green3: #c5e1a5 !important;
+$c-light-green4: #aed581 !important;
+$c-light-green5: #9ccc65 !important;
+$c-light-green7: #7cb342 !important;
+$c-light-green8: #689f38 !important;
+$c-light-green9: #558b2f !important;
+$c-light-green10: #33691e !important;
+
+$c-brown: #795548 !important;
+$c-brown6: $c-brown;
+$c-brown2: #d7ccc8 !important;
+$c-brown3: #bcaaa4 !important;
+$c-brown4: #a1887f !important;
+$c-brown5: #8d6e63 !important;
+$c-brown7: #6d4c41 !important;
+$c-brown8: #5d4037 !important;
+$c-brown9: #4e342e !important;
+$c-brown10: #3e2723 !important;
+
+$c-grey: #9e9e9e !important;
+$c-grey6: $c-grey;
+$c-grey2: #f5f5f5 !important;
+$c-grey3: #eeeeee !important;
+$c-grey4: #e0e0e0 !important;
+$c-grey5: #bdbdbd !important;
+$c-grey7: #757575 !important;
+$c-grey8: #4e4e4e !important;
+$c-grey9: #4e342e !important;
+$c-grey10: #424040 !important;
+
+$c-black: #000 !important;
+$c-black2: #404040 !important;
+$c-black3: #353535 !important;
+$c-black4: #303030 !important;
+$c-black5: #252525 !important;
+$c-black6: #202020 !important;
+$c-black7: #151515 !important;
+$c-black8: #101010 !important;
+$c-black9: #050505 !important;

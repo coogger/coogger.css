@@ -163,16 +163,16 @@
     }
   }
 }
-@mixin general($name, $property, $value){
-  [gnrl~="#{$name}"]{#{$property}:$value}
+@mixin general($func_name, $name, $property, $value){
+  [#{$func_name}~="#{$name}"]{#{$property}:$value}
 }
-@mixin general-prefixed($name, $property, $value){
-  [gnrl~="#{$name}"]{
+@mixin general-prefixed($func_name, $name, $property, $value){
+  [#{$func_name}~="#{$name}"]{
     @include prefixed($property, $value);
   }
 }
-@mixin general-prefixed2($name, $property, $value){
-  [gnrl~="#{$name}"]{
+@mixin general-prefixed2($func_name, $name, $property, $value){
+  [#{$func_name}~="#{$name}"]{
     @include prefixed2($property, $value);
   }
 }

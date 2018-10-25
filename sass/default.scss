@@ -40,7 +40,7 @@
 [default~="paragraph"]{
     word-wrap: break-word;
     a{
-      @extend [gnrl~="c-info"];
+      @extend [color~="c-info"];
       &:hover,&:focus,&:active{
         color:$c-success;
       }
@@ -68,9 +68,9 @@
     @extend [gnrl~="txt-m"];
     @extend [gnrl~="b-1"];
     @extend [gnrl~="br-2"];
-    @extend [gnrl~="brc-muted"];
+    @extend [color~="brc-muted"];
     @extend [default~="pm"];
-    @extend [gnrl~="bg-white"];
+    @extend [color~="bg-white"];
     &:hover,&:focus,&:active{
       border-color:$c-secondary;
     }
@@ -97,28 +97,5 @@
     @extend [flx];
     @extend [flx~="jc-c"];
   }
-  li{
-    list-style: none;
-  }
 }
 /* another default settings */
-title{
-  @extend [flx];
-  @extend [flx~="jc-c"];
-  @extend [flx~="ai-c"];
-  @extend [gnrl~="txt-m"];
-  @extend [gnrl~="b-1"];
-  @extend [gnrl~="brc-muted"];
-  @extend [gnrl~="c-private"];
-  text-align: center;
-  word-break: break-all;
-  padding: 3px 6px;
-}
-.helptext{
-  @extend [flx];
-  @extend [gnrl~="bg-warning"];
-  @extend [gnrl~="c-white"];
-  @extend [gnrl~="br-2"];
-  @extend [default~="pm"];
-  padding: 4px 12px;
-}

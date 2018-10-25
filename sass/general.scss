@@ -26,3 +26,23 @@ img{
   max-width: 100%;
   max-height: 100%;
 }
+title{
+  @extend [flx];
+  @extend [flx~="jc-c"];
+  @extend [flx~="ai-c"];
+  @extend [gnrl~="txt-m"];
+  @extend [gnrl~="b-1"];
+  @extend [color~="brc-muted"];
+  @extend [color~="c-private"];
+  text-align: center;
+  word-break: break-all;
+  padding: 3px 6px;
+}
+.helptext{
+  @extend [flx];
+  @extend [color~="bg-warning"];
+  @extend [color~="c-white"];
+  @extend [gnrl~="br-2"];
+  @extend [default~="pm"];
+  padding: 4px 12px;
+}
