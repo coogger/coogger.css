@@ -37,20 +37,7 @@
         width: 98%;
     }
 }
-[default~="paragraph"]{
-    word-wrap: break-word;
-    a{
-      @extend [color~="c-info"];
-      &:hover,&:focus,&:active{
-        color:$c-success;
-      }
-    }
-    img{
-      max-height: 100%;
-      max-width: 100%;
-      margin: auto;
-    }
-}
+
 [default~="forminput"]{
   label{
     @extend [gnrl~="txt-m"];

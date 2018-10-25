@@ -63,7 +63,7 @@
   color: #f1c40f !important;
 }
 
-[color~=c-info], [default~=paragraph] a {
+[color~=c-info] {
   color: #85c1e9 !important;
 }
 
@@ -319,7 +319,7 @@
   color: #311b92 !important;
 }
 
-[color~=c-blue] {
+[color~=c-blue], a {
   color: #2196f3 !important;
 }
 
@@ -1951,7 +1951,9 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #fff !important;
+}
+a:hover, a:focus, a:active {
+  color: #1abc9c !important;
 }
 
 ul {
@@ -1966,6 +1968,7 @@ input[type=submit] {
 img {
   max-width: 100%;
   max-height: 100%;
+  margin: auto;
 }
 
 title {
@@ -2043,18 +2046,6 @@ title {
   [default~=media2] {
     width: 98%;
   }
-}
-
-[default~=paragraph] {
-  word-wrap: break-word;
-}
-[default~=paragraph] a:hover, [default~=paragraph] a:focus, [default~=paragraph] a:active {
-  color: #1abc9c !important;
-}
-[default~=paragraph] img {
-  max-height: 100%;
-  max-width: 100%;
-  margin: auto;
 }
 
 [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {

@@ -13,7 +13,10 @@ h1{font-size:1.5em;color:#000}
  }
  a{
    text-decoration: none;
-   color:$c-white;
+   @extend [color~="c-blue"];
+   &:hover,&:focus,&:active{
+     color:$c-success;
+   }
  }
  ul{
   margin: 0px;
@@ -25,6 +28,7 @@ h1{font-size:1.5em;color:#000}
 img{
   max-width: 100%;
   max-height: 100%;
+  margin: auto;
 }
 title{
   @extend [flx];
