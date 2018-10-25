@@ -71,7 +71,7 @@
   color: #fff !important;
 }
 
-[color~=c-dark] {
+[color~=c-dark], a {
   color: #17202a !important;
 }
 
@@ -319,7 +319,7 @@
   color: #311b92 !important;
 }
 
-[color~=c-blue], a {
+[color~=c-blue] {
   color: #2196f3 !important;
 }
 
@@ -1951,9 +1951,6 @@ html, body {
 
 a {
   text-decoration: none;
-}
-a:hover, a:focus, a:active {
-  color: #1abc9c !important;
 }
 
 ul {

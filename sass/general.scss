@@ -13,10 +13,7 @@ h1{font-size:1.5em;color:#000}
  }
  a{
    text-decoration: none;
-   @extend [color~="c-blue"];
-   &:hover,&:focus,&:active{
-     color:$c-success;
-   }
+   @extend [color~="c-dark"];
  }
  ul{
   margin: 0px;
