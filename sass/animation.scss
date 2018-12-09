@@ -94,29 +94,6 @@
 @include animation("slideOutLeft");
 @include animation("slideOutRight");
 @include animation("slideOutUp");
-// hover, focus, active animation text size
-@include animation-basic(txt-xs,font-size, 8px);
-@include animation-basic(txt-s,font-size, 12px);
-@include animation-basic(txt-m,font-size, 16px);
-@include animation-basic(txt-l,font-size, 20px);
-@include animation-basic(txt-xl,font-size, 24px);
-@include animation-basic(txt-xxl,font-size, 28px);
-/* hover, focus, active animation opacity */
-@include animation-prefixed(opacity-0,opacity,0);
-@include animation-prefixed(opacity-0.2,opacity,0.2);
-@include animation-prefixed(opacity-0.4,opacity,0.4);
-@include animation-prefixed(opacity-0.6,opacity,0.6);
-@include animation-prefixed(opacity-0.8,opacity,0.8);
-@include animation-prefixed(opacity-1,opacity,1);
-/* hover, focus, active animation border-radius */
-@include animation-prefixed(br-1,border-radius, 2px);
-@include animation-prefixed(br-2,border-radius, 4px);
-@include animation-prefixed(br-3,border-radius, 6px);
-@include animation-prefixed(br-4,border-radius, 8px);
-@include animation-prefixed(br-5,border-radius, 10px);
-@include animation-prefixed(br-6,border-radius, 12px);
-@include animation-prefixed(br-circle,border-radius, 50%);
-//
 @keyframes rebound {
   20%, 53%, 80% {
     @include transform(translate3d(0,0,0));
