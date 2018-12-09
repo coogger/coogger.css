@@ -14,34 +14,25 @@
 }
 /* flex aperations */
 @mixin display-flex(){
-  @include prefixed(display,flex);
+  @include prefixed(display, flex);
 }
-@mixin flex-direction($fd){
-  @include prefixed(flex-direction, $fd);
-  /*  flex-direction: row | row-reverse | column | column-reverse; */
-}
-@mixin flex-wrap($fw){
-  @include prefixed(flex-wrap, $fw);
-  /* flex-wrap:nowrap | wrap | wrap-reverse;  */
-}
-@mixin justify-content($jc){
-  @include prefixed(justify-content, $jc);
-  /* justify-content: flex-start | flex-end  |  center |  space-around | space-between;  */
-}
-@mixin align-items($ai){
-  @include prefixed(align-items ,$ai);
-  /* align-items: stretch | baseline  |  center  |  flex-start  | flex-end ; */
-}
-@mixin align-content($ac){
-  @include prefixed(align-content, $ac);
-  /* align-content: stretch| center  | flex-start  | flex-end | space-around  | space-between; */
-}
-@mixin align-self($as: auto){
-  @include prefixed(align-self, $as);
-  /* align-content: stretch| center  | flex-start  | flex-end | space-around  | space-between; */
-}
-@mixin flex($f){
-  @include prefixed(flex, $f);
+@mixin flex($name, $property, $value){
+  @include prefixed($property, $value);
+  [hover-flex~="#{$name}"]{
+    &:hover{
+      @include prefixed($property, $value);
+    }
+  }
+  [focus-flex~="#{$name}"]{
+    &:focus{
+      @include prefixed($property, $value);
+    }
+  }
+  [active-flex~="#{$name}"]{
+    &:active{
+      @include prefixed($property, $value);
+    }
+  }
 }
 @mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: $string;
@@ -118,31 +109,87 @@
 @mixin transform-origin($x:center, $y:center) {
   @include prefixed(transform-origin, $x $y);
 }
-@mixin hvr-basic($name, $property, $value){
-  [hvr~="#{$name}"]{
-    &:hover,&:focus,&:active
-    {#{$property}:$value;}
+@mixin hover-basic($name, $property, $value){
+  [hover~="#{$name}"]{
+    &:hover{
+      #{$property}:$value;
+    }
+  }
+}
+@mixin focus-basic($name, $property, $value){
+  [focus~="#{$name}"]{
+    &:focus{
+      #{$property}:$value;
+    }
+  }
+}
+@mixin active-basic($name, $property, $value){
+  [active~="#{$name}"]{
+    &:active{
+      #{$property}:$value;
+    }
   }
 }
 /* border-radius border-color gibi özelliklerin her tarayıcı için ayrı ayrı çağrılmasından dolayı dogan bir fonksiyon */
-@mixin hvr-prefixed($name,$property, $value){
-  [hvr~="#{$name}"]{&:hover,&:focus,&:active
-    {
+@mixin hover-prefixed($name,$property, $value){
+  [hover~="#{$name}"]{
+    &:hover{
       @include prefixed($property, $value);
     }
   }
 }
-@mixin hvr-animation($name){
-  [hvr-animation~="#{$name}"]{
-    &:hover,&:focus,&:active{
+@mixin focus-prefixed($name,$property, $value){
+  [hover~="#{$name}"]{
+    &:focus{
+      @include prefixed($property, $value);
+    }
+  }
+}
+@mixin active-prefixed($name,$property, $value){
+  [hover~="#{$name}"]{
+    &:active{
+      @include prefixed($property, $value);
+    }
+  }
+}
+@mixin animation($name){
+  [animation~="#{$name}"]{
+    @include prefixed(animation-name, $name);
+  }
+  @include hover-animation($name);
+  @include focus-animation($name);
+  @include active-animation($name);
+}
+@mixin hover-animation($name){
+  [hover-animation~="#{$name}"]{
+    &:hover{
+      @include prefixed(animation-name, $name);
+    }
+  }
+}
+@mixin focus-animation($name){
+  [focus-animation~="#{$name}"]{
+    &:focus{
+      @include prefixed(animation-name, $name);
+    }
+  }
+}
+@mixin active-animation($name){
+  [active-animation~="#{$name}"]{
+    &:active{
       @include prefixed(animation-name, $name);
     }
   }
 }
 /* bu mixin çok fazla animasyon yapmadan tek boyutlu istenileni gerçekleştirir*/
-@mixin hvr-a-basic($name, $property, $value){
-  [hvr-a~="#{$name}"]{
-    &:hover,&:focus,&:active{
+@mixin animation-basic($name, $property, $value){
+  @include hover-animation-basic($name, $property, $value);
+  @include focus-animation-basic($name, $property, $value);
+  @include active-animation-basic($name, $property, $value);
+}
+@mixin hover-animation-basic($name, $property, $value){
+  [hover-animation~="#{$name}"]{
+    &:hover{
       @include prefixed(animation-name, $name);
     }
   }
@@ -152,8 +199,62 @@
     }
   }
 }
-@mixin hvr-a-prefixed($name, $property, $value){
-  [hvr-a~="#{$name}"]{&:hover,&:focus,&:active{
+@mixin focus-animation-basic($name, $property, $value){
+  [focus-animation~="#{$name}"]{
+    &:focus{
+      @include prefixed(animation-name, $name);
+    }
+  }
+  @keyframes #{$name}{
+    100%{
+      #{$property}:$value;
+    }
+  }
+}
+@mixin active-animation-basic($name, $property, $value){
+  [active-animation~="#{$name}"]{
+    &:active{
+      @include prefixed(animation-name, $name);
+    }
+  }
+  @keyframes #{$name}{
+    100%{
+      #{$property}:$value;
+    }
+  }
+}
+@mixin animation-prefixed($name, $property, $value){
+  @include hover-animation-prefixed($name, $property, $value);
+  @include focus-animation-prefixed($name, $property, $value);
+  @include active-animation-prefixed($name, $property, $value);
+}
+@mixin hover-animation-prefixed($name, $property, $value){
+  [hover-animation~="#{$name}"]{
+    &:hover{
+      @include prefixed(animation-name, $name);
+    }
+  }
+  @keyframes #{$name}{
+    100%{
+      @include prefixed($property, $value);
+    }
+  }
+}
+@mixin focus-animation-prefixed($name, $property, $value){
+  [focus-animation~="#{$name}"]{
+    &:focus{
+      @include prefixed(animation-name, $name);
+    }
+  }
+  @keyframes #{$name}{
+    100%{
+      @include prefixed($property, $value);
+    }
+  }
+}
+@mixin active-animation-prefixed($name, $property, $value){
+  [active-animation~="#{$name}"]{
+    &:active{
       @include prefixed(animation-name, $name);
     }
   }
@@ -165,6 +266,14 @@
 }
 @mixin general($func_name, $name, $property, $value){
   [#{$func_name}~="#{$name}"]{#{$property}:$value}
+  @include hover-basic($name, $property, $value);
+  @include hover-prefixed($name, $property, $value);
+  @include focus-basic($name, $property, $value);
+  @include focus-prefixed($name, $property, $value);
+  @include active-basic($name, $property, $value);
+  @include active-prefixed($name, $property, $value);
+  @include animation-basic($name, $property, $value);
+  @include animation-prefixed($name, $property, $value);
 }
 @mixin general-prefixed($func_name, $name, $property, $value){
   [#{$func_name}~="#{$name}"]{

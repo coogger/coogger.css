@@ -1,100 +1,122 @@
 /* originally  - https://github.com/daneden/animate.css */
-
-[animation]{
+[animation], [hover-animation], [focus-animation], [active-animation]{
   @include prefixed(animation-duration, $animation-duration);
   @include prefixed(animation-fill-mode, $a-fill-mode);
   @include prefixed(animation-iteration-count, 1);
 }
-[animation~="i"]{
+[animation~="i"], [hover-animation~="i"], [focus-animation~="i"], [active-animation~="i"]{
   @include prefixed(animation-iteration-count, infinite);
 }
-[animation~="c-2"]{
+[animation~="c-2"], [hover-animation~="c-2"], [focus-animation~="c-2"], [active-animation~="c-2"]{
   @include prefixed(animation-iteration-count, 2);
 }
-[animation~="c-3"]{
+[animation~="c-3"], [hover-animation~="c-3"], [focus-animation~="c-3"], [active-animation~="c-3"]{
   @include prefixed(animation-iteration-count, 3);
 }
-[animation~="c-4"]{
+[animation~="c-4"], [hover-animation~="c-4"], [focus-animation~="c-4"], [active-animation~="c-4"]{
   @include prefixed(animation-iteration-count, 4);
 }
-[animation~="rebound"]{@include prefixed(animation-name, rebound);}
-[animation~="blink"]{@include prefixed(animation-name, blink);}
-[animation~="flash"]{@include prefixed(animation-name, flash);}
-[animation~="pulse"]{@include prefixed(animation-name, pulse);}
-[animation~="rubberBand"]{@include prefixed(animation-name, rubberBand);}
-[animation~="shake"]{@include prefixed(animation-name, shake);}
-[animation~="headShake"]{@include prefixed(animation-name, headShake);}
-[animation~="swing"]{@include prefixed(animation-name, swing);}
-[animation~="tada"]{@include prefixed(animation-name, tada);}
-[animation~="wobble"]{@include prefixed(animation-name, wobble);}
-[animation~="jello"]{@include prefixed(animation-name, jello);}
-[animation~="bounceIn"]{@include prefixed(animation-name, bounceIn);}
-[animation~="bounceInDown"]{@include prefixed(animation-name, bounceInDown);}
-[animation~="bounceInLeft"]{@include prefixed(animation-name, bounceInLeft);}
-[animation~="bounceInRight"]{@include prefixed(animation-name, bounceInRight);}
-[animation~="bounceInUp"]{@include prefixed(animation-name, bounceInUp);}
-[animation~="bounceOut"]{@include prefixed(animation-name, bounceOut);}
-[animation~="bounceOutDown"]{@include prefixed(animation-name, bounceOutDown);}
-[animation~="bounceOutLeft"]{@include prefixed(animation-name, bounceOutLeft);}
-[animation~="bounceOutRight"]{@include prefixed(animation-name, bounceOutRight);}
-[animation~="bounceOutUp"]{@include prefixed(animation-name, bounceOutUp);}
-[animation~="fadeIn"]{@include prefixed(animation-name, fadeIn);}
-[animation~="fadeInDown"]{@include prefixed(animation-name, fadeInDown);}
-[animation~="fadeInDownBig"]{@include prefixed(animation-name, fadeInDownBig);}
-[animation~="fadeInLeft"]{@include prefixed(animation-name, fadeInLeft);}
-[animation~="fadeInLeftBig"]{@include prefixed(animation-name, fadeInLeftBig);}
-[animation~="fadeInRight"]{@include prefixed(animation-name, fadeInRight);}
-[animation~="fadeInRightBig"]{@include prefixed(animation-name, fadeInRightBig);}
-[animation~="fadeInUp"]{@include prefixed(animation-name, fadeInUp);}
-[animation~="fadeInUpBig"]{@include prefixed(animation-name, fadeInUpBig);}
-[animation~="fadeOut"]{@include prefixed(animation-name, fadeOut);}
-[animation~="fadeOutDown"]{@include prefixed(animation-name, fadeOutDown);}
-[animation~="fadeOutDownBig"]{@include prefixed(animation-name, fadeOutDownBig);}
-[animation~="fadeOutLeft"]{@include prefixed(animation-name, fadeOutLeft);}
-[animation~="fadeOutLeftBig"]{@include prefixed(animation-name, fadeOutLeftBig);}
-[animation~="fadeOutRight"]{@include prefixed(animation-name, fadeOutRight);}
-[animation~="fadeOutRightBig"]{@include prefixed(animation-name, fadeOutRightBig);}
-[animation~="fadeOutUp"]{@include prefixed(animation-name, fadeOutUp);}
-[animation~="fadeOutUpBig"]{@include prefixed(animation-name, fadeOutUpBig);}
-[animation~="flip"]{@include prefixed(animation-name, flip);}
-[animation~="flipInX"]{@include prefixed(animation-name, flipInX);}
-[animation~="flipInY"]{@include prefixed(animation-name, flipInY);}
-[animation~="flipOutX"]{@include prefixed(animation-name, flipOutX);}
-[animation~="flipOutY"]{@include prefixed(animation-name, flipOutY);}
-[animation~="lightSpeedIn"]{@include prefixed(animation-name, lightSpeedIn);}
-[animation~="lightSpeedOut"]{@include prefixed(animation-name, lightSpeedOut);}
-[animation~="rotateIn"]{@include prefixed(animation-name, rotateIn);}
-[animation~="rotateInDownLeft"]{@include prefixed(animation-name, rotateInDownLeft);}
-[animation~="rotateInDownRight"]{@include prefixed(animation-name, rotateInDownRight);}
-[animation~="rotateInUpLeft"]{@include prefixed(animation-name, rotateInUpLeft);}
-[animation~="rotateInUpRight"]{@include prefixed(animation-name, rotateInUpRight);}
-[animation~="rotateOut"]{@include prefixed(animation-name, rotateOut);}
-[animation~="rotateOutDownLeft"]{@include prefixed(animation-name, rotateOutDownLeft);}
-[animation~="rotateOutDownRight"]{@include prefixed(animation-name, rotateOutDownRight);}
-[animation~="rotateOutUpLeft"]{@include prefixed(animation-name, rotateOutUpLeft);}
-[animation~="rotateOutUpRight"]{@include prefixed(animation-name, rotateOutUpRight);}
-[animation~="hinge"]{@include prefixed(animation-name, hinge);}
-[animation~="jackInTheBox"]{@include prefixed(animation-name, jackInTheBox);}
-[animation~="rollIn"]{@include prefixed(animation-name, rollIn);}
-[animation~="rollOut"]{@include prefixed(animation-name, rollOut);}
-[animation~="zoomIn"]{@include prefixed(animation-name, zoomIn);}
-[animation~="zoomInDown"]{@include prefixed(animation-name, zoomInDown);}
-[animation~="zoomInLeft"]{@include prefixed(animation-name, zoomInLeft);}
-[animation~="zoomInRight"]{@include prefixed(animation-name, zoomInRight);}
-[animation~="zoomInUp"]{@include prefixed(animation-name, zoomInUp);}
-[animation~="zoomOut"]{@include prefixed(animation-name, zoomOut);}
-[animation~="zoomOutDown"]{@include prefixed(animation-name, zoomOutDown);}
-[animation~="zoomOutLeft"]{@include prefixed(animation-name, zoomOutLeft);}
-[animation~="zoomOutRight"]{@include prefixed(animation-name, zoomOutRight);}
-[animation~="zoomOutUp"]{@include prefixed(animation-name, zoomOutUp);}
-[animation~="slideInDown"]{@include prefixed(animation-name, slideInDown);}
-[animation~="slideInLeft"]{@include prefixed(animation-name, slideInLeft);}
-[animation~="slideInRight"]{@include prefixed(animation-name, slideInRight);}
-[animation~="slideInUp"]{@include prefixed(animation-name, slideInUp);}
-[animation~="slideOutDown"]{@include prefixed(animation-name, slideOutDown);}
-[animation~="slideOutLeft"]{@include prefixed(animation-name, slideOutLeft);}
-[animation~="slideOutRight"]{@include prefixed(animation-name, slideOutRight);}
-[animation~="slideOutUp"]{@include prefixed(animation-name, slideOutUp);}
+@include animation("rebound");
+@include animation("blink");
+@include animation("flash");
+@include animation("pulse");
+@include animation("rubberBand");
+@include animation("shake");
+@include animation("headShake");
+@include animation("swing");
+@include animation("tada");
+@include animation("wobble");
+@include animation("jello");
+@include animation("bounceIn");
+@include animation("bounceInDown");
+@include animation("bounceInLeft");
+@include animation("bounceInRight");
+@include animation("bounceInUp");
+@include animation("bounceOut");
+@include animation("bounceOutDown");
+@include animation("bounceOutLeft");
+@include animation("bounceOutRight");
+@include animation("bounceOutUp");
+@include animation("fadeIn");
+@include animation("fadeInDown");
+@include animation("fadeInDownBig");
+@include animation("fadeInLeft");
+@include animation("fadeInLeftBig");
+@include animation("fadeInRight");
+@include animation("fadeInRightBig");
+@include animation("fadeInUp");
+@include animation("fadeInUpBig");
+@include animation("fadeOut");
+@include animation("fadeOutDown");
+@include animation("fadeOutDownBig");
+@include animation("fadeOutLeft");
+@include animation("fadeOutLeftBig");
+@include animation("fadeOutRight");
+@include animation("fadeOutRightBig");
+@include animation("fadeOutUp");
+@include animation("fadeOutUpBig");
+@include animation("flip");
+@include animation("flipInX");
+@include animation("flipInY");
+@include animation("flipOutX");
+@include animation("flipOutY");
+@include animation("lightSpeedIn");
+@include animation("lightSpeedOut");
+@include animation("rotateIn");
+@include animation("rotateInDownLeft");
+@include animation("rotateInDownRight");
+@include animation("rotateInUpLeft");
+@include animation("rotateInUpRight");
+@include animation("rotateOut");
+@include animation("rotateOutDownLeft");
+@include animation("rotateOutDownRight");
+@include animation("rotateOutUpLeft");
+@include animation("rotateOutUpRight");
+@include animation("hinge");
+@include animation("jackInTheBox");
+@include animation("rollIn");
+@include animation("rollOut");
+@include animation("zoomIn");
+@include animation("zoomInDown");
+@include animation("zoomInLeft");
+@include animation("zoomInRight");
+@include animation("zoomInUp");
+@include animation("zoomOut");
+@include animation("zoomOutDown");
+@include animation("zoomOutLeft");
+@include animation("zoomOutRight");
+@include animation("zoomOutUp");
+@include animation("slideInDown");
+@include animation("slideInLeft");
+@include animation("slideInRight");
+@include animation("slideInUp");
+@include animation("slideOutDown");
+@include animation("slideOutLeft");
+@include animation("slideOutRight");
+@include animation("slideOutUp");
+// hover, focus, active animation text size
+@include animation-basic(txt-xs,font-size, 8px);
+@include animation-basic(txt-s,font-size, 12px);
+@include animation-basic(txt-m,font-size, 16px);
+@include animation-basic(txt-l,font-size, 20px);
+@include animation-basic(txt-xl,font-size, 24px);
+@include animation-basic(txt-xxl,font-size, 28px);
+/* hover, focus, active animation opacity */
+@include animation-prefixed(opacity-0,opacity,0);
+@include animation-prefixed(opacity-0.2,opacity,0.2);
+@include animation-prefixed(opacity-0.4,opacity,0.4);
+@include animation-prefixed(opacity-0.6,opacity,0.6);
+@include animation-prefixed(opacity-0.8,opacity,0.8);
+@include animation-prefixed(opacity-1,opacity,1);
+/* hover, focus, active animation border-radius */
+@include animation-prefixed(br-1,border-radius, 2px);
+@include animation-prefixed(br-2,border-radius, 4px);
+@include animation-prefixed(br-3,border-radius, 6px);
+@include animation-prefixed(br-4,border-radius, 8px);
+@include animation-prefixed(br-5,border-radius, 10px);
+@include animation-prefixed(br-6,border-radius, 12px);
+@include animation-prefixed(br-circle,border-radius, 50%);
+//
 @keyframes rebound {
   20%, 53%, 80% {
     @include transform(translate3d(0,0,0));
@@ -330,9 +352,6 @@
     @include transform(scale3d(1, 1, 1));
   }
 }
-
-/* -------- */
-
 @keyframes bounceInDown {
   from,
   60%,

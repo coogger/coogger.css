@@ -1,5 +1,4 @@
 /* color */
-@include general(color, c-private, color, $c-private);
 @include general(color, c-primary, color, $c-primary);
 @include general(color, c-secondary, color, $c-secondary);
 @include general(color, c-success, color, $c-success);
@@ -164,7 +163,6 @@
 @include general(color, c-black9, color, $c-black9);
 
 /* background-color */
-@include general(color, bg-private, background-color, $c-private);
 @include general(color, bg-primary, background-color, $c-primary);
 @include general(color, bg-secondary, background-color, $c-secondary);
 @include general(color, bg-success, background-color, $c-success);
@@ -328,7 +326,6 @@
 @include general(color, bg-black8, background-color, $c-black8);
 @include general(color, bg-black9, background-color, $c-black9);
 /* border-color */
-@include general-prefixed(color, brc-private, border-color, $c-private+!important);
 @include general-prefixed(color, brc-primary, border-color, $c-primary+!important);
 @include general-prefixed(color, brc-secondary, border-color, $c-secondary+!important);
 @include general-prefixed(color, brc-success, border-color, $c-success+!important);

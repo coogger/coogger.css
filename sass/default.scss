@@ -1,60 +1,27 @@
 /* general default settings */
 [default~="fs"]{font-size:$font-size}
-[default~="c"]{color:$c-private}
 [default~="bg"]{background-color:#ececec}
 [default~="pm"]{
   padding: 3px 0px;
   margin: 3px 0px;
 }
-/* diğer default özellikler bunlar tam isimleri ile yazılacaktır */
-[default~="media"]{
-    width: 50%;
-    @media screen and (max-width: 900px) {
-        width: 80%;
-    }
-    @media screen and (max-width: 700px) {
-        width: 90%;
-    }
-    @media screen and (max-width: 500px) {
-        width: 96%;
-    }
-    @media screen and (max-width: 300px) {
-        width: 98%;
-    }
-}
-[default~="media2"]{
-    width: 30%;
-    @media screen and (max-width: 1024px) {
-      width: 40%;
-    }
-    @media screen and (max-width: 900px) {
-        width: 60%;
-    }
-    @media screen and (max-width: 700px) {
-        width: 80%;
-    }
-    @media screen and (max-width: 500px) {
-        width: 98%;
-    }
-}
-
 [default~="forminput"]{
   label{
-    @extend [gnrl~="txt-m"];
+    @extend [general~="txt-m"];
     @extend [default~="pm"];
   }
   li label{
-    @extend [flx];
-    @extend [flx~="as-fs"];
+    @extend [flex];
+    @extend [flex~="as-fs"];
   }
   input,select{
     width: 96%;
     min-width: 200px;
     min-height: 24px;
     padding: 4px 12px;
-    @extend [gnrl~="txt-m"];
-    @extend [gnrl~="b-1"];
-    @extend [gnrl~="br-2"];
+    @extend [general~="txt-m"];
+    @extend [general~="b-1"];
+    @extend [general~="br-2"];
     @extend [color~="brc-muted"];
     @extend [default~="pm"];
     @extend [color~="bg-white"];
@@ -63,7 +30,7 @@
     }
   }
   input[type="submit"]{
-    @extend [gnrl~="wf"];
+    @extend [general~="wf"];
     @include prefixed2(min-width,fit-content);
     margin-left: 6px;
     padding: 4px 12px;
@@ -81,8 +48,55 @@
 [default~="form"]{
   @extend [default~="forminput"];
   p input,li input{
-    @extend [flx];
-    @extend [flx~="jc-c"];
+    @extend [flex];
+    @extend [flex~="jc-c"];
   }
 }
-/* another default settings */
+/* another settings */
+h1{font-size:1.5em;color:#000}
+ h2{font-size:1.2em;color:#222}
+  h3{font-size:1.1em;color:#444}
+   h4{font-size:1.0em; font-weight: 500; color:#666;}
+    h5{font-size:1.0em; font-weight: 400; color: #888;}
+     h6{font-size:1.0em; font-weight: 300; color: #999;}
+
+ html,body{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+ }
+ a{
+   text-decoration: none;
+   @extend [color~="c-dark"];
+ }
+ ul{
+  margin: 0px;
+  padding: 0px;
+ }
+ input[type="submit"]{
+   cursor: pointer;
+ }
+img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+title{
+  @extend [flex];
+  @extend [flex~="jc-c"];
+  @extend [flex~="ai-c"];
+  @extend [general~="txt-m"];
+  @extend [general~="b-1"];
+  @extend [color~="brc-muted"];
+  text-align: center;
+  word-break: break-all;
+  padding: 3px 6px;
+}
+.helptext{
+  @extend [flex];
+  @extend [color~="bg-warning"];
+  @extend [color~="c-white"];
+  @extend [general~="br-2"];
+  @extend [default~="pm"];
+  padding: 4px 12px;
+}
