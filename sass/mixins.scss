@@ -1,17 +1,16 @@
 @mixin flex($name, $property, $value){
-  // TODO can add animation flex maybe later
   @include prefixed($property, $value);
-  [hover-flex~="#{$name}"]{
+  [flex-hover~="#{$name}"]{
     &:hover{
       @include prefixed($property, $value);
     }
   }
-  [focus-flex~="#{$name}"]{
+  [flex-focus~="#{$name}"]{
     &:focus{
       @include prefixed($property, $value);
     }
   }
-  [active-flex~="#{$name}"]{
+  [flex-active~="#{$name}"]{
     &:active{
       @include prefixed($property, $value);
     }
@@ -29,7 +28,7 @@
   @include hover-animation($name);
   @include focus-animation($name);
   @include active-animation($name);
-  @keyframes #{$name}{
+  @keyframes "#{$name}"{
     100%{
       #{$property}:$value;
     }
@@ -39,7 +38,7 @@
   @include hover-animation($name);
   @include focus-animation($name);
   @include active-animation($name);
-  @keyframes #{$name}{
+  @keyframes "#{$name}"{
     100%{
       @include prefixed($property, $value);
     }
@@ -47,18 +46,10 @@
 }
 @mixin general($func_name, $name, $property, $value){
   [#{$func_name}~="#{$name}"]{#{$property}:$value}
-  @if $func_name == color{
-    @include hover-basic($name, $property, $value);
-    @include focus-basic($name, $property, $value);
-    @include active-basic($name, $property, $value);
-    @include animation-basic($name, $property, $value);
-  }
-  @else if $func_name == general{
-    @include hover-prefixed($name, $property, $value);
-    @include focus-prefixed($name, $property, $value);
-    @include active-prefixed($name, $property, $value);
-    @include animation-prefixed($name, $property, $value);
-  }
+  @include hover-prefixed($name, $property, $value);
+  @include focus-prefixed($name, $property, $value);
+  @include active-prefixed($name, $property, $value);
+  @include animation-prefixed($name, $property, $value);
 }
 @mixin general-prefixed($func_name, $name, $property, $value){
   [#{$func_name}~="#{$name}"]{
@@ -77,23 +68,6 @@
   @include focus-prefixed($name, $property, $value);
   @include active-prefixed($name, $property, $value);
   @include animation-prefixed($name, $property, $value);
-}
-@mixin prefixed($property, $value) {
-    -webkit-#{$property}: #{$value};
-    -moz-#{$property}: #{$value};
-    -ms-#{$property}: #{$value};
-    -o-#{$property}: #{$value};
-    #{$property}: #{$value};
-}
-@mixin prefixed2($property, $value) {
-    #{$property}: -webkit-#{$value};
-    #{$property}: -moz-#{$value};
-    #{$property}: -ms-#{$value};
-    #{$property}: -o-#{$value};
-    #{$property}: #{$value};
-}
-@mixin display-flex(){
-  @include prefixed(display, flex);
 }
 @mixin hover-basic($name, $property, $value){
   [hover~="#{$name}"]{
@@ -124,39 +98,56 @@
   }
 }
 @mixin focus-prefixed($name, $property, $value){
-  [hover~="#{$name}"]{
+  [focus~="#{$name}"]{
     &:focus{
       @include prefixed($property, $value);
     }
   }
 }
 @mixin active-prefixed($name, $property, $value){
-  [hover~="#{$name}"]{
+  [active~="#{$name}"]{
     &:active{
       @include prefixed($property, $value);
     }
   }
 }
 @mixin hover-animation($name){
-  [hover-animation~="#{$name}"]{
+  [animation-hover~="#{$name}"]{
     &:hover{
       @include prefixed(animation-name, $name);
     }
   }
 }
 @mixin focus-animation($name){
-  [focus-animation~="#{$name}"]{
+  [animation-focus~="#{$name}"]{
     &:focus{
       @include prefixed(animation-name, $name);
     }
   }
 }
 @mixin active-animation($name){
-  [active-animation~="#{$name}"]{
+  [animation-active~="#{$name}"]{
     &:active{
       @include prefixed(animation-name, $name);
     }
   }
+}
+@mixin prefixed($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}
+@mixin prefixed2($property, $value) {
+    #{$property}: -webkit-#{$value};
+    #{$property}: -moz-#{$value};
+    #{$property}: -ms-#{$value};
+    #{$property}: -o-#{$value};
+    #{$property}: #{$value};
+}
+@mixin display-flex(){
+  @include prefixed(display, flex);
 }
 @mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: $string;

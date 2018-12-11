@@ -7,7 +7,39 @@
   @include flex("ai-s", align-items, stretch);
   @include flex("ac-s", align-content, stretch);
 }
-/* private flex */
+[flex-hover]{
+  &:hover{
+    /* default flex */
+    @include display-flex();
+    @include flex("fd-r", flex-direction, row);
+    @include flex("fw-w", flex-wrap, wrap);
+    @include flex("jc-fs", justify-content, flex-start);
+    @include flex("ai-s", align-items, stretch);
+    @include flex("ac-s", align-content, stretch);
+  }
+}
+[flex-focus]{
+  &:focus{
+    /* default flex */
+    @include display-flex();
+    @include flex("fd-r", flex-direction, row);
+    @include flex("fw-w", flex-wrap, wrap);
+    @include flex("jc-fs", justify-content, flex-start);
+    @include flex("ai-s", align-items, stretch);
+    @include flex("ac-s", align-content, stretch);
+  }
+}
+[flex-active]{
+  &:active{
+    /* default flex */
+    @include display-flex();
+    @include flex("fd-r", flex-direction, row);
+    @include flex("fw-w", flex-wrap, wrap);
+    @include flex("jc-fs", justify-content, flex-start);
+    @include flex("ai-s", align-items, stretch);
+    @include flex("ac-s", align-content, stretch);
+  }
+}
 [flex~="fd-rr"]{@include flex("fd-rr", flex-direction, row-reverse)}
 [flex~="fd-c"]{@include flex("fd-c", flex-direction, column)}
 [flex~="fd-cr"]{@include flex("fd-cr", flex-direction, column-reverse)}

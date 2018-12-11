@@ -22,9 +22,9 @@
     @extend [general~="txt-m"];
     @extend [general~="b-1"];
     @extend [general~="br-2"];
-    @extend [color~="brc-muted"];
+    @extend [general~="brc-muted"];
     @extend [default~="pm"];
-    @extend [color~="bg-white"];
+    @extend [general~="bg-white"];
     &:hover,&:focus,&:active{
       border-color:$c-secondary;
     }
@@ -67,7 +67,7 @@ h1{font-size:1.5em;color:#000}
  }
  a{
    text-decoration: none;
-   @extend [color~="c-dark"];
+   @extend [general~="c-dark"];
  }
  ul{
   margin: 0px;
@@ -87,15 +87,15 @@ title{
   @extend [flex~="ai-c"];
   @extend [general~="txt-m"];
   @extend [general~="b-1"];
-  @extend [color~="brc-muted"];
+  @extend [general~="brc-muted"];
   text-align: center;
   word-break: break-all;
   padding: 3px 6px;
 }
 .helptext{
   @extend [flex];
-  @extend [color~="bg-warning"];
-  @extend [color~="c-white"];
+  @extend [general~="bg-warning"];
+  @extend [general~="c-white"];
   @extend [general~="br-2"];
   @extend [default~="pm"];
   padding: 4px 12px;
