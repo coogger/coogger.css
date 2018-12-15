@@ -105,9 +105,14 @@
   @include hover-animation($name);
   @include focus-animation($name);
   @include active-animation($name);
-  @keyframes "#{$name}"{
+  @keyframes #{$name}{
     100%{
       #{$property}:$value;
+    }
+  }
+  @-webkit-keyframes #{$name}{
+    100%{
+      @include prefixed($property, $value);
     }
   }
 }
@@ -115,7 +120,12 @@
   @include hover-animation($name);
   @include focus-animation($name);
   @include active-animation($name);
-  @keyframes "#{$name}"{
+  @keyframes #{$name}{
+    100%{
+      @include prefixed($property, $value);
+    }
+  }
+  @-webkit-keyframes #{$name}{
     100%{
       @include prefixed($property, $value);
     }

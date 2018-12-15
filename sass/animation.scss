@@ -1,19 +1,19 @@
 /* originally  - https://github.com/daneden/animate.css */
-[animation], [hover-animation], [focus-animation], [active-animation]{
+[animation], [animation-hover], [animation-focus], [animation-active]{
   @include prefixed(animation-duration, $animation-duration);
   @include prefixed(animation-fill-mode, $a-fill-mode);
   @include prefixed(animation-iteration-count, 1);
 }
-[animation~="i"], [hover-animation~="i"], [focus-animation~="i"], [active-animation~="i"]{
+[animation~="i"], [animation-hover~="i"], [animation-focus~="i"], [animation-active~="i"]{
   @include prefixed(animation-iteration-count, infinite);
 }
-[animation~="c-2"], [hover-animation~="c-2"], [focus-animation~="c-2"], [active-animation~="c-2"]{
+[animation~="c-2"], [animation-hover~="c-2"], [animation-focus~="c-2"], [animation-active~="c-2"]{
   @include prefixed(animation-iteration-count, 2);
 }
-[animation~="c-3"], [hover-animation~="c-3"], [focus-animation~="c-3"], [active-animation~="c-3"]{
+[animation~="c-3"], [animation-hover~="c-3"], [animation-focus~="c-3"], [animation-active~="c-3"]{
   @include prefixed(animation-iteration-count, 3);
 }
-[animation~="c-4"], [hover-animation~="c-4"], [focus-animation~="c-4"], [active-animation~="c-4"]{
+[animation~="c-4"], [animation-hover~="c-4"], [animation-focus~="c-4"], [animation-active~="c-4"]{
   @include prefixed(animation-iteration-count, 4);
 }
 @include animation("rebound");
