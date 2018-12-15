@@ -31,7 +31,7 @@
   }
   input[type="submit"]{
     @extend [general~="wf"];
-    @include prefixed2(min-width,fit-content);
+    @include reverse-prefixed(min-width, fit-content);
     margin-left: 6px;
     padding: 4px 12px;
     &:hover,&:focus{

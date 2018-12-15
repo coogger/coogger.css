@@ -1,3 +1,4 @@
+@import "mixins";
 [flex]{
   /* default flex */
   @include display-flex();
