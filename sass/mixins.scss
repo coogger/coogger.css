@@ -12,13 +12,13 @@
     }
   }
 }
-@mixin active-animation($name){
-  [animation-active~="#{$name}"]{
-    &:active{
-      @include prefixed(animation-name, $name);
-    }
-  }
-}
+// @mixin active-animation($name){
+//   [animation-active~="#{$name}"]{
+//     &:active{
+//       @include prefixed(animation-name, $name);
+//     }
+//   }
+// }
 @mixin focus-basic($name, $property, $value){
   [focus~="#{$name}"]{
     &:focus{
@@ -43,17 +43,11 @@
 @mixin general($name, $property, $value){
   // devices
   [general~="#{$name}"]{#{$property}:$value}
-  @include hover-prefixed($name, $property, $value);
-  @include focus-prefixed($name, $property, $value);
-  @include active-prefixed($name, $property, $value);
-  @include animation-prefixed($name, $property, $value);
-  @include device("mobiles", $name, 320px, $property, $value);
-  @include device("mobilem", $name, 375px, $property, $value);
-  @include device("mobilel", $name, 425px, $property, $value);
-  @include device("tablet", $name, 768px, $property, $value);
-  @include device("laptop", $name, 1024px, $property, $value);
-  @include device("laptopl", $name, 1440px, $property, $value);
-  @include device("4k", $name, 2560px, $property, $value);
+  @include hover-basic($name, $property, $value);
+  @include focus-basic($name, $property, $value);
+  @include active-basic($name, $property, $value);
+  @include animation-basic($name, $property, $value);
+  @include devices($name, $property, $value);
 }
 @mixin general-prefixed($name, $property, $value){
   // devices
@@ -64,13 +58,7 @@
   @include focus-prefixed($name, $property, $value);
   @include active-prefixed($name, $property, $value);
   @include animation-prefixed($name, $property, $value);
-  @include device("mobiles", $name, 320px, $property, $value);
-  @include device("mobilem", $name, 375px, $property, $value);
-  @include device("mobilel", $name, 425px, $property, $value);
-  @include device("tablet", $name, 768px, $property, $value);
-  @include device("laptop", $name, 1024px, $property, $value);
-  @include device("laptopl", $name, 1440px, $property, $value);
-  @include device("4k", $name, 2560px, $property, $value);
+  @include devices-prefixed($name, $property, $value);
 }
 @mixin hover-basic($name, $property, $value){
   [hover~="#{$name}"]{
@@ -99,12 +87,12 @@
   }
   @include hover-animation($name);
   @include focus-animation($name);
-  @include active-animation($name);
+  // @include active-animation($name);
 }
 @mixin animation-basic($name, $property, $value){
   @include hover-animation($name);
   @include focus-animation($name);
-  @include active-animation($name);
+  // @include active-animation($name);
   @keyframes #{$name}{
     100%{
       #{$property}:$value;
@@ -112,14 +100,14 @@
   }
   @-webkit-keyframes #{$name}{
     100%{
-      @include prefixed($property, $value);
+      #{$property}:$value;
     }
   }
 }
 @mixin animation-prefixed($name, $property, $value){
   @include hover-animation($name);
   @include focus-animation($name);
-  @include active-animation($name);
+  // @include active-animation($name);
   @keyframes #{$name}{
     100%{
       @include prefixed($property, $value);
@@ -143,36 +131,42 @@
       @include prefixed($property, $value);
     }
   }
-  [flex-active~="#{$name}"]{
-    &:active{
-      @include prefixed($property, $value);
-    }
-  }
-  // devices
-  @include device("mobiles", $name, 320px, $property, $value);
-  @include device("mobilem", $name, 375px, $property, $value);
-  @include device("mobilel", $name, 425px, $property, $value);
-  @include device("tablet", $name, 768px, $property, $value);
-  @include device("laptop", $name, 1024px, $property, $value);
-  @include device("laptopl", $name, 1440px, $property, $value);
-  @include device("4k", $name, 2560px, $property, $value);
-
+  // [flex-active~="#{$name}"]{
+  //   &:active{
+  //     @include prefixed($property, $value);
+  //   }
+  // }
+  // @include devices-prefixed($name, $property, $value);
 }
 @mixin display-flex(){
   @include prefixed(display, flex);
 }
+@mixin devices($name, $property, $value){
+  @include device("max", $name, 2560px, $property, $value);
+  @include device("laptop-l", $name, 1440px, $property, $value);
+  @include device("laptop", $name, 1024px, $property, $value);
+  @include device("tablet", $name, 768px, $property, $value);
+  @include device("mobile-l", $name, 425px, $property, $value);
+  @include device("mobile-m", $name, 375px, $property, $value);
+  @include device("mobile-s", $name, 320px, $property, $value);
+}
 @mixin device($name, $key, $maxwidth, $property, $value){
   @media screen and (max-width: $maxwidth) {
-    [device-#{$name}~="#{$key}"]{
-      #{$property}: $value;
-    }
+    [#{$name}~="#{$key}"]{#{$property}: $value;}
   }
+}
+@mixin devices-prefixed($name, $property, $value){
+  @include device-prefixed("max", $name, 2560px, $property, $value);
+  @include device-prefixed("laptop-l", $name, 1440px, $property, $value);
+  @include device-prefixed("laptop", $name, 1024px, $property, $value);
+  @include device-prefixed("tablet", $name, 768px, $property, $value);
+  @include device-prefixed("mobile-l", $name, 425px, $property, $value);
+  @include device-prefixed("mobile-m", $name, 375px, $property, $value);
+  @include device-prefixed("mobile-s", $name, 320px, $property, $value);
 }
 @mixin device-prefixed($name, $key, $maxwidth, $property, $value){
   @media screen and (max-width: $maxwidth) {
-    [device-#{$name}~="#{$key}"]{
-      @include prefixed($property, $value);
-    }
+    [#{$name}~="#{$key}"]{@include prefixed($property, $value);}
   }
 }
 @mixin prefixed($property, $value) {
