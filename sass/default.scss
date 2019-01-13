@@ -20,17 +20,17 @@
     min-height: 24px;
     padding: 4px 12px;
     @extend [general~="text:m"];
-    @extend [general~="b-1"];
-    @extend [general~="br-2"];
+    @extend [general~="border:1"];
+    @extend [general~="br:2"];
     @extend [general~="brc:muted"];
     @extend [default~="pm"];
-    @extend [general~="bgc:white"];
+    @extend [general~="bg:white"];
     &:hover,&:focus,&:active{
       border-color:map-get($colors, secondary);
     }
   }
   input[type="submit"]{
-    @extend [general~="wf"];
+    @extend [general~="width:f"];
     @include reverse-prefixed(min-width, fit-content);
     margin-left: 6px;
     padding: 4px 12px;
@@ -67,7 +67,7 @@ h1{font-size:1.5em;color:#000}
  }
  a{
    text-decoration: none;
-   @extend [general~="c:dark"];
+   @extend [general~="color:dark"];
  }
  ul{
   margin: 0px;
@@ -86,7 +86,7 @@ title{
   @extend [flex~="jc-c"];
   @extend [flex~="ai-c"];
   @extend [general~="text:m"];
-  @extend [general~="b-1"];
+  @extend [general~="border:1"];
   @extend [general~="brc:muted"];
   text-align: center;
   word-break: break-all;
@@ -94,9 +94,9 @@ title{
 }
 .helptext{
   @extend [flex];
-  @extend [general~="bgc:warning"];
-  @extend [general~="c:white"];
-  @extend [general~="br-2"];
+  @extend [general~="bg:warning"];
+  @extend [general~="color:white"];
+  @extend [general~="br:2"];
   @extend [default~="pm"];
   padding: 4px 12px;
 }

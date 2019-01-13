@@ -35,20 +35,19 @@
 }
 @mixin general($name, $property, $value){
   [general~="#{$name}"]{#{$property}:$value}
-  @include hover-basic($name, $property, $value);
-  @include focus-basic($name, $property, $value);
-  @include active-basic($name, $property, $value);
-  @include animation-basic($name, $property, $value);
-  @include devices($name, $property, $value);
-
+  @include hover-basic("#{$name}", $property, $value);
+  @include focus-basic("#{$name}", $property, $value);
+  @include active-basic("#{$name}", $property, $value);
+  @include animation-basic("#{$name}", $property, $value);
+  @include devices("#{$name}", $property, $value);
 }
 @mixin general-prefixed($name, $property, $value){
   [general~="#{$name}"]{@include prefixed($property, $value);}
-  @include hover-prefixed($name, $property, $value);
-  @include focus-prefixed($name, $property, $value);
-  @include active-prefixed($name, $property, $value);
-  @include animation-prefixed($name, $property, $value);
-  @include devices-prefixed($name, $property, $value);
+  @include hover-prefixed("#{$name}", $property, $value);
+  @include focus-prefixed("#{$name}", $property, $value);
+  @include active-prefixed("#{$name}", $property, $value);
+  @include animation-prefixed("#{$name}", $property, $value);
+  @include devices-prefixed("#{$name}", $property, $value);
 }
 @mixin hover-basic($name, $property, $value){
   [hover~="#{$name}"]{
@@ -75,8 +74,8 @@
   [animation~="#{$name}"]{
     @include prefixed(animation-name, $name);
   }
-  @include hover-animation($name);
-  @include focus-animation($name);
+  @include hover-animation("#{$name}");
+  @include focus-animation("#{$name}");
 }
 @mixin animation-basic($name, $property, $value){
   @include hover-animation($name);
@@ -93,8 +92,8 @@
   }
 }
 @mixin animation-prefixed($name, $property, $value){
-  @include hover-animation($name);
-  @include focus-animation($name);
+  @include hover-animation("#{$name}");
+  @include focus-animation("#{$name}");
   @keyframes #{$name}{
     100%{
       @include prefixed($property, $value);

@@ -60,7 +60,7 @@
 /* colors */
 @each $name, $hex in $colors{
   @include general("color:#{$name}", color, $hex);
-  @include general("bgc:#{$name}", background-color, $hex);
+  @include general("bg:#{$name}", background-color, $hex);
   @include general("brc:#{$name}", border-color, $hex);
 }
 //
