@@ -7,7 +7,7 @@
 }
 [default~="forminput"]{
   label{
-    @extend [general~="txt-m"];
+    @extend [general~="text:m"];
     @extend [default~="pm"];
   }
   li label{
@@ -19,14 +19,14 @@
     min-width: 200px;
     min-height: 24px;
     padding: 4px 12px;
-    @extend [general~="txt-m"];
+    @extend [general~="text:m"];
     @extend [general~="b-1"];
     @extend [general~="br-2"];
-    @extend [general~="brc-muted"];
+    @extend [general~="brc:muted"];
     @extend [default~="pm"];
-    @extend [general~="bg-white"];
+    @extend [general~="bgc:white"];
     &:hover,&:focus,&:active{
-      border-color:$c-secondary;
+      border-color:map-get($colors, secondary);
     }
   }
   input[type="submit"]{
@@ -35,13 +35,13 @@
     margin-left: 6px;
     padding: 4px 12px;
     &:hover,&:focus{
-      border-color:$c-success;
-      background-color:$c-success;
-      color:$c-white;
+      border-color:map-get($colors, success);
+      background-color:map-get($colors, success);
+      color:map-get($colors, white);
     }
     &:active{
-      border-color:$c-primary;
-      background-color:$c-primary;
+      border-color:map-get($colors, primary);
+      background-color:map-get($colors, primary);
     }
   }
 }
@@ -67,7 +67,7 @@ h1{font-size:1.5em;color:#000}
  }
  a{
    text-decoration: none;
-   @extend [general~="c-dark"];
+   @extend [general~="c:dark"];
  }
  ul{
   margin: 0px;
@@ -85,17 +85,17 @@ title{
   @extend [flex];
   @extend [flex~="jc-c"];
   @extend [flex~="ai-c"];
-  @extend [general~="txt-m"];
+  @extend [general~="text:m"];
   @extend [general~="b-1"];
-  @extend [general~="brc-muted"];
+  @extend [general~="brc:muted"];
   text-align: center;
   word-break: break-all;
   padding: 3px 6px;
 }
 .helptext{
   @extend [flex];
-  @extend [general~="bg-warning"];
-  @extend [general~="c-white"];
+  @extend [general~="bgc:warning"];
+  @extend [general~="c:white"];
   @extend [general~="br-2"];
   @extend [default~="pm"];
   padding: 4px 12px;

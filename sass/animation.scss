@@ -4,96 +4,23 @@
   @include prefixed(animation-fill-mode, $a-fill-mode);
   @include prefixed(animation-iteration-count, 1);
 }
-[animation~="i"], [animation-hover~="i"], [animation-focus~="i"], [animation-active~="i"]{
+[animation~="infinite"], [animation-hover~="infinite"], [animation-focus~="infinite"], [animation-active~="infinite"]{
   @include prefixed(animation-iteration-count, infinite);
 }
-[animation~="c-2"], [animation-hover~="c-2"], [animation-focus~="c-2"], [animation-active~="c-2"]{
+[animation~="count:2"], [animation-hover~="count:2"], [animation-focus~="count:2"], [animation-active~="count:2"]{
   @include prefixed(animation-iteration-count, 2);
 }
-[animation~="c-3"], [animation-hover~="c-3"], [animation-focus~="c-3"], [animation-active~="c-3"]{
+[animation~="count:3"], [animation-hover~="count:3"], [animation-focus~="count:3"], [animation-active~="count:3"]{
   @include prefixed(animation-iteration-count, 3);
 }
-[animation~="c-4"], [animation-hover~="c-4"], [animation-focus~="c-4"], [animation-active~="c-4"]{
+[animation~="count:4"], [animation-hover~="count:4"], [animation-focus~="count:4"], [animation-active~="count:4"]{
   @include prefixed(animation-iteration-count, 4);
 }
-@include animation("rebound");
-@include animation("blink");
-@include animation("flash");
-@include animation("pulse");
-@include animation("rubberBand");
-@include animation("shake");
-@include animation("headShake");
-@include animation("swing");
-@include animation("tada");
-@include animation("wobble");
-@include animation("jello");
-@include animation("bounceIn");
-@include animation("bounceInDown");
-@include animation("bounceInLeft");
-@include animation("bounceInRight");
-@include animation("bounceInUp");
-@include animation("bounceOut");
-@include animation("bounceOutDown");
-@include animation("bounceOutLeft");
-@include animation("bounceOutRight");
-@include animation("bounceOutUp");
-@include animation("fadeIn");
-@include animation("fadeInDown");
-@include animation("fadeInDownBig");
-@include animation("fadeInLeft");
-@include animation("fadeInLeftBig");
-@include animation("fadeInRight");
-@include animation("fadeInRightBig");
-@include animation("fadeInUp");
-@include animation("fadeInUpBig");
-@include animation("fadeOut");
-@include animation("fadeOutDown");
-@include animation("fadeOutDownBig");
-@include animation("fadeOutLeft");
-@include animation("fadeOutLeftBig");
-@include animation("fadeOutRight");
-@include animation("fadeOutRightBig");
-@include animation("fadeOutUp");
-@include animation("fadeOutUpBig");
-@include animation("flip");
-@include animation("flipInX");
-@include animation("flipInY");
-@include animation("flipOutX");
-@include animation("flipOutY");
-@include animation("lightSpeedIn");
-@include animation("lightSpeedOut");
-@include animation("rotateIn");
-@include animation("rotateInDownLeft");
-@include animation("rotateInDownRight");
-@include animation("rotateInUpLeft");
-@include animation("rotateInUpRight");
-@include animation("rotateOut");
-@include animation("rotateOutDownLeft");
-@include animation("rotateOutDownRight");
-@include animation("rotateOutUpLeft");
-@include animation("rotateOutUpRight");
-@include animation("hinge");
-@include animation("jackInTheBox");
-@include animation("rollIn");
-@include animation("rollOut");
-@include animation("zoomIn");
-@include animation("zoomInDown");
-@include animation("zoomInLeft");
-@include animation("zoomInRight");
-@include animation("zoomInUp");
-@include animation("zoomOut");
-@include animation("zoomOutDown");
-@include animation("zoomOutLeft");
-@include animation("zoomOutRight");
-@include animation("zoomOutUp");
-@include animation("slideInDown");
-@include animation("slideInLeft");
-@include animation("slideInRight");
-@include animation("slideInUp");
-@include animation("slideOutDown");
-@include animation("slideOutLeft");
-@include animation("slideOutRight");
-@include animation("slideOutUp");
+
+@each $animation in $animations{
+  @include animation(#{$animation});
+}
+
 @keyframes rebound {
   20%, 53%, 80% {
     @include transform(translate3d(0,0,0));

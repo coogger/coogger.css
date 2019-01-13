@@ -6,165 +6,256 @@ $a-fill-mode: both;
 $a-duration :.45s;
 $animation-duration :.75s;
 /* colors */
-$c-primary: #3498db;
-$c-secondary: #99a3a4;
-$c-success: #1abc9c;
-$c-danger: #e74c3c;
-$c-warning: #f1c40f;
-$c-info: #85c1e9;
-$c-dark: #17202a;
-$c-muted: #eaecee;
-$c-white: #fff;
-// https://github.com/omergulcicek/turkuaz/blob/master/turkuaz.css#L1569
-$c-yellow: #ffeb3b;
-$c-yellow6: $c-yellow;
-$c-yellow2: #fff9c4;
-$c-yellow3: #fff59d;
-$c-yellow4: #fff176;
-$c-yellow5: #ffee58;
-$c-yellow7: #fdd835;
-$c-yellow8: #fbc02d;
-$c-yellow9: #f9a825;
-$c-yellow10: #f57f17;
+$colors: (
+  primary: #3498db,
+  secondary: #99a3a4,
+  success: #1abc9c,
+  danger: #e74c3c,
+  warning: #f1c40f,
+  info: #85c1e9,
+  dark: #17202a,
+  muted: #eaecee,
+  white: #fff,
+  // https://github.com/omergulcicek/turkuaz/blob/master/turkuaz.css#L1569
+  yellow: #ffeb3b,
+  yellow6: yellow,
+  yellow2: #fff9c4,
+  yellow3: #fff59d,
+  yellow4: #fff176,
+  yellow5: #ffee58,
+  yellow7: #fdd835,
+  yellow8: #fbc02d,
+  yellow9: #f9a825,
+  yellow10: #f57f17,
 
-$c-orange: #ff9800;
-$c-orange6: $c-orange;
-$c-orange2: #ffe0b2;
-$c-orange3: #ffcc80;
-$c-orange4: #ffb74d;
-$c-orange5: #ffa726;
-$c-orange7: #fb8c00;
-$c-orange8: #f57c00;
-$c-orange9: #ef6c00;
-$c-orange10: #e65100;
+  orange: #ff9800,
+  orange6: orange,
+  orange2: #ffe0b2,
+  orange3: #ffcc80,
+  orange4: #ffb74d,
+  orange5: #ffa726,
+  orange7: #fb8c00,
+  orange8: #f57c00,
+  orange9: #ef6c00,
+  orange10: #e65100,
 
-$c-dark-orange: #ff5722;
-$c-dark-orange6: $c-dark-orange;
-$c-dark-orange2: #ffccbc;
-$c-dark-orange3: #ffab91;
-$c-dark-orange4: #ff8a65;
-$c-dark-orange5: #ff7043;
-$c-dark-orange7: #f4511e;
-$c-dark-orange8: #e64a19;
-$c-dark-orange9: #d84315;
-$c-dark-orange10: #bf360c;
+  dark-orange: #ff5722,
+  dark-orange6: dark-orange,
+  dark-orange2: #ffccbc,
+  dark-orange3: #ffab91,
+  dark-orange4: #ff8a65,
+  dark-orange5: #ff7043,
+  dark-orange7: #f4511e,
+  dark-orange8: #e64a19,
+  dark-orange9: #d84315,
+  dark-orange10: #bf360c,
 
-$c-red: #f44336;
-$c-red6: $c-red;
-$c-red2: #ffcdd2;
-$c-red3: #ef9a9a;
-$c-red4: #e57373;
-$c-red5: #ef5350;
-$c-red7: #e53935;
-$c-red8: #d32f2f;
-$c-red9: #c62828;
-$c-red10: #b71c1c;
+  red: #f44336,
+  red6: red,
+  red2: #ffcdd2,
+  red3: #ef9a9a,
+  red4: #e57373,
+  red5: #ef5350,
+  red7: #e53935,
+  red8: #d32f2f,
+  red9: #c62828,
+  red10: #b71c1c,
 
-$c-pink: #e91e63;
-$c-pink6: $c-pink;
-$c-pink2: #f8bbd0;
-$c-pink3:#f48fb1;
-$c-pink4:#f06292;
-$c-pink5:#ec407a;
-$c-pink7:#d81b60;
-$c-pink8:#c2185b;
-$c-pink9:#ad1457;
-$c-pink10:#880e4f;
+  pink: #e91e63,
+  pink6: pink,
+  pink2: #f8bbd0,
+  pink3:#f48fb1,
+  pink4:#f06292,
+  pink5:#ec407a,
+  pink7:#d81b60,
+  pink8:#c2185b,
+  pink9:#ad1457,
+  pink10:#880e4f,
 
-$c-dark-purple: #673ab7;
-$c-dark-purple6: $c-dark-purple;
-$c-dark-purple2: #d1c4e9;
-$c-dark-purple3: #b39ddb;
-$c-dark-purple4: #9575cd;
-$c-dark-purple5: #7e57c2;
-$c-dark-purple7: #5e35b1;
-$c-dark-purple8: #512da8;
-$c-dark-purple9: #4527a0;
-$c-dark-purple10: #311b92;
+  dark-purple: #673ab7,
+  dark-purple6: dark-purple,
+  dark-purple2: #d1c4e9,
+  dark-purple3: #b39ddb,
+  dark-purple4: #9575cd,
+  dark-purple5: #7e57c2,
+  dark-purple7: #5e35b1,
+  dark-purple8: #512da8,
+  dark-purple9: #4527a0,
+  dark-purple10: #311b92,
 
-$c-blue: #2196f3;
-$c-blue6: $c-blue;
-$c-blue2: #bbdefb;
-$c-blue3: #90caf9;
-$c-blue4: #64b5f6;
-$c-blue5: #42a5f5;
-$c-blue7: #1e88e5;
-$c-blue8: #1976d2;
-$c-blue9: #1565c0;
-$c-blue10: #0d47a1;
+  blue: #2196f3,
+  blue6: blue,
+  blue2: #bbdefb,
+  blue3: #90caf9,
+  blue4: #64b5f6,
+  blue5: #42a5f5,
+  blue7: #1e88e5,
+  blue8: #1976d2,
+  blue9: #1565c0,
+  blue10: #0d47a1,
 
-$c-light-blue: #03a9f4;
-$c-light-blue6: $c-light-blue;
-$c-light-blue2: #b3e5fc;
-$c-light-blue3: #81d4fa;
-$c-light-blue4: #4fc3f7;
-$c-light-blue5: #29b6f6;
-$c-light-blue7: #039be5;
-$c-light-blue8: #0288d1;
-$c-light-blue9: #0277bd;
-$c-light-blue10: #01579b;
+  light-blue: #03a9f4,
+  light-blue6: light-blue,
+  light-blue2: #b3e5fc,
+  light-blue3: #81d4fa,
+  light-blue4: #4fc3f7,
+  light-blue5: #29b6f6,
+  light-blue7: #039be5,
+  light-blue8: #0288d1,
+  light-blue9: #0277bd,
+  light-blue10: #01579b,
 
-$c-turquoise: #1ac5b8;
-$c-turquoise6: $c-turquoise;
-$c-turquoise2: #c1fdf8;
-$c-turquoise3: #56f7eb;
-$c-turquoise4: #36eadd;
-$c-turquoise5: #2ed8cb;
-$c-turquoise7: #12b9ac;
-$c-turquoise8: #0cab9e;
-$c-turquoise9: #03968a;
-$c-turquoise10: #038075;
+  turquoise: #1ac5b8,
+  turquoise6: turquoise,
+  turquoise2: #c1fdf8,
+  turquoise3: #56f7eb,
+  turquoise4: #36eadd,
+  turquoise5: #2ed8cb,
+  turquoise7: #12b9ac,
+  turquoise8: #0cab9e,
+  turquoise9: #03968a,
+  turquoise10: #038075,
 
-$c-green: #4caf50;
-$c-green6: $c-green;
-$c-green2: #c8e6c9;
-$c-green3: #a5d6a7;
-$c-green4: #81c784;
-$c-green5: #66bb6a;
-$c-green7: #43a047;
-$c-green8: #388e3c;
-$c-green9: #2e7d32;
-$c-green10: #1b5e20;
+  green: #4caf50,
+  green6: green,
+  green2: #c8e6c9,
+  green3: #a5d6a7,
+  green4: #81c784,
+  green5: #66bb6a,
+  green7: #43a047,
+  green8: #388e3c,
+  green9: #2e7d32,
+  green10: #1b5e20,
 
-$c-light-green: #8bc34a;
-$c-light-green6: $c-light-green;
-$c-light-green2: #dcedc8;
-$c-light-green3: #c5e1a5;
-$c-light-green4: #aed581;
-$c-light-green5: #9ccc65;
-$c-light-green7: #7cb342;
-$c-light-green8: #689f38;
-$c-light-green9: #558b2f;
-$c-light-green10: #33691e;
+  light-green: #8bc34a,
+  light-green6: light-green,
+  light-green2: #dcedc8,
+  light-green3: #c5e1a5,
+  light-green4: #aed581,
+  light-green5: #9ccc65,
+  light-green7: #7cb342,
+  light-green8: #689f38,
+  light-green9: #558b2f,
+  light-green10: #33691e,
 
-$c-brown: #795548;
-$c-brown6: $c-brown;
-$c-brown2: #d7ccc8;
-$c-brown3: #bcaaa4;
-$c-brown4: #a1887f;
-$c-brown5: #8d6e63;
-$c-brown7: #6d4c41;
-$c-brown8: #5d4037;
-$c-brown9: #4e342e;
-$c-brown10: #3e2723;
+  brown: #795548,
+  brown6: brown,
+  brown2: #d7ccc8,
+  brown3: #bcaaa4,
+  brown4: #a1887f,
+  brown5: #8d6e63,
+  brown7: #6d4c41,
+  brown8: #5d4037,
+  brown9: #4e342e,
+  brown10: #3e2723,
 
-$c-grey: #9e9e9e;
-$c-grey6: $c-grey;
-$c-grey2: #f5f5f5;
-$c-grey3: #eeeeee;
-$c-grey4: #e0e0e0;
-$c-grey5: #bdbdbd;
-$c-grey7: #757575;
-$c-grey8: #4e4e4e;
-$c-grey9: #4e342e;
-$c-grey10: #424040;
+  grey: #9e9e9e,
+  grey6: grey,
+  grey2: #f5f5f5,
+  grey3: #eeeeee,
+  grey4: #e0e0e0,
+  grey5: #bdbdbd,
+  grey7: #757575,
+  grey8: #4e4e4e,
+  grey9: #4e342e,
+  grey10: #424040,
 
-$c-black: #000;
-$c-black2: #404040;
-$c-black3: #353535;
-$c-black4: #303030;
-$c-black5: #252525;
-$c-black6: #202020;
-$c-black7: #151515;
-$c-black8: #101010;
-$c-black9: #050505;
+  black: #000,
+  black2: #404040,
+  black3: #353535,
+  black4: #303030,
+  black5: #252525,
+  black6: #202020,
+  black7: #151515,
+  black8: #101010,
+  black9: #050505,
+);
+// animations
+$animations:(
+  "rebound",
+  "blink",
+  "flash",
+  "pulse",
+  "rubberBand",
+  "shake",
+  "headShake",
+  "swing",
+  "tada",
+  "wobble",
+  "jello",
+  "bounceIn",
+  "bounceInDown",
+  "bounceInLeft",
+  "bounceInRight",
+  "bounceInUp",
+  "bounceOut",
+  "bounceOutDown",
+  "bounceOutLeft",
+  "bounceOutRight",
+  "bounceOutUp",
+  "fadeIn",
+  "fadeInDown",
+  "fadeInDownBig",
+  "fadeInLeft",
+  "fadeInLeftBig",
+  "fadeInRight",
+  "fadeInRightBig",
+  "fadeInUp",
+  "fadeInUpBig",
+  "fadeOut",
+  "fadeOutDown",
+  "fadeOutDownBig",
+  "fadeOutLeft",
+  "fadeOutLeftBig",
+  "fadeOutRight",
+  "fadeOutRightBig",
+  "fadeOutUp",
+  "fadeOutUpBig",
+  "flip",
+  "flipInX",
+  "flipInY",
+  "flipOutX",
+  "flipOutY",
+  "lightSpeedIn",
+  "lightSpeedOut",
+  "rotateIn",
+  "rotateInDownLeft",
+  "rotateInDownRight",
+  "rotateInUpLeft",
+  "rotateInUpRight",
+  "rotateOut",
+  "rotateOutDownLeft",
+  "rotateOutDownRight",
+  "rotateOutUpLeft",
+  "rotateOutUpRight",
+  "hinge",
+  "jackInTheBox",
+  "rollIn",
+  "rollOut",
+  "zoomIn",
+  "zoomInDown",
+  "zoomInLeft",
+  "zoomInRight",
+  "zoomInUp",
+  "zoomOut",
+  "zoomOutDown",
+  "zoomOutLeft",
+  "zoomOutRight",
+  "zoomOutUp",
+  "slideInDown",
+  "slideInLeft",
+  "slideInRight",
+  "slideInUp",
+  "slideOutDown",
+  "slideOutLeft",
+  "slideOutRight",
+  "slideOutUp",
+);
+$size:(
+  "xs": 8px,
+  "s": 12px,
+  "m": 16px,
+  "l": 20px,
+  "xl": 24px,
+  "xxl": 28px,
+)

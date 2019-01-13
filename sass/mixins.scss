@@ -12,13 +12,6 @@
     }
   }
 }
-// @mixin active-animation($name){
-//   [animation-active~="#{$name}"]{
-//     &:active{
-//       @include prefixed(animation-name, $name);
-//     }
-//   }
-// }
 @mixin focus-basic($name, $property, $value){
   [focus~="#{$name}"]{
     &:focus{
@@ -41,19 +34,16 @@
   }
 }
 @mixin general($name, $property, $value){
-  // devices
   [general~="#{$name}"]{#{$property}:$value}
   @include hover-basic($name, $property, $value);
   @include focus-basic($name, $property, $value);
   @include active-basic($name, $property, $value);
   @include animation-basic($name, $property, $value);
   @include devices($name, $property, $value);
+
 }
 @mixin general-prefixed($name, $property, $value){
-  // devices
-  [general~="#{$name}"]{
-    @include prefixed($property, $value);
-  }
+  [general~="#{$name}"]{@include prefixed($property, $value);}
   @include hover-prefixed($name, $property, $value);
   @include focus-prefixed($name, $property, $value);
   @include active-prefixed($name, $property, $value);
@@ -87,12 +77,10 @@
   }
   @include hover-animation($name);
   @include focus-animation($name);
-  // @include active-animation($name);
 }
 @mixin animation-basic($name, $property, $value){
   @include hover-animation($name);
   @include focus-animation($name);
-  // @include active-animation($name);
   @keyframes #{$name}{
     100%{
       #{$property}:$value;
@@ -107,7 +95,6 @@
 @mixin animation-prefixed($name, $property, $value){
   @include hover-animation($name);
   @include focus-animation($name);
-  // @include active-animation($name);
   @keyframes #{$name}{
     100%{
       @include prefixed($property, $value);
@@ -131,11 +118,6 @@
       @include prefixed($property, $value);
     }
   }
-  // [flex-active~="#{$name}"]{
-  //   &:active{
-  //     @include prefixed($property, $value);
-  //   }
-  // }
   // @include devices-prefixed($name, $property, $value);
 }
 @mixin display-flex(){
