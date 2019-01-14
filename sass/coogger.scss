@@ -1,7 +1,156 @@
 @import "variables.scss";
 @import "mixins.scss";
-@import "font.scss";
 @import "default.scss";
-@import "flex.scss";
+@import "font.scss";
 @import "animation.scss";
-@import "general.scss";
+@each $name, $px in $size{
+  @include devices("text:#{$name}", font-size, $px, "false");
+}
+/* border */
+@for $i from 1 to 11{
+  @include devices("border:#{$i}", border ,$i+0px solid, "true");
+}
+/* border-radius ayarı */
+@for $i from 1 to 11{
+  @include devices("br:#{$i}", border-radius ,$i*2px, "true");
+}
+@include devices("br:circle", border-radius, 50%, "true");
+//  opacity
+@include devices("opacity:0", opacity, 0, "true");
+@for $i from 1 to 11{
+  @include devices("opacity:0.#{$i}", opacity ,$i/10, "true");
+}
+// for width
+@for $i from 1 to 101{
+  @include devices("width:#{$i}", width, 0% + $i, "false");
+  @include devices("height:#{$i}", height, 0% + $i, "false");
+}
+[general~="width:f"]{
+  @include reverse-prefixed(width, fit-content);
+}
+[general~="width:a"]{
+  @include reverse-prefixed(width, available);
+}
+[general~="width:max"]{
+  @include reverse-prefixed(width, max-content);
+}
+[general~="width:min"]{
+  @include reverse-prefixed(width, min-content);
+}
+/* genişlik ayarları */
+/* colors */
+@each $name, $hex in $colors{
+  @include devices("color:#{$name}", color, $hex, "false");
+  @include devices("bg:#{$name}", background-color, $hex, "false");
+  @include devices("brc:#{$name}", border-color, $hex, "false");
+}
+//
+@include devices("font:quicksand", font-family, ('Quicksand', sans-serif), "false");
+// flex
+@include devices("flex:fd-r", flex-direction, row, "true");
+@include devices("flex:ai-s", align-items, stretch, "true");
+@include devices("flex:ac-s", align-content, stretch, "true");
+@include devices("flex:fd-rr", flex-direction, row-reverse, "true");
+@include devices("flex:fd-c", flex-direction, column, "true");
+@include devices("flex:fd-cr", flex-direction, column-reverse, "true");
+@include devices("flex:fw-nw", flex-wrap, nowrap, "true");
+@include devices("flex:fw-w", flex-wrap, wrap, "true");
+@include devices("flex:fw-wr", flex-wrap, wrap-reverse, "true");
+@include devices("flex:jc-fe", justify-content, flex-end, "true");
+@include devices("flex:jc-fs", justify-content, flex-start, "true");
+@include devices("flex:jc-c", justify-content, center, "true");
+@include devices("flex:jc-sa", justify-content, space-around, "true");
+@include devices("flex:jc-sb", justify-content, space-between, "true");
+@include devices("flex:ai-b", align-items, baseline, "true");
+@include devices("flex:ai-c", align-items, center, "true");
+@include devices("flex:ai-fs", align-items, flex-start, "true");
+@include devices("flex:ai-fe", align-items, flex-end, "true");
+@include devices("flex:ac-c", align-content, center, "true");
+@include devices("flex:ac-fs", align-content, flex-start, "true");
+@include devices("flex:ac-fe", align-content, flex-end, "true");
+@include devices("flex:ac-a", align-content, space-around, "true");
+@include devices("flex:ac-b", align-content, space-between, "true");
+@include devices("flex:as-fs", align-self, flex-start, "true");
+@include devices("flex:as-fe", align-self, flex-end, "true");
+@include devices("flex:as-c", align-self, center, "true");
+@include devices("flex:as-b", align-self, baseline, "true");
+@include devices("flex:as-s", align-self, stretch, "true");
+[general~="flex"]{
+  @include prefixed(display, flex);
+  @extend [general~="flex:fd-r"];
+  @extend [general~="flex:fw-w"];
+  @extend [general~="flex:jc-fs"];
+  @extend [general~="flex:ai-s"];
+  @extend [general~="flex:ac-s"];
+}
+@each $device_name, $px in $devices{
+  [#{$device_name}~="flex"]{
+    @include prefixed(display, flex);
+    @extend [#{$device_name}~="flex:fd-r"];
+    @extend [#{$device_name}~="flex:fw-w"];
+    @extend [#{$device_name}~="flex:jc-fs"];
+    @extend [#{$device_name}~="flex:ai-s"];
+    @extend [#{$device_name}~="flex:ac-s"];
+  }
+}
+[general~="position:center"]{
+  @extend [general~="flex"];
+  @extend [general~="flex:jc-c"];
+  margin: auto;
+}
+[general~="position:ewcenter"]{
+  @extend [general~="flex"];
+  @extend [general~="flex:jc-c"];
+  @extend [general~="flex:ai-c"];
+  margin: auto;
+}
+[general~="position:right"]{
+  @extend [general~="flex"];
+  @extend [general~="flex:jc-fe"];
+  margin-left: auto;
+}
+[general~="position:left"]{
+  @extend [general~="flex"];
+  @extend [general~="flex:jc-fs"];
+  margin-right: auto;
+}
+[general~="text:unselectable"]{
+  @include prefixed(user-select, none)
+}
+@each $device_name, $maxwidth in $devices{
+  @media screen and (max-width: $maxwidth) {
+    [#{$device_name}~="position:center"]{
+      @include prefixed(display, flex);
+      @include prefixed(justify-content, center);
+      margin: auto;
+    }
+  }
+}
+@each $device_name, $maxwidth in $devices{
+  @media (max-width: $maxwidth) {
+    [#{$device_name}~="position:ewcenter"]{
+      @include prefixed(display, flex);
+      @include prefixed(justify-content, center);
+      @include prefixed(align-items, center);
+      margin: auto;
+    }
+  }
+}
+@each $device_name, $maxwidth in $devices{
+  @media screen and (max-width: $maxwidth) {
+    [#{$device_name}~="position:right"]{
+      @include prefixed(display, flex);
+      @include prefixed(justify-content, flex-end);
+      margin-left: auto;
+    }
+  }
+}
+@each $device_name, $maxwidth in $devices{
+  @media screen and (max-width: $maxwidth) {
+    [#{$device_name}~="position:left"]{
+      @include prefixed(display, flex);
+      @include prefixed(justify-content, flex-start);
+      margin-right: auto;
+    }
+  }
+}
