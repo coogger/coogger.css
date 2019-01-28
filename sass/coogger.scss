@@ -3,7 +3,6 @@
 @import "default.scss";
 @import "font.scss";
 
-
 @each $name, $px in $size{
   @include devices("text:#{$name}", font-size, $px, "false");
 }
