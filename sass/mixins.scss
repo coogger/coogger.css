@@ -14,60 +14,9 @@
     }
   }
 }
-// animation
-@mixin focus-animation($name){
-  [animation-focus~="#{$name}"]{
-    &:focus{
-      @include prefixed(animation-name, $name);
-    }
-  }
-}
-@mixin animation($key){
-  [animation~="#{$key}"]{
-    @include prefixed(animation-name, $key);
-  }
-  @include hover-animation("#{$key}");
-  @include focus-animation("#{$key}");
-}
-@mixin animation-basic($key, $property, $value){
-  @include hover-animation($key);
-  @include focus-animation($key);
-  @keyframes #{$key}{
-    100%{
-      #{$property}:$value;
-    }
-  }
-  @-webkit-keyframes #{$key}{
-    100%{
-      #{$property}:$value;
-    }
-  }
-}
-@mixin animation-prefixed($key, $property, $value){
-  @include hover-animation("#{$key}");
-  @include focus-animation("#{$key}");
-  @keyframes #{$key}{
-    100%{
-      @include prefixed($property, $value);
-    }
-  }
-  @-webkit-keyframes #{$key}{
-    100%{
-      @include prefixed($property, $value);
-    }
-  }
-}
-@mixin hover-animation($key){
-  [animation-hover~="#{$key}"]{
-    &:hover{
-      @include prefixed(animation-name, $key);
-    }
-  }
-}
-// device
-@mixin device($device_name, $key, $maxwidth, $property, $value, $prefixed){
+@mixin device($device_name, $key, $min, $max, $property, $value, $prefixed){
   @if $prefixed == "true"{
-    @media screen and (max-width: $maxwidth) {
+    @media screen and (min-width: $min) and (max-width: $max) {
       [#{$device_name}~="#{$key}"]{@include prefixed($property, $value);}
       @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
       @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
@@ -75,7 +24,7 @@
     }
   }
   @else{
-    @media screen and (max-width: $maxwidth) {
+    @media screen and (min-width: $min) and (max-width: $max) {
       [#{$device_name}~="#{$key}"]{#{$property}: $value;}
       @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
       @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
@@ -84,9 +33,37 @@
   }
 }
 @mixin devices($key, $property, $value, $prefixed){
-  [general~="#{$key}"]{#{$property}:$value}
-  @each $device_name, $px in $devices{
-    @include device($device_name, $key, $px, $property, $value, $prefixed);
+  @if $prefixed == "true"{
+    [general~="#{$key}"]{#{$property}:$value}
+    [general~="#{$key}:hover"]{
+      &:hover{
+        @include prefixed($property, $value);
+      }
+    }
+    [general~="#{$key}:focus"]{
+      &:focus{
+        @include prefixed($property, $value);
+      }
+    }
+  }
+  @else{
+    [general~="#{$key}"]{#{$property}:$value}
+    [general~="#{$key}:hover"]{
+      &:hover{
+        #{$property}:$value;
+      }
+    }
+    [general~="#{$key}:focus"]{
+      &:focus{
+        #{$property}:$value;
+      }
+    }
+  }
+
+  @each $device_name, $width in $devices{
+    $min: map-get($width, "min");
+    $max: map-get($width, "max");
+    @include device($device_name, $key, $min, $max, $property, $value, $prefixed);
   }
 }
 // prefixed

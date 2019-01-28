@@ -1,4 +1,53 @@
 /* originally  - https://github.com/daneden/animate.css */
+@mixin focus-animation($name){
+  [animation-focus~="#{$name}"]{
+    &:focus{
+      @include prefixed(animation-name, $name);
+    }
+  }
+}
+@mixin animation($key){
+  [animation~="#{$key}"]{
+    @include prefixed(animation-name, $key);
+  }
+  @include hover-animation("#{$key}");
+  @include focus-animation("#{$key}");
+}
+@mixin animation-basic($key, $property, $value){
+  @include hover-animation($key);
+  @include focus-animation($key);
+  @keyframes #{$key}{
+    100%{
+      #{$property}:$value;
+    }
+  }
+  @-webkit-keyframes #{$key}{
+    100%{
+      #{$property}:$value;
+    }
+  }
+}
+@mixin animation-prefixed($key, $property, $value){
+  @include hover-animation("#{$key}");
+  @include focus-animation("#{$key}");
+  @keyframes #{$key}{
+    100%{
+      @include prefixed($property, $value);
+    }
+  }
+  @-webkit-keyframes #{$key}{
+    100%{
+      @include prefixed($property, $value);
+    }
+  }
+}
+@mixin hover-animation($key){
+  [animation-hover~="#{$key}"]{
+    &:hover{
+      @include prefixed(animation-name, $key);
+    }
+  }
+}
 [animation], [animation-hover], [animation-focus], [animation-active]{
   @include prefixed(animation-duration, $animation-duration);
   @include prefixed(animation-fill-mode, $a-fill-mode);

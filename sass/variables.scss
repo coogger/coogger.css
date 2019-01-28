@@ -260,11 +260,11 @@ $size:(
   "xxl": 28px,
 );
 $devices: (
-  "max": 2560px,
-  "laptop-l": 1440px,
-  "laptop": 1024px,
-  "tablet": 768px,
-  "mobile-l": 425px,
-  "mobile-m": 375px,
-  "mobile-s": 320px,
+  "mobile-s": ("min":0, "max": 320px),
+  "mobile-m": ("min":321px, "max": 375px),
+  "mobile-l": ("min":376px, "max": 425px),
+  "tablet": ("min":426px, "max": 768px),
+  "laptop": ("min":769px, "max": 1024px),
+  "laptop-l": ("min":1025px, "max": 1440px),
+  "max": ("min":1441px, "max": 2560px),
 );
