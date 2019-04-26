@@ -1,0 +1,9218 @@
+@charset "UTF-8";
+/* animations op */
+/* colors */
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url(https://fonts.gstatic.com/s/quicksand/v7/NUrn2XQrRfyGZp5MknntaRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url(https://fonts.gstatic.com/s/quicksand/v7/s2PXW4WrV3VLrOUpHiqsfRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quicksand Regular"), local("Quicksand-Regular"), url(https://fonts.gstatic.com/s/quicksand/v7/sKd0EMYPAh5PYCRKSryvW1tXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+[general~="text:xs"] {
+  font-size: 8px;
+}
+
+[general~="text:xs:hover"]:hover {
+  font-size: 8px;
+}
+
+[general~="text:xs:focus"]:focus {
+  font-size: 8px;
+}
+
+[general~="text:s"] {
+  font-size: 12px;
+}
+
+[general~="text:s:hover"]:hover {
+  font-size: 12px;
+}
+
+[general~="text:s:focus"]:focus {
+  font-size: 12px;
+}
+
+[general~="text:m"], [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select, [default~=forminput] label, [default~=form] label {
+  font-size: 16px;
+}
+
+[general~="text:m:hover"]:hover {
+  font-size: 16px;
+}
+
+[general~="text:m:focus"]:focus {
+  font-size: 16px;
+}
+
+[general~="text:l"] {
+  font-size: 20px;
+}
+
+[general~="text:l:hover"]:hover {
+  font-size: 20px;
+}
+
+[general~="text:l:focus"]:focus {
+  font-size: 20px;
+}
+
+[general~="text:xl"] {
+  font-size: 24px;
+}
+
+[general~="text:xl:hover"]:hover {
+  font-size: 24px;
+}
+
+[general~="text:xl:focus"]:focus {
+  font-size: 24px;
+}
+
+[general~="text:xxl"] {
+  font-size: 28px;
+}
+
+[general~="text:xxl:hover"]:hover {
+  font-size: 28px;
+}
+
+[general~="text:xxl:focus"]:focus {
+  font-size: 28px;
+}
+
+/* border */
+[general~="border:1"], [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {
+  border: 1px solid;
+}
+
+[general~="border:1:hover"]:hover {
+  -webkit-border: 1px solid;
+  -moz-border: 1px solid;
+  -ms-border: 1px solid;
+  -o-border: 1px solid;
+  border: 1px solid;
+}
+
+[general~="border:1:focus"]:focus {
+  -webkit-border: 1px solid;
+  -moz-border: 1px solid;
+  -ms-border: 1px solid;
+  -o-border: 1px solid;
+  border: 1px solid;
+}
+
+[general~="border:2"] {
+  border: 2px solid;
+}
+
+[general~="border:2:hover"]:hover {
+  -webkit-border: 2px solid;
+  -moz-border: 2px solid;
+  -ms-border: 2px solid;
+  -o-border: 2px solid;
+  border: 2px solid;
+}
+
+[general~="border:2:focus"]:focus {
+  -webkit-border: 2px solid;
+  -moz-border: 2px solid;
+  -ms-border: 2px solid;
+  -o-border: 2px solid;
+  border: 2px solid;
+}
+
+[general~="border:3"] {
+  border: 3px solid;
+}
+
+[general~="border:3:hover"]:hover {
+  -webkit-border: 3px solid;
+  -moz-border: 3px solid;
+  -ms-border: 3px solid;
+  -o-border: 3px solid;
+  border: 3px solid;
+}
+
+[general~="border:3:focus"]:focus {
+  -webkit-border: 3px solid;
+  -moz-border: 3px solid;
+  -ms-border: 3px solid;
+  -o-border: 3px solid;
+  border: 3px solid;
+}
+
+[general~="border:4"] {
+  border: 4px solid;
+}
+
+[general~="border:4:hover"]:hover {
+  -webkit-border: 4px solid;
+  -moz-border: 4px solid;
+  -ms-border: 4px solid;
+  -o-border: 4px solid;
+  border: 4px solid;
+}
+
+[general~="border:4:focus"]:focus {
+  -webkit-border: 4px solid;
+  -moz-border: 4px solid;
+  -ms-border: 4px solid;
+  -o-border: 4px solid;
+  border: 4px solid;
+}
+
+[general~="border:5"] {
+  border: 5px solid;
+}
+
+[general~="border:5:hover"]:hover {
+  -webkit-border: 5px solid;
+  -moz-border: 5px solid;
+  -ms-border: 5px solid;
+  -o-border: 5px solid;
+  border: 5px solid;
+}
+
+[general~="border:5:focus"]:focus {
+  -webkit-border: 5px solid;
+  -moz-border: 5px solid;
+  -ms-border: 5px solid;
+  -o-border: 5px solid;
+  border: 5px solid;
+}
+
+[general~="border:6"] {
+  border: 6px solid;
+}
+
+[general~="border:6:hover"]:hover {
+  -webkit-border: 6px solid;
+  -moz-border: 6px solid;
+  -ms-border: 6px solid;
+  -o-border: 6px solid;
+  border: 6px solid;
+}
+
+[general~="border:6:focus"]:focus {
+  -webkit-border: 6px solid;
+  -moz-border: 6px solid;
+  -ms-border: 6px solid;
+  -o-border: 6px solid;
+  border: 6px solid;
+}
+
+[general~="border:7"] {
+  border: 7px solid;
+}
+
+[general~="border:7:hover"]:hover {
+  -webkit-border: 7px solid;
+  -moz-border: 7px solid;
+  -ms-border: 7px solid;
+  -o-border: 7px solid;
+  border: 7px solid;
+}
+
+[general~="border:7:focus"]:focus {
+  -webkit-border: 7px solid;
+  -moz-border: 7px solid;
+  -ms-border: 7px solid;
+  -o-border: 7px solid;
+  border: 7px solid;
+}
+
+[general~="border:8"] {
+  border: 8px solid;
+}
+
+[general~="border:8:hover"]:hover {
+  -webkit-border: 8px solid;
+  -moz-border: 8px solid;
+  -ms-border: 8px solid;
+  -o-border: 8px solid;
+  border: 8px solid;
+}
+
+[general~="border:8:focus"]:focus {
+  -webkit-border: 8px solid;
+  -moz-border: 8px solid;
+  -ms-border: 8px solid;
+  -o-border: 8px solid;
+  border: 8px solid;
+}
+
+[general~="border:9"] {
+  border: 9px solid;
+}
+
+[general~="border:9:hover"]:hover {
+  -webkit-border: 9px solid;
+  -moz-border: 9px solid;
+  -ms-border: 9px solid;
+  -o-border: 9px solid;
+  border: 9px solid;
+}
+
+[general~="border:9:focus"]:focus {
+  -webkit-border: 9px solid;
+  -moz-border: 9px solid;
+  -ms-border: 9px solid;
+  -o-border: 9px solid;
+  border: 9px solid;
+}
+
+[general~="border:10"] {
+  border: 10px solid;
+}
+
+[general~="border:10:hover"]:hover {
+  -webkit-border: 10px solid;
+  -moz-border: 10px solid;
+  -ms-border: 10px solid;
+  -o-border: 10px solid;
+  border: 10px solid;
+}
+
+[general~="border:10:focus"]:focus {
+  -webkit-border: 10px solid;
+  -moz-border: 10px solid;
+  -ms-border: 10px solid;
+  -o-border: 10px solid;
+  border: 10px solid;
+}
+
+/* border-radius ayarı */
+[general~="br:1"] {
+  border-radius: 2px;
+}
+
+[general~="br:1:hover"]:hover {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+[general~="br:1:focus"]:focus {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+[general~="br:2"], [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {
+  border-radius: 4px;
+}
+
+[general~="br:2:hover"]:hover {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+[general~="br:2:focus"]:focus {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+[general~="br:3"] {
+  border-radius: 6px;
+}
+
+[general~="br:3:hover"]:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+[general~="br:3:focus"]:focus {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+[general~="br:4"] {
+  border-radius: 8px;
+}
+
+[general~="br:4:hover"]:hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+[general~="br:4:focus"]:focus {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+[general~="br:5"] {
+  border-radius: 10px;
+}
+
+[general~="br:5:hover"]:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+[general~="br:5:focus"]:focus {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+[general~="br:6"] {
+  border-radius: 12px;
+}
+
+[general~="br:6:hover"]:hover {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+
+[general~="br:6:focus"]:focus {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+
+[general~="br:7"] {
+  border-radius: 14px;
+}
+
+[general~="br:7:hover"]:hover {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+
+[general~="br:7:focus"]:focus {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+
+[general~="br:8"] {
+  border-radius: 16px;
+}
+
+[general~="br:8:hover"]:hover {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+
+[general~="br:8:focus"]:focus {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+
+[general~="br:9"] {
+  border-radius: 18px;
+}
+
+[general~="br:9:hover"]:hover {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+}
+
+[general~="br:9:focus"]:focus {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+}
+
+[general~="br:10"] {
+  border-radius: 20px;
+}
+
+[general~="br:10:hover"]:hover {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+[general~="br:10:focus"]:focus {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+[general~="br:circle"] {
+  border-radius: 50%;
+}
+
+[general~="br:circle:hover"]:hover {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+[general~="br:circle:focus"]:focus {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+[general~="opacity:0"] {
+  opacity: 0;
+}
+
+[general~="opacity:0:hover"]:hover {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+}
+
+[general~="opacity:0:focus"]:focus {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+}
+
+[general~="opacity:0.1"] {
+  opacity: 0.1;
+}
+
+[general~="opacity:0.1:hover"]:hover {
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  -ms-opacity: 0.1;
+  -o-opacity: 0.1;
+  opacity: 0.1;
+}
+
+[general~="opacity:0.1:focus"]:focus {
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  -ms-opacity: 0.1;
+  -o-opacity: 0.1;
+  opacity: 0.1;
+}
+
+[general~="opacity:0.2"] {
+  opacity: 0.2;
+}
+
+[general~="opacity:0.2:hover"]:hover {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  -ms-opacity: 0.2;
+  -o-opacity: 0.2;
+  opacity: 0.2;
+}
+
+[general~="opacity:0.2:focus"]:focus {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  -ms-opacity: 0.2;
+  -o-opacity: 0.2;
+  opacity: 0.2;
+}
+
+[general~="opacity:0.3"] {
+  opacity: 0.3;
+}
+
+[general~="opacity:0.3:hover"]:hover {
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  -ms-opacity: 0.3;
+  -o-opacity: 0.3;
+  opacity: 0.3;
+}
+
+[general~="opacity:0.3:focus"]:focus {
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  -ms-opacity: 0.3;
+  -o-opacity: 0.3;
+  opacity: 0.3;
+}
+
+[general~="opacity:0.4"] {
+  opacity: 0.4;
+}
+
+[general~="opacity:0.4:hover"]:hover {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  -ms-opacity: 0.4;
+  -o-opacity: 0.4;
+  opacity: 0.4;
+}
+
+[general~="opacity:0.4:focus"]:focus {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  -ms-opacity: 0.4;
+  -o-opacity: 0.4;
+  opacity: 0.4;
+}
+
+[general~="opacity:0.5"] {
+  opacity: 0.5;
+}
+
+[general~="opacity:0.5:hover"]:hover {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  -ms-opacity: 0.5;
+  -o-opacity: 0.5;
+  opacity: 0.5;
+}
+
+[general~="opacity:0.5:focus"]:focus {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  -ms-opacity: 0.5;
+  -o-opacity: 0.5;
+  opacity: 0.5;
+}
+
+[general~="opacity:0.6"] {
+  opacity: 0.6;
+}
+
+[general~="opacity:0.6:hover"]:hover {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  -ms-opacity: 0.6;
+  -o-opacity: 0.6;
+  opacity: 0.6;
+}
+
+[general~="opacity:0.6:focus"]:focus {
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  -ms-opacity: 0.6;
+  -o-opacity: 0.6;
+  opacity: 0.6;
+}
+
+[general~="opacity:0.7"] {
+  opacity: 0.7;
+}
+
+[general~="opacity:0.7:hover"]:hover {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  -ms-opacity: 0.7;
+  -o-opacity: 0.7;
+  opacity: 0.7;
+}
+
+[general~="opacity:0.7:focus"]:focus {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  -ms-opacity: 0.7;
+  -o-opacity: 0.7;
+  opacity: 0.7;
+}
+
+[general~="opacity:0.8"] {
+  opacity: 0.8;
+}
+
+[general~="opacity:0.8:hover"]:hover {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-opacity: 0.8;
+  -o-opacity: 0.8;
+  opacity: 0.8;
+}
+
+[general~="opacity:0.8:focus"]:focus {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-opacity: 0.8;
+  -o-opacity: 0.8;
+  opacity: 0.8;
+}
+
+[general~="opacity:0.9"] {
+  opacity: 0.9;
+}
+
+[general~="opacity:0.9:hover"]:hover {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  -ms-opacity: 0.9;
+  -o-opacity: 0.9;
+  opacity: 0.9;
+}
+
+[general~="opacity:0.9:focus"]:focus {
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  -ms-opacity: 0.9;
+  -o-opacity: 0.9;
+  opacity: 0.9;
+}
+
+[general~="opacity:0.10"] {
+  opacity: 1;
+}
+
+[general~="opacity:0.10:hover"]:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+[general~="opacity:0.10:focus"]:focus {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+
+[general~="width:1"] {
+  width: 1%;
+}
+
+[general~="width:1:hover"]:hover {
+  width: 1%;
+}
+
+[general~="width:1:focus"]:focus {
+  width: 1%;
+}
+
+[general~="height:1"] {
+  height: 1%;
+}
+
+[general~="height:1:hover"]:hover {
+  height: 1%;
+}
+
+[general~="height:1:focus"]:focus {
+  height: 1%;
+}
+
+[general~="width:2"] {
+  width: 2%;
+}
+
+[general~="width:2:hover"]:hover {
+  width: 2%;
+}
+
+[general~="width:2:focus"]:focus {
+  width: 2%;
+}
+
+[general~="height:2"] {
+  height: 2%;
+}
+
+[general~="height:2:hover"]:hover {
+  height: 2%;
+}
+
+[general~="height:2:focus"]:focus {
+  height: 2%;
+}
+
+[general~="width:3"] {
+  width: 3%;
+}
+
+[general~="width:3:hover"]:hover {
+  width: 3%;
+}
+
+[general~="width:3:focus"]:focus {
+  width: 3%;
+}
+
+[general~="height:3"] {
+  height: 3%;
+}
+
+[general~="height:3:hover"]:hover {
+  height: 3%;
+}
+
+[general~="height:3:focus"]:focus {
+  height: 3%;
+}
+
+[general~="width:4"] {
+  width: 4%;
+}
+
+[general~="width:4:hover"]:hover {
+  width: 4%;
+}
+
+[general~="width:4:focus"]:focus {
+  width: 4%;
+}
+
+[general~="height:4"] {
+  height: 4%;
+}
+
+[general~="height:4:hover"]:hover {
+  height: 4%;
+}
+
+[general~="height:4:focus"]:focus {
+  height: 4%;
+}
+
+[general~="width:5"] {
+  width: 5%;
+}
+
+[general~="width:5:hover"]:hover {
+  width: 5%;
+}
+
+[general~="width:5:focus"]:focus {
+  width: 5%;
+}
+
+[general~="height:5"] {
+  height: 5%;
+}
+
+[general~="height:5:hover"]:hover {
+  height: 5%;
+}
+
+[general~="height:5:focus"]:focus {
+  height: 5%;
+}
+
+[general~="width:6"] {
+  width: 6%;
+}
+
+[general~="width:6:hover"]:hover {
+  width: 6%;
+}
+
+[general~="width:6:focus"]:focus {
+  width: 6%;
+}
+
+[general~="height:6"] {
+  height: 6%;
+}
+
+[general~="height:6:hover"]:hover {
+  height: 6%;
+}
+
+[general~="height:6:focus"]:focus {
+  height: 6%;
+}
+
+[general~="width:7"] {
+  width: 7%;
+}
+
+[general~="width:7:hover"]:hover {
+  width: 7%;
+}
+
+[general~="width:7:focus"]:focus {
+  width: 7%;
+}
+
+[general~="height:7"] {
+  height: 7%;
+}
+
+[general~="height:7:hover"]:hover {
+  height: 7%;
+}
+
+[general~="height:7:focus"]:focus {
+  height: 7%;
+}
+
+[general~="width:8"] {
+  width: 8%;
+}
+
+[general~="width:8:hover"]:hover {
+  width: 8%;
+}
+
+[general~="width:8:focus"]:focus {
+  width: 8%;
+}
+
+[general~="height:8"] {
+  height: 8%;
+}
+
+[general~="height:8:hover"]:hover {
+  height: 8%;
+}
+
+[general~="height:8:focus"]:focus {
+  height: 8%;
+}
+
+[general~="width:9"] {
+  width: 9%;
+}
+
+[general~="width:9:hover"]:hover {
+  width: 9%;
+}
+
+[general~="width:9:focus"]:focus {
+  width: 9%;
+}
+
+[general~="height:9"] {
+  height: 9%;
+}
+
+[general~="height:9:hover"]:hover {
+  height: 9%;
+}
+
+[general~="height:9:focus"]:focus {
+  height: 9%;
+}
+
+[general~="width:10"] {
+  width: 10%;
+}
+
+[general~="width:10:hover"]:hover {
+  width: 10%;
+}
+
+[general~="width:10:focus"]:focus {
+  width: 10%;
+}
+
+[general~="height:10"] {
+  height: 10%;
+}
+
+[general~="height:10:hover"]:hover {
+  height: 10%;
+}
+
+[general~="height:10:focus"]:focus {
+  height: 10%;
+}
+
+[general~="width:11"] {
+  width: 11%;
+}
+
+[general~="width:11:hover"]:hover {
+  width: 11%;
+}
+
+[general~="width:11:focus"]:focus {
+  width: 11%;
+}
+
+[general~="height:11"] {
+  height: 11%;
+}
+
+[general~="height:11:hover"]:hover {
+  height: 11%;
+}
+
+[general~="height:11:focus"]:focus {
+  height: 11%;
+}
+
+[general~="width:12"] {
+  width: 12%;
+}
+
+[general~="width:12:hover"]:hover {
+  width: 12%;
+}
+
+[general~="width:12:focus"]:focus {
+  width: 12%;
+}
+
+[general~="height:12"] {
+  height: 12%;
+}
+
+[general~="height:12:hover"]:hover {
+  height: 12%;
+}
+
+[general~="height:12:focus"]:focus {
+  height: 12%;
+}
+
+[general~="width:13"] {
+  width: 13%;
+}
+
+[general~="width:13:hover"]:hover {
+  width: 13%;
+}
+
+[general~="width:13:focus"]:focus {
+  width: 13%;
+}
+
+[general~="height:13"] {
+  height: 13%;
+}
+
+[general~="height:13:hover"]:hover {
+  height: 13%;
+}
+
+[general~="height:13:focus"]:focus {
+  height: 13%;
+}
+
+[general~="width:14"] {
+  width: 14%;
+}
+
+[general~="width:14:hover"]:hover {
+  width: 14%;
+}
+
+[general~="width:14:focus"]:focus {
+  width: 14%;
+}
+
+[general~="height:14"] {
+  height: 14%;
+}
+
+[general~="height:14:hover"]:hover {
+  height: 14%;
+}
+
+[general~="height:14:focus"]:focus {
+  height: 14%;
+}
+
+[general~="width:15"] {
+  width: 15%;
+}
+
+[general~="width:15:hover"]:hover {
+  width: 15%;
+}
+
+[general~="width:15:focus"]:focus {
+  width: 15%;
+}
+
+[general~="height:15"] {
+  height: 15%;
+}
+
+[general~="height:15:hover"]:hover {
+  height: 15%;
+}
+
+[general~="height:15:focus"]:focus {
+  height: 15%;
+}
+
+[general~="width:16"] {
+  width: 16%;
+}
+
+[general~="width:16:hover"]:hover {
+  width: 16%;
+}
+
+[general~="width:16:focus"]:focus {
+  width: 16%;
+}
+
+[general~="height:16"] {
+  height: 16%;
+}
+
+[general~="height:16:hover"]:hover {
+  height: 16%;
+}
+
+[general~="height:16:focus"]:focus {
+  height: 16%;
+}
+
+[general~="width:17"] {
+  width: 17%;
+}
+
+[general~="width:17:hover"]:hover {
+  width: 17%;
+}
+
+[general~="width:17:focus"]:focus {
+  width: 17%;
+}
+
+[general~="height:17"] {
+  height: 17%;
+}
+
+[general~="height:17:hover"]:hover {
+  height: 17%;
+}
+
+[general~="height:17:focus"]:focus {
+  height: 17%;
+}
+
+[general~="width:18"] {
+  width: 18%;
+}
+
+[general~="width:18:hover"]:hover {
+  width: 18%;
+}
+
+[general~="width:18:focus"]:focus {
+  width: 18%;
+}
+
+[general~="height:18"] {
+  height: 18%;
+}
+
+[general~="height:18:hover"]:hover {
+  height: 18%;
+}
+
+[general~="height:18:focus"]:focus {
+  height: 18%;
+}
+
+[general~="width:19"] {
+  width: 19%;
+}
+
+[general~="width:19:hover"]:hover {
+  width: 19%;
+}
+
+[general~="width:19:focus"]:focus {
+  width: 19%;
+}
+
+[general~="height:19"] {
+  height: 19%;
+}
+
+[general~="height:19:hover"]:hover {
+  height: 19%;
+}
+
+[general~="height:19:focus"]:focus {
+  height: 19%;
+}
+
+[general~="width:20"] {
+  width: 20%;
+}
+
+[general~="width:20:hover"]:hover {
+  width: 20%;
+}
+
+[general~="width:20:focus"]:focus {
+  width: 20%;
+}
+
+[general~="height:20"] {
+  height: 20%;
+}
+
+[general~="height:20:hover"]:hover {
+  height: 20%;
+}
+
+[general~="height:20:focus"]:focus {
+  height: 20%;
+}
+
+[general~="width:21"] {
+  width: 21%;
+}
+
+[general~="width:21:hover"]:hover {
+  width: 21%;
+}
+
+[general~="width:21:focus"]:focus {
+  width: 21%;
+}
+
+[general~="height:21"] {
+  height: 21%;
+}
+
+[general~="height:21:hover"]:hover {
+  height: 21%;
+}
+
+[general~="height:21:focus"]:focus {
+  height: 21%;
+}
+
+[general~="width:22"] {
+  width: 22%;
+}
+
+[general~="width:22:hover"]:hover {
+  width: 22%;
+}
+
+[general~="width:22:focus"]:focus {
+  width: 22%;
+}
+
+[general~="height:22"] {
+  height: 22%;
+}
+
+[general~="height:22:hover"]:hover {
+  height: 22%;
+}
+
+[general~="height:22:focus"]:focus {
+  height: 22%;
+}
+
+[general~="width:23"] {
+  width: 23%;
+}
+
+[general~="width:23:hover"]:hover {
+  width: 23%;
+}
+
+[general~="width:23:focus"]:focus {
+  width: 23%;
+}
+
+[general~="height:23"] {
+  height: 23%;
+}
+
+[general~="height:23:hover"]:hover {
+  height: 23%;
+}
+
+[general~="height:23:focus"]:focus {
+  height: 23%;
+}
+
+[general~="width:24"] {
+  width: 24%;
+}
+
+[general~="width:24:hover"]:hover {
+  width: 24%;
+}
+
+[general~="width:24:focus"]:focus {
+  width: 24%;
+}
+
+[general~="height:24"] {
+  height: 24%;
+}
+
+[general~="height:24:hover"]:hover {
+  height: 24%;
+}
+
+[general~="height:24:focus"]:focus {
+  height: 24%;
+}
+
+[general~="width:25"] {
+  width: 25%;
+}
+
+[general~="width:25:hover"]:hover {
+  width: 25%;
+}
+
+[general~="width:25:focus"]:focus {
+  width: 25%;
+}
+
+[general~="height:25"] {
+  height: 25%;
+}
+
+[general~="height:25:hover"]:hover {
+  height: 25%;
+}
+
+[general~="height:25:focus"]:focus {
+  height: 25%;
+}
+
+[general~="width:26"] {
+  width: 26%;
+}
+
+[general~="width:26:hover"]:hover {
+  width: 26%;
+}
+
+[general~="width:26:focus"]:focus {
+  width: 26%;
+}
+
+[general~="height:26"] {
+  height: 26%;
+}
+
+[general~="height:26:hover"]:hover {
+  height: 26%;
+}
+
+[general~="height:26:focus"]:focus {
+  height: 26%;
+}
+
+[general~="width:27"] {
+  width: 27%;
+}
+
+[general~="width:27:hover"]:hover {
+  width: 27%;
+}
+
+[general~="width:27:focus"]:focus {
+  width: 27%;
+}
+
+[general~="height:27"] {
+  height: 27%;
+}
+
+[general~="height:27:hover"]:hover {
+  height: 27%;
+}
+
+[general~="height:27:focus"]:focus {
+  height: 27%;
+}
+
+[general~="width:28"] {
+  width: 28%;
+}
+
+[general~="width:28:hover"]:hover {
+  width: 28%;
+}
+
+[general~="width:28:focus"]:focus {
+  width: 28%;
+}
+
+[general~="height:28"] {
+  height: 28%;
+}
+
+[general~="height:28:hover"]:hover {
+  height: 28%;
+}
+
+[general~="height:28:focus"]:focus {
+  height: 28%;
+}
+
+[general~="width:29"] {
+  width: 29%;
+}
+
+[general~="width:29:hover"]:hover {
+  width: 29%;
+}
+
+[general~="width:29:focus"]:focus {
+  width: 29%;
+}
+
+[general~="height:29"] {
+  height: 29%;
+}
+
+[general~="height:29:hover"]:hover {
+  height: 29%;
+}
+
+[general~="height:29:focus"]:focus {
+  height: 29%;
+}
+
+[general~="width:30"] {
+  width: 30%;
+}
+
+[general~="width:30:hover"]:hover {
+  width: 30%;
+}
+
+[general~="width:30:focus"]:focus {
+  width: 30%;
+}
+
+[general~="height:30"] {
+  height: 30%;
+}
+
+[general~="height:30:hover"]:hover {
+  height: 30%;
+}
+
+[general~="height:30:focus"]:focus {
+  height: 30%;
+}
+
+[general~="width:31"] {
+  width: 31%;
+}
+
+[general~="width:31:hover"]:hover {
+  width: 31%;
+}
+
+[general~="width:31:focus"]:focus {
+  width: 31%;
+}
+
+[general~="height:31"] {
+  height: 31%;
+}
+
+[general~="height:31:hover"]:hover {
+  height: 31%;
+}
+
+[general~="height:31:focus"]:focus {
+  height: 31%;
+}
+
+[general~="width:32"] {
+  width: 32%;
+}
+
+[general~="width:32:hover"]:hover {
+  width: 32%;
+}
+
+[general~="width:32:focus"]:focus {
+  width: 32%;
+}
+
+[general~="height:32"] {
+  height: 32%;
+}
+
+[general~="height:32:hover"]:hover {
+  height: 32%;
+}
+
+[general~="height:32:focus"]:focus {
+  height: 32%;
+}
+
+[general~="width:33"] {
+  width: 33%;
+}
+
+[general~="width:33:hover"]:hover {
+  width: 33%;
+}
+
+[general~="width:33:focus"]:focus {
+  width: 33%;
+}
+
+[general~="height:33"] {
+  height: 33%;
+}
+
+[general~="height:33:hover"]:hover {
+  height: 33%;
+}
+
+[general~="height:33:focus"]:focus {
+  height: 33%;
+}
+
+[general~="width:34"] {
+  width: 34%;
+}
+
+[general~="width:34:hover"]:hover {
+  width: 34%;
+}
+
+[general~="width:34:focus"]:focus {
+  width: 34%;
+}
+
+[general~="height:34"] {
+  height: 34%;
+}
+
+[general~="height:34:hover"]:hover {
+  height: 34%;
+}
+
+[general~="height:34:focus"]:focus {
+  height: 34%;
+}
+
+[general~="width:35"] {
+  width: 35%;
+}
+
+[general~="width:35:hover"]:hover {
+  width: 35%;
+}
+
+[general~="width:35:focus"]:focus {
+  width: 35%;
+}
+
+[general~="height:35"] {
+  height: 35%;
+}
+
+[general~="height:35:hover"]:hover {
+  height: 35%;
+}
+
+[general~="height:35:focus"]:focus {
+  height: 35%;
+}
+
+[general~="width:36"] {
+  width: 36%;
+}
+
+[general~="width:36:hover"]:hover {
+  width: 36%;
+}
+
+[general~="width:36:focus"]:focus {
+  width: 36%;
+}
+
+[general~="height:36"] {
+  height: 36%;
+}
+
+[general~="height:36:hover"]:hover {
+  height: 36%;
+}
+
+[general~="height:36:focus"]:focus {
+  height: 36%;
+}
+
+[general~="width:37"] {
+  width: 37%;
+}
+
+[general~="width:37:hover"]:hover {
+  width: 37%;
+}
+
+[general~="width:37:focus"]:focus {
+  width: 37%;
+}
+
+[general~="height:37"] {
+  height: 37%;
+}
+
+[general~="height:37:hover"]:hover {
+  height: 37%;
+}
+
+[general~="height:37:focus"]:focus {
+  height: 37%;
+}
+
+[general~="width:38"] {
+  width: 38%;
+}
+
+[general~="width:38:hover"]:hover {
+  width: 38%;
+}
+
+[general~="width:38:focus"]:focus {
+  width: 38%;
+}
+
+[general~="height:38"] {
+  height: 38%;
+}
+
+[general~="height:38:hover"]:hover {
+  height: 38%;
+}
+
+[general~="height:38:focus"]:focus {
+  height: 38%;
+}
+
+[general~="width:39"] {
+  width: 39%;
+}
+
+[general~="width:39:hover"]:hover {
+  width: 39%;
+}
+
+[general~="width:39:focus"]:focus {
+  width: 39%;
+}
+
+[general~="height:39"] {
+  height: 39%;
+}
+
+[general~="height:39:hover"]:hover {
+  height: 39%;
+}
+
+[general~="height:39:focus"]:focus {
+  height: 39%;
+}
+
+[general~="width:40"] {
+  width: 40%;
+}
+
+[general~="width:40:hover"]:hover {
+  width: 40%;
+}
+
+[general~="width:40:focus"]:focus {
+  width: 40%;
+}
+
+[general~="height:40"] {
+  height: 40%;
+}
+
+[general~="height:40:hover"]:hover {
+  height: 40%;
+}
+
+[general~="height:40:focus"]:focus {
+  height: 40%;
+}
+
+[general~="width:41"] {
+  width: 41%;
+}
+
+[general~="width:41:hover"]:hover {
+  width: 41%;
+}
+
+[general~="width:41:focus"]:focus {
+  width: 41%;
+}
+
+[general~="height:41"] {
+  height: 41%;
+}
+
+[general~="height:41:hover"]:hover {
+  height: 41%;
+}
+
+[general~="height:41:focus"]:focus {
+  height: 41%;
+}
+
+[general~="width:42"] {
+  width: 42%;
+}
+
+[general~="width:42:hover"]:hover {
+  width: 42%;
+}
+
+[general~="width:42:focus"]:focus {
+  width: 42%;
+}
+
+[general~="height:42"] {
+  height: 42%;
+}
+
+[general~="height:42:hover"]:hover {
+  height: 42%;
+}
+
+[general~="height:42:focus"]:focus {
+  height: 42%;
+}
+
+[general~="width:43"] {
+  width: 43%;
+}
+
+[general~="width:43:hover"]:hover {
+  width: 43%;
+}
+
+[general~="width:43:focus"]:focus {
+  width: 43%;
+}
+
+[general~="height:43"] {
+  height: 43%;
+}
+
+[general~="height:43:hover"]:hover {
+  height: 43%;
+}
+
+[general~="height:43:focus"]:focus {
+  height: 43%;
+}
+
+[general~="width:44"] {
+  width: 44%;
+}
+
+[general~="width:44:hover"]:hover {
+  width: 44%;
+}
+
+[general~="width:44:focus"]:focus {
+  width: 44%;
+}
+
+[general~="height:44"] {
+  height: 44%;
+}
+
+[general~="height:44:hover"]:hover {
+  height: 44%;
+}
+
+[general~="height:44:focus"]:focus {
+  height: 44%;
+}
+
+[general~="width:45"] {
+  width: 45%;
+}
+
+[general~="width:45:hover"]:hover {
+  width: 45%;
+}
+
+[general~="width:45:focus"]:focus {
+  width: 45%;
+}
+
+[general~="height:45"] {
+  height: 45%;
+}
+
+[general~="height:45:hover"]:hover {
+  height: 45%;
+}
+
+[general~="height:45:focus"]:focus {
+  height: 45%;
+}
+
+[general~="width:46"] {
+  width: 46%;
+}
+
+[general~="width:46:hover"]:hover {
+  width: 46%;
+}
+
+[general~="width:46:focus"]:focus {
+  width: 46%;
+}
+
+[general~="height:46"] {
+  height: 46%;
+}
+
+[general~="height:46:hover"]:hover {
+  height: 46%;
+}
+
+[general~="height:46:focus"]:focus {
+  height: 46%;
+}
+
+[general~="width:47"] {
+  width: 47%;
+}
+
+[general~="width:47:hover"]:hover {
+  width: 47%;
+}
+
+[general~="width:47:focus"]:focus {
+  width: 47%;
+}
+
+[general~="height:47"] {
+  height: 47%;
+}
+
+[general~="height:47:hover"]:hover {
+  height: 47%;
+}
+
+[general~="height:47:focus"]:focus {
+  height: 47%;
+}
+
+[general~="width:48"] {
+  width: 48%;
+}
+
+[general~="width:48:hover"]:hover {
+  width: 48%;
+}
+
+[general~="width:48:focus"]:focus {
+  width: 48%;
+}
+
+[general~="height:48"] {
+  height: 48%;
+}
+
+[general~="height:48:hover"]:hover {
+  height: 48%;
+}
+
+[general~="height:48:focus"]:focus {
+  height: 48%;
+}
+
+[general~="width:49"] {
+  width: 49%;
+}
+
+[general~="width:49:hover"]:hover {
+  width: 49%;
+}
+
+[general~="width:49:focus"]:focus {
+  width: 49%;
+}
+
+[general~="height:49"] {
+  height: 49%;
+}
+
+[general~="height:49:hover"]:hover {
+  height: 49%;
+}
+
+[general~="height:49:focus"]:focus {
+  height: 49%;
+}
+
+[general~="width:50"] {
+  width: 50%;
+}
+
+[general~="width:50:hover"]:hover {
+  width: 50%;
+}
+
+[general~="width:50:focus"]:focus {
+  width: 50%;
+}
+
+[general~="height:50"] {
+  height: 50%;
+}
+
+[general~="height:50:hover"]:hover {
+  height: 50%;
+}
+
+[general~="height:50:focus"]:focus {
+  height: 50%;
+}
+
+[general~="width:51"] {
+  width: 51%;
+}
+
+[general~="width:51:hover"]:hover {
+  width: 51%;
+}
+
+[general~="width:51:focus"]:focus {
+  width: 51%;
+}
+
+[general~="height:51"] {
+  height: 51%;
+}
+
+[general~="height:51:hover"]:hover {
+  height: 51%;
+}
+
+[general~="height:51:focus"]:focus {
+  height: 51%;
+}
+
+[general~="width:52"] {
+  width: 52%;
+}
+
+[general~="width:52:hover"]:hover {
+  width: 52%;
+}
+
+[general~="width:52:focus"]:focus {
+  width: 52%;
+}
+
+[general~="height:52"] {
+  height: 52%;
+}
+
+[general~="height:52:hover"]:hover {
+  height: 52%;
+}
+
+[general~="height:52:focus"]:focus {
+  height: 52%;
+}
+
+[general~="width:53"] {
+  width: 53%;
+}
+
+[general~="width:53:hover"]:hover {
+  width: 53%;
+}
+
+[general~="width:53:focus"]:focus {
+  width: 53%;
+}
+
+[general~="height:53"] {
+  height: 53%;
+}
+
+[general~="height:53:hover"]:hover {
+  height: 53%;
+}
+
+[general~="height:53:focus"]:focus {
+  height: 53%;
+}
+
+[general~="width:54"] {
+  width: 54%;
+}
+
+[general~="width:54:hover"]:hover {
+  width: 54%;
+}
+
+[general~="width:54:focus"]:focus {
+  width: 54%;
+}
+
+[general~="height:54"] {
+  height: 54%;
+}
+
+[general~="height:54:hover"]:hover {
+  height: 54%;
+}
+
+[general~="height:54:focus"]:focus {
+  height: 54%;
+}
+
+[general~="width:55"] {
+  width: 55%;
+}
+
+[general~="width:55:hover"]:hover {
+  width: 55%;
+}
+
+[general~="width:55:focus"]:focus {
+  width: 55%;
+}
+
+[general~="height:55"] {
+  height: 55%;
+}
+
+[general~="height:55:hover"]:hover {
+  height: 55%;
+}
+
+[general~="height:55:focus"]:focus {
+  height: 55%;
+}
+
+[general~="width:56"] {
+  width: 56%;
+}
+
+[general~="width:56:hover"]:hover {
+  width: 56%;
+}
+
+[general~="width:56:focus"]:focus {
+  width: 56%;
+}
+
+[general~="height:56"] {
+  height: 56%;
+}
+
+[general~="height:56:hover"]:hover {
+  height: 56%;
+}
+
+[general~="height:56:focus"]:focus {
+  height: 56%;
+}
+
+[general~="width:57"] {
+  width: 57%;
+}
+
+[general~="width:57:hover"]:hover {
+  width: 57%;
+}
+
+[general~="width:57:focus"]:focus {
+  width: 57%;
+}
+
+[general~="height:57"] {
+  height: 57%;
+}
+
+[general~="height:57:hover"]:hover {
+  height: 57%;
+}
+
+[general~="height:57:focus"]:focus {
+  height: 57%;
+}
+
+[general~="width:58"] {
+  width: 58%;
+}
+
+[general~="width:58:hover"]:hover {
+  width: 58%;
+}
+
+[general~="width:58:focus"]:focus {
+  width: 58%;
+}
+
+[general~="height:58"] {
+  height: 58%;
+}
+
+[general~="height:58:hover"]:hover {
+  height: 58%;
+}
+
+[general~="height:58:focus"]:focus {
+  height: 58%;
+}
+
+[general~="width:59"] {
+  width: 59%;
+}
+
+[general~="width:59:hover"]:hover {
+  width: 59%;
+}
+
+[general~="width:59:focus"]:focus {
+  width: 59%;
+}
+
+[general~="height:59"] {
+  height: 59%;
+}
+
+[general~="height:59:hover"]:hover {
+  height: 59%;
+}
+
+[general~="height:59:focus"]:focus {
+  height: 59%;
+}
+
+[general~="width:60"] {
+  width: 60%;
+}
+
+[general~="width:60:hover"]:hover {
+  width: 60%;
+}
+
+[general~="width:60:focus"]:focus {
+  width: 60%;
+}
+
+[general~="height:60"] {
+  height: 60%;
+}
+
+[general~="height:60:hover"]:hover {
+  height: 60%;
+}
+
+[general~="height:60:focus"]:focus {
+  height: 60%;
+}
+
+[general~="width:61"] {
+  width: 61%;
+}
+
+[general~="width:61:hover"]:hover {
+  width: 61%;
+}
+
+[general~="width:61:focus"]:focus {
+  width: 61%;
+}
+
+[general~="height:61"] {
+  height: 61%;
+}
+
+[general~="height:61:hover"]:hover {
+  height: 61%;
+}
+
+[general~="height:61:focus"]:focus {
+  height: 61%;
+}
+
+[general~="width:62"] {
+  width: 62%;
+}
+
+[general~="width:62:hover"]:hover {
+  width: 62%;
+}
+
+[general~="width:62:focus"]:focus {
+  width: 62%;
+}
+
+[general~="height:62"] {
+  height: 62%;
+}
+
+[general~="height:62:hover"]:hover {
+  height: 62%;
+}
+
+[general~="height:62:focus"]:focus {
+  height: 62%;
+}
+
+[general~="width:63"] {
+  width: 63%;
+}
+
+[general~="width:63:hover"]:hover {
+  width: 63%;
+}
+
+[general~="width:63:focus"]:focus {
+  width: 63%;
+}
+
+[general~="height:63"] {
+  height: 63%;
+}
+
+[general~="height:63:hover"]:hover {
+  height: 63%;
+}
+
+[general~="height:63:focus"]:focus {
+  height: 63%;
+}
+
+[general~="width:64"] {
+  width: 64%;
+}
+
+[general~="width:64:hover"]:hover {
+  width: 64%;
+}
+
+[general~="width:64:focus"]:focus {
+  width: 64%;
+}
+
+[general~="height:64"] {
+  height: 64%;
+}
+
+[general~="height:64:hover"]:hover {
+  height: 64%;
+}
+
+[general~="height:64:focus"]:focus {
+  height: 64%;
+}
+
+[general~="width:65"] {
+  width: 65%;
+}
+
+[general~="width:65:hover"]:hover {
+  width: 65%;
+}
+
+[general~="width:65:focus"]:focus {
+  width: 65%;
+}
+
+[general~="height:65"] {
+  height: 65%;
+}
+
+[general~="height:65:hover"]:hover {
+  height: 65%;
+}
+
+[general~="height:65:focus"]:focus {
+  height: 65%;
+}
+
+[general~="width:66"] {
+  width: 66%;
+}
+
+[general~="width:66:hover"]:hover {
+  width: 66%;
+}
+
+[general~="width:66:focus"]:focus {
+  width: 66%;
+}
+
+[general~="height:66"] {
+  height: 66%;
+}
+
+[general~="height:66:hover"]:hover {
+  height: 66%;
+}
+
+[general~="height:66:focus"]:focus {
+  height: 66%;
+}
+
+[general~="width:67"] {
+  width: 67%;
+}
+
+[general~="width:67:hover"]:hover {
+  width: 67%;
+}
+
+[general~="width:67:focus"]:focus {
+  width: 67%;
+}
+
+[general~="height:67"] {
+  height: 67%;
+}
+
+[general~="height:67:hover"]:hover {
+  height: 67%;
+}
+
+[general~="height:67:focus"]:focus {
+  height: 67%;
+}
+
+[general~="width:68"] {
+  width: 68%;
+}
+
+[general~="width:68:hover"]:hover {
+  width: 68%;
+}
+
+[general~="width:68:focus"]:focus {
+  width: 68%;
+}
+
+[general~="height:68"] {
+  height: 68%;
+}
+
+[general~="height:68:hover"]:hover {
+  height: 68%;
+}
+
+[general~="height:68:focus"]:focus {
+  height: 68%;
+}
+
+[general~="width:69"] {
+  width: 69%;
+}
+
+[general~="width:69:hover"]:hover {
+  width: 69%;
+}
+
+[general~="width:69:focus"]:focus {
+  width: 69%;
+}
+
+[general~="height:69"] {
+  height: 69%;
+}
+
+[general~="height:69:hover"]:hover {
+  height: 69%;
+}
+
+[general~="height:69:focus"]:focus {
+  height: 69%;
+}
+
+[general~="width:70"] {
+  width: 70%;
+}
+
+[general~="width:70:hover"]:hover {
+  width: 70%;
+}
+
+[general~="width:70:focus"]:focus {
+  width: 70%;
+}
+
+[general~="height:70"] {
+  height: 70%;
+}
+
+[general~="height:70:hover"]:hover {
+  height: 70%;
+}
+
+[general~="height:70:focus"]:focus {
+  height: 70%;
+}
+
+[general~="width:71"] {
+  width: 71%;
+}
+
+[general~="width:71:hover"]:hover {
+  width: 71%;
+}
+
+[general~="width:71:focus"]:focus {
+  width: 71%;
+}
+
+[general~="height:71"] {
+  height: 71%;
+}
+
+[general~="height:71:hover"]:hover {
+  height: 71%;
+}
+
+[general~="height:71:focus"]:focus {
+  height: 71%;
+}
+
+[general~="width:72"] {
+  width: 72%;
+}
+
+[general~="width:72:hover"]:hover {
+  width: 72%;
+}
+
+[general~="width:72:focus"]:focus {
+  width: 72%;
+}
+
+[general~="height:72"] {
+  height: 72%;
+}
+
+[general~="height:72:hover"]:hover {
+  height: 72%;
+}
+
+[general~="height:72:focus"]:focus {
+  height: 72%;
+}
+
+[general~="width:73"] {
+  width: 73%;
+}
+
+[general~="width:73:hover"]:hover {
+  width: 73%;
+}
+
+[general~="width:73:focus"]:focus {
+  width: 73%;
+}
+
+[general~="height:73"] {
+  height: 73%;
+}
+
+[general~="height:73:hover"]:hover {
+  height: 73%;
+}
+
+[general~="height:73:focus"]:focus {
+  height: 73%;
+}
+
+[general~="width:74"] {
+  width: 74%;
+}
+
+[general~="width:74:hover"]:hover {
+  width: 74%;
+}
+
+[general~="width:74:focus"]:focus {
+  width: 74%;
+}
+
+[general~="height:74"] {
+  height: 74%;
+}
+
+[general~="height:74:hover"]:hover {
+  height: 74%;
+}
+
+[general~="height:74:focus"]:focus {
+  height: 74%;
+}
+
+[general~="width:75"] {
+  width: 75%;
+}
+
+[general~="width:75:hover"]:hover {
+  width: 75%;
+}
+
+[general~="width:75:focus"]:focus {
+  width: 75%;
+}
+
+[general~="height:75"] {
+  height: 75%;
+}
+
+[general~="height:75:hover"]:hover {
+  height: 75%;
+}
+
+[general~="height:75:focus"]:focus {
+  height: 75%;
+}
+
+[general~="width:76"] {
+  width: 76%;
+}
+
+[general~="width:76:hover"]:hover {
+  width: 76%;
+}
+
+[general~="width:76:focus"]:focus {
+  width: 76%;
+}
+
+[general~="height:76"] {
+  height: 76%;
+}
+
+[general~="height:76:hover"]:hover {
+  height: 76%;
+}
+
+[general~="height:76:focus"]:focus {
+  height: 76%;
+}
+
+[general~="width:77"] {
+  width: 77%;
+}
+
+[general~="width:77:hover"]:hover {
+  width: 77%;
+}
+
+[general~="width:77:focus"]:focus {
+  width: 77%;
+}
+
+[general~="height:77"] {
+  height: 77%;
+}
+
+[general~="height:77:hover"]:hover {
+  height: 77%;
+}
+
+[general~="height:77:focus"]:focus {
+  height: 77%;
+}
+
+[general~="width:78"] {
+  width: 78%;
+}
+
+[general~="width:78:hover"]:hover {
+  width: 78%;
+}
+
+[general~="width:78:focus"]:focus {
+  width: 78%;
+}
+
+[general~="height:78"] {
+  height: 78%;
+}
+
+[general~="height:78:hover"]:hover {
+  height: 78%;
+}
+
+[general~="height:78:focus"]:focus {
+  height: 78%;
+}
+
+[general~="width:79"] {
+  width: 79%;
+}
+
+[general~="width:79:hover"]:hover {
+  width: 79%;
+}
+
+[general~="width:79:focus"]:focus {
+  width: 79%;
+}
+
+[general~="height:79"] {
+  height: 79%;
+}
+
+[general~="height:79:hover"]:hover {
+  height: 79%;
+}
+
+[general~="height:79:focus"]:focus {
+  height: 79%;
+}
+
+[general~="width:80"] {
+  width: 80%;
+}
+
+[general~="width:80:hover"]:hover {
+  width: 80%;
+}
+
+[general~="width:80:focus"]:focus {
+  width: 80%;
+}
+
+[general~="height:80"] {
+  height: 80%;
+}
+
+[general~="height:80:hover"]:hover {
+  height: 80%;
+}
+
+[general~="height:80:focus"]:focus {
+  height: 80%;
+}
+
+[general~="width:81"] {
+  width: 81%;
+}
+
+[general~="width:81:hover"]:hover {
+  width: 81%;
+}
+
+[general~="width:81:focus"]:focus {
+  width: 81%;
+}
+
+[general~="height:81"] {
+  height: 81%;
+}
+
+[general~="height:81:hover"]:hover {
+  height: 81%;
+}
+
+[general~="height:81:focus"]:focus {
+  height: 81%;
+}
+
+[general~="width:82"] {
+  width: 82%;
+}
+
+[general~="width:82:hover"]:hover {
+  width: 82%;
+}
+
+[general~="width:82:focus"]:focus {
+  width: 82%;
+}
+
+[general~="height:82"] {
+  height: 82%;
+}
+
+[general~="height:82:hover"]:hover {
+  height: 82%;
+}
+
+[general~="height:82:focus"]:focus {
+  height: 82%;
+}
+
+[general~="width:83"] {
+  width: 83%;
+}
+
+[general~="width:83:hover"]:hover {
+  width: 83%;
+}
+
+[general~="width:83:focus"]:focus {
+  width: 83%;
+}
+
+[general~="height:83"] {
+  height: 83%;
+}
+
+[general~="height:83:hover"]:hover {
+  height: 83%;
+}
+
+[general~="height:83:focus"]:focus {
+  height: 83%;
+}
+
+[general~="width:84"] {
+  width: 84%;
+}
+
+[general~="width:84:hover"]:hover {
+  width: 84%;
+}
+
+[general~="width:84:focus"]:focus {
+  width: 84%;
+}
+
+[general~="height:84"] {
+  height: 84%;
+}
+
+[general~="height:84:hover"]:hover {
+  height: 84%;
+}
+
+[general~="height:84:focus"]:focus {
+  height: 84%;
+}
+
+[general~="width:85"] {
+  width: 85%;
+}
+
+[general~="width:85:hover"]:hover {
+  width: 85%;
+}
+
+[general~="width:85:focus"]:focus {
+  width: 85%;
+}
+
+[general~="height:85"] {
+  height: 85%;
+}
+
+[general~="height:85:hover"]:hover {
+  height: 85%;
+}
+
+[general~="height:85:focus"]:focus {
+  height: 85%;
+}
+
+[general~="width:86"] {
+  width: 86%;
+}
+
+[general~="width:86:hover"]:hover {
+  width: 86%;
+}
+
+[general~="width:86:focus"]:focus {
+  width: 86%;
+}
+
+[general~="height:86"] {
+  height: 86%;
+}
+
+[general~="height:86:hover"]:hover {
+  height: 86%;
+}
+
+[general~="height:86:focus"]:focus {
+  height: 86%;
+}
+
+[general~="width:87"] {
+  width: 87%;
+}
+
+[general~="width:87:hover"]:hover {
+  width: 87%;
+}
+
+[general~="width:87:focus"]:focus {
+  width: 87%;
+}
+
+[general~="height:87"] {
+  height: 87%;
+}
+
+[general~="height:87:hover"]:hover {
+  height: 87%;
+}
+
+[general~="height:87:focus"]:focus {
+  height: 87%;
+}
+
+[general~="width:88"] {
+  width: 88%;
+}
+
+[general~="width:88:hover"]:hover {
+  width: 88%;
+}
+
+[general~="width:88:focus"]:focus {
+  width: 88%;
+}
+
+[general~="height:88"] {
+  height: 88%;
+}
+
+[general~="height:88:hover"]:hover {
+  height: 88%;
+}
+
+[general~="height:88:focus"]:focus {
+  height: 88%;
+}
+
+[general~="width:89"] {
+  width: 89%;
+}
+
+[general~="width:89:hover"]:hover {
+  width: 89%;
+}
+
+[general~="width:89:focus"]:focus {
+  width: 89%;
+}
+
+[general~="height:89"] {
+  height: 89%;
+}
+
+[general~="height:89:hover"]:hover {
+  height: 89%;
+}
+
+[general~="height:89:focus"]:focus {
+  height: 89%;
+}
+
+[general~="width:90"] {
+  width: 90%;
+}
+
+[general~="width:90:hover"]:hover {
+  width: 90%;
+}
+
+[general~="width:90:focus"]:focus {
+  width: 90%;
+}
+
+[general~="height:90"] {
+  height: 90%;
+}
+
+[general~="height:90:hover"]:hover {
+  height: 90%;
+}
+
+[general~="height:90:focus"]:focus {
+  height: 90%;
+}
+
+[general~="width:91"] {
+  width: 91%;
+}
+
+[general~="width:91:hover"]:hover {
+  width: 91%;
+}
+
+[general~="width:91:focus"]:focus {
+  width: 91%;
+}
+
+[general~="height:91"] {
+  height: 91%;
+}
+
+[general~="height:91:hover"]:hover {
+  height: 91%;
+}
+
+[general~="height:91:focus"]:focus {
+  height: 91%;
+}
+
+[general~="width:92"] {
+  width: 92%;
+}
+
+[general~="width:92:hover"]:hover {
+  width: 92%;
+}
+
+[general~="width:92:focus"]:focus {
+  width: 92%;
+}
+
+[general~="height:92"] {
+  height: 92%;
+}
+
+[general~="height:92:hover"]:hover {
+  height: 92%;
+}
+
+[general~="height:92:focus"]:focus {
+  height: 92%;
+}
+
+[general~="width:93"] {
+  width: 93%;
+}
+
+[general~="width:93:hover"]:hover {
+  width: 93%;
+}
+
+[general~="width:93:focus"]:focus {
+  width: 93%;
+}
+
+[general~="height:93"] {
+  height: 93%;
+}
+
+[general~="height:93:hover"]:hover {
+  height: 93%;
+}
+
+[general~="height:93:focus"]:focus {
+  height: 93%;
+}
+
+[general~="width:94"] {
+  width: 94%;
+}
+
+[general~="width:94:hover"]:hover {
+  width: 94%;
+}
+
+[general~="width:94:focus"]:focus {
+  width: 94%;
+}
+
+[general~="height:94"] {
+  height: 94%;
+}
+
+[general~="height:94:hover"]:hover {
+  height: 94%;
+}
+
+[general~="height:94:focus"]:focus {
+  height: 94%;
+}
+
+[general~="width:95"] {
+  width: 95%;
+}
+
+[general~="width:95:hover"]:hover {
+  width: 95%;
+}
+
+[general~="width:95:focus"]:focus {
+  width: 95%;
+}
+
+[general~="height:95"] {
+  height: 95%;
+}
+
+[general~="height:95:hover"]:hover {
+  height: 95%;
+}
+
+[general~="height:95:focus"]:focus {
+  height: 95%;
+}
+
+[general~="width:96"] {
+  width: 96%;
+}
+
+[general~="width:96:hover"]:hover {
+  width: 96%;
+}
+
+[general~="width:96:focus"]:focus {
+  width: 96%;
+}
+
+[general~="height:96"] {
+  height: 96%;
+}
+
+[general~="height:96:hover"]:hover {
+  height: 96%;
+}
+
+[general~="height:96:focus"]:focus {
+  height: 96%;
+}
+
+[general~="width:97"] {
+  width: 97%;
+}
+
+[general~="width:97:hover"]:hover {
+  width: 97%;
+}
+
+[general~="width:97:focus"]:focus {
+  width: 97%;
+}
+
+[general~="height:97"] {
+  height: 97%;
+}
+
+[general~="height:97:hover"]:hover {
+  height: 97%;
+}
+
+[general~="height:97:focus"]:focus {
+  height: 97%;
+}
+
+[general~="width:98"] {
+  width: 98%;
+}
+
+[general~="width:98:hover"]:hover {
+  width: 98%;
+}
+
+[general~="width:98:focus"]:focus {
+  width: 98%;
+}
+
+[general~="height:98"] {
+  height: 98%;
+}
+
+[general~="height:98:hover"]:hover {
+  height: 98%;
+}
+
+[general~="height:98:focus"]:focus {
+  height: 98%;
+}
+
+[general~="width:99"] {
+  width: 99%;
+}
+
+[general~="width:99:hover"]:hover {
+  width: 99%;
+}
+
+[general~="width:99:focus"]:focus {
+  width: 99%;
+}
+
+[general~="height:99"] {
+  height: 99%;
+}
+
+[general~="height:99:hover"]:hover {
+  height: 99%;
+}
+
+[general~="height:99:focus"]:focus {
+  height: 99%;
+}
+
+[general~="width:100"] {
+  width: 100%;
+}
+
+[general~="width:100:hover"]:hover {
+  width: 100%;
+}
+
+[general~="width:100:focus"]:focus {
+  width: 100%;
+}
+
+[general~="height:100"] {
+  height: 100%;
+}
+
+[general~="height:100:hover"]:hover {
+  height: 100%;
+}
+
+[general~="height:100:focus"]:focus {
+  height: 100%;
+}
+
+/* colors */
+[general~="color:primary"] {
+  color: #3498db;
+}
+
+[general~="color:primary:hover"]:hover {
+  color: #3498db;
+}
+
+[general~="color:primary:focus"]:focus {
+  color: #3498db;
+}
+
+[general~="bg:primary"] {
+  background-color: #3498db;
+}
+
+[general~="bg:primary:hover"]:hover {
+  background-color: #3498db;
+}
+
+[general~="bg:primary:focus"]:focus {
+  background-color: #3498db;
+}
+
+[general~="brc:primary"] {
+  border-color: #3498db;
+}
+
+[general~="brc:primary:hover"]:hover {
+  border-color: #3498db;
+}
+
+[general~="brc:primary:focus"]:focus {
+  border-color: #3498db;
+}
+
+[general~="color:secondary"] {
+  color: #99a3a4;
+}
+
+[general~="color:secondary:hover"]:hover {
+  color: #99a3a4;
+}
+
+[general~="color:secondary:focus"]:focus {
+  color: #99a3a4;
+}
+
+[general~="bg:secondary"] {
+  background-color: #99a3a4;
+}
+
+[general~="bg:secondary:hover"]:hover {
+  background-color: #99a3a4;
+}
+
+[general~="bg:secondary:focus"]:focus {
+  background-color: #99a3a4;
+}
+
+[general~="brc:secondary"] {
+  border-color: #99a3a4;
+}
+
+[general~="brc:secondary:hover"]:hover {
+  border-color: #99a3a4;
+}
+
+[general~="brc:secondary:focus"]:focus {
+  border-color: #99a3a4;
+}
+
+[general~="color:success"] {
+  color: #1abc9c;
+}
+
+[general~="color:success:hover"]:hover {
+  color: #1abc9c;
+}
+
+[general~="color:success:focus"]:focus {
+  color: #1abc9c;
+}
+
+[general~="bg:success"] {
+  background-color: #1abc9c;
+}
+
+[general~="bg:success:hover"]:hover {
+  background-color: #1abc9c;
+}
+
+[general~="bg:success:focus"]:focus {
+  background-color: #1abc9c;
+}
+
+[general~="brc:success"] {
+  border-color: #1abc9c;
+}
+
+[general~="brc:success:hover"]:hover {
+  border-color: #1abc9c;
+}
+
+[general~="brc:success:focus"]:focus {
+  border-color: #1abc9c;
+}
+
+[general~="color:danger"] {
+  color: #e74c3c;
+}
+
+[general~="color:danger:hover"]:hover {
+  color: #e74c3c;
+}
+
+[general~="color:danger:focus"]:focus {
+  color: #e74c3c;
+}
+
+[general~="bg:danger"] {
+  background-color: #e74c3c;
+}
+
+[general~="bg:danger:hover"]:hover {
+  background-color: #e74c3c;
+}
+
+[general~="bg:danger:focus"]:focus {
+  background-color: #e74c3c;
+}
+
+[general~="brc:danger"] {
+  border-color: #e74c3c;
+}
+
+[general~="brc:danger:hover"]:hover {
+  border-color: #e74c3c;
+}
+
+[general~="brc:danger:focus"]:focus {
+  border-color: #e74c3c;
+}
+
+[general~="color:warning"] {
+  color: #f1c40f;
+}
+
+[general~="color:warning:hover"]:hover {
+  color: #f1c40f;
+}
+
+[general~="color:warning:focus"]:focus {
+  color: #f1c40f;
+}
+
+[general~="bg:warning"] {
+  background-color: #f1c40f;
+}
+
+[general~="bg:warning:hover"]:hover {
+  background-color: #f1c40f;
+}
+
+[general~="bg:warning:focus"]:focus {
+  background-color: #f1c40f;
+}
+
+[general~="brc:warning"] {
+  border-color: #f1c40f;
+}
+
+[general~="brc:warning:hover"]:hover {
+  border-color: #f1c40f;
+}
+
+[general~="brc:warning:focus"]:focus {
+  border-color: #f1c40f;
+}
+
+[general~="color:info"] {
+  color: #85c1e9;
+}
+
+[general~="color:info:hover"]:hover {
+  color: #85c1e9;
+}
+
+[general~="color:info:focus"]:focus {
+  color: #85c1e9;
+}
+
+[general~="bg:info"] {
+  background-color: #85c1e9;
+}
+
+[general~="bg:info:hover"]:hover {
+  background-color: #85c1e9;
+}
+
+[general~="bg:info:focus"]:focus {
+  background-color: #85c1e9;
+}
+
+[general~="brc:info"] {
+  border-color: #85c1e9;
+}
+
+[general~="brc:info:hover"]:hover {
+  border-color: #85c1e9;
+}
+
+[general~="brc:info:focus"]:focus {
+  border-color: #85c1e9;
+}
+
+[general~="color:dark"], a {
+  color: #17202a;
+}
+
+[general~="color:dark:hover"]:hover {
+  color: #17202a;
+}
+
+[general~="color:dark:focus"]:focus {
+  color: #17202a;
+}
+
+[general~="bg:dark"] {
+  background-color: #17202a;
+}
+
+[general~="bg:dark:hover"]:hover {
+  background-color: #17202a;
+}
+
+[general~="bg:dark:focus"]:focus {
+  background-color: #17202a;
+}
+
+[general~="brc:dark"] {
+  border-color: #17202a;
+}
+
+[general~="brc:dark:hover"]:hover {
+  border-color: #17202a;
+}
+
+[general~="brc:dark:focus"]:focus {
+  border-color: #17202a;
+}
+
+[general~="color:muted"] {
+  color: #eaecee;
+}
+
+[general~="color:muted:hover"]:hover {
+  color: #eaecee;
+}
+
+[general~="color:muted:focus"]:focus {
+  color: #eaecee;
+}
+
+[general~="bg:muted"] {
+  background-color: #eaecee;
+}
+
+[general~="bg:muted:hover"]:hover {
+  background-color: #eaecee;
+}
+
+[general~="bg:muted:focus"]:focus {
+  background-color: #eaecee;
+}
+
+[general~="brc:muted"], [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {
+  border-color: #eaecee;
+}
+
+[general~="brc:muted:hover"]:hover {
+  border-color: #eaecee;
+}
+
+[general~="brc:muted:focus"]:focus {
+  border-color: #eaecee;
+}
+
+[general~="color:white"] {
+  color: #fff;
+}
+
+[general~="color:white:hover"]:hover {
+  color: #fff;
+}
+
+[general~="color:white:focus"]:focus {
+  color: #fff;
+}
+
+[general~="bg:white"], [default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {
+  background-color: #fff;
+}
+
+[general~="bg:white:hover"]:hover {
+  background-color: #fff;
+}
+
+[general~="bg:white:focus"]:focus {
+  background-color: #fff;
+}
+
+[general~="brc:white"] {
+  border-color: #fff;
+}
+
+[general~="brc:white:hover"]:hover {
+  border-color: #fff;
+}
+
+[general~="brc:white:focus"]:focus {
+  border-color: #fff;
+}
+
+[general~="color:yellow"] {
+  color: #ffeb3b;
+}
+
+[general~="color:yellow:hover"]:hover {
+  color: #ffeb3b;
+}
+
+[general~="color:yellow:focus"]:focus {
+  color: #ffeb3b;
+}
+
+[general~="bg:yellow"] {
+  background-color: #ffeb3b;
+}
+
+[general~="bg:yellow:hover"]:hover {
+  background-color: #ffeb3b;
+}
+
+[general~="bg:yellow:focus"]:focus {
+  background-color: #ffeb3b;
+}
+
+[general~="brc:yellow"] {
+  border-color: #ffeb3b;
+}
+
+[general~="brc:yellow:hover"]:hover {
+  border-color: #ffeb3b;
+}
+
+[general~="brc:yellow:focus"]:focus {
+  border-color: #ffeb3b;
+}
+
+[general~="color:yellow6"] {
+  color: yellow;
+}
+
+[general~="color:yellow6:hover"]:hover {
+  color: yellow;
+}
+
+[general~="color:yellow6:focus"]:focus {
+  color: yellow;
+}
+
+[general~="bg:yellow6"] {
+  background-color: yellow;
+}
+
+[general~="bg:yellow6:hover"]:hover {
+  background-color: yellow;
+}
+
+[general~="bg:yellow6:focus"]:focus {
+  background-color: yellow;
+}
+
+[general~="brc:yellow6"] {
+  border-color: yellow;
+}
+
+[general~="brc:yellow6:hover"]:hover {
+  border-color: yellow;
+}
+
+[general~="brc:yellow6:focus"]:focus {
+  border-color: yellow;
+}
+
+[general~="color:yellow2"] {
+  color: #fff9c4;
+}
+
+[general~="color:yellow2:hover"]:hover {
+  color: #fff9c4;
+}
+
+[general~="color:yellow2:focus"]:focus {
+  color: #fff9c4;
+}
+
+[general~="bg:yellow2"] {
+  background-color: #fff9c4;
+}
+
+[general~="bg:yellow2:hover"]:hover {
+  background-color: #fff9c4;
+}
+
+[general~="bg:yellow2:focus"]:focus {
+  background-color: #fff9c4;
+}
+
+[general~="brc:yellow2"] {
+  border-color: #fff9c4;
+}
+
+[general~="brc:yellow2:hover"]:hover {
+  border-color: #fff9c4;
+}
+
+[general~="brc:yellow2:focus"]:focus {
+  border-color: #fff9c4;
+}
+
+[general~="color:yellow3"] {
+  color: #fff59d;
+}
+
+[general~="color:yellow3:hover"]:hover {
+  color: #fff59d;
+}
+
+[general~="color:yellow3:focus"]:focus {
+  color: #fff59d;
+}
+
+[general~="bg:yellow3"] {
+  background-color: #fff59d;
+}
+
+[general~="bg:yellow3:hover"]:hover {
+  background-color: #fff59d;
+}
+
+[general~="bg:yellow3:focus"]:focus {
+  background-color: #fff59d;
+}
+
+[general~="brc:yellow3"] {
+  border-color: #fff59d;
+}
+
+[general~="brc:yellow3:hover"]:hover {
+  border-color: #fff59d;
+}
+
+[general~="brc:yellow3:focus"]:focus {
+  border-color: #fff59d;
+}
+
+[general~="color:yellow4"] {
+  color: #fff176;
+}
+
+[general~="color:yellow4:hover"]:hover {
+  color: #fff176;
+}
+
+[general~="color:yellow4:focus"]:focus {
+  color: #fff176;
+}
+
+[general~="bg:yellow4"] {
+  background-color: #fff176;
+}
+
+[general~="bg:yellow4:hover"]:hover {
+  background-color: #fff176;
+}
+
+[general~="bg:yellow4:focus"]:focus {
+  background-color: #fff176;
+}
+
+[general~="brc:yellow4"] {
+  border-color: #fff176;
+}
+
+[general~="brc:yellow4:hover"]:hover {
+  border-color: #fff176;
+}
+
+[general~="brc:yellow4:focus"]:focus {
+  border-color: #fff176;
+}
+
+[general~="color:yellow5"] {
+  color: #ffee58;
+}
+
+[general~="color:yellow5:hover"]:hover {
+  color: #ffee58;
+}
+
+[general~="color:yellow5:focus"]:focus {
+  color: #ffee58;
+}
+
+[general~="bg:yellow5"] {
+  background-color: #ffee58;
+}
+
+[general~="bg:yellow5:hover"]:hover {
+  background-color: #ffee58;
+}
+
+[general~="bg:yellow5:focus"]:focus {
+  background-color: #ffee58;
+}
+
+[general~="brc:yellow5"] {
+  border-color: #ffee58;
+}
+
+[general~="brc:yellow5:hover"]:hover {
+  border-color: #ffee58;
+}
+
+[general~="brc:yellow5:focus"]:focus {
+  border-color: #ffee58;
+}
+
+[general~="color:yellow7"] {
+  color: #fdd835;
+}
+
+[general~="color:yellow7:hover"]:hover {
+  color: #fdd835;
+}
+
+[general~="color:yellow7:focus"]:focus {
+  color: #fdd835;
+}
+
+[general~="bg:yellow7"] {
+  background-color: #fdd835;
+}
+
+[general~="bg:yellow7:hover"]:hover {
+  background-color: #fdd835;
+}
+
+[general~="bg:yellow7:focus"]:focus {
+  background-color: #fdd835;
+}
+
+[general~="brc:yellow7"] {
+  border-color: #fdd835;
+}
+
+[general~="brc:yellow7:hover"]:hover {
+  border-color: #fdd835;
+}
+
+[general~="brc:yellow7:focus"]:focus {
+  border-color: #fdd835;
+}
+
+[general~="color:yellow8"] {
+  color: #fbc02d;
+}
+
+[general~="color:yellow8:hover"]:hover {
+  color: #fbc02d;
+}
+
+[general~="color:yellow8:focus"]:focus {
+  color: #fbc02d;
+}
+
+[general~="bg:yellow8"] {
+  background-color: #fbc02d;
+}
+
+[general~="bg:yellow8:hover"]:hover {
+  background-color: #fbc02d;
+}
+
+[general~="bg:yellow8:focus"]:focus {
+  background-color: #fbc02d;
+}
+
+[general~="brc:yellow8"] {
+  border-color: #fbc02d;
+}
+
+[general~="brc:yellow8:hover"]:hover {
+  border-color: #fbc02d;
+}
+
+[general~="brc:yellow8:focus"]:focus {
+  border-color: #fbc02d;
+}
+
+[general~="color:yellow9"] {
+  color: #f9a825;
+}
+
+[general~="color:yellow9:hover"]:hover {
+  color: #f9a825;
+}
+
+[general~="color:yellow9:focus"]:focus {
+  color: #f9a825;
+}
+
+[general~="bg:yellow9"] {
+  background-color: #f9a825;
+}
+
+[general~="bg:yellow9:hover"]:hover {
+  background-color: #f9a825;
+}
+
+[general~="bg:yellow9:focus"]:focus {
+  background-color: #f9a825;
+}
+
+[general~="brc:yellow9"] {
+  border-color: #f9a825;
+}
+
+[general~="brc:yellow9:hover"]:hover {
+  border-color: #f9a825;
+}
+
+[general~="brc:yellow9:focus"]:focus {
+  border-color: #f9a825;
+}
+
+[general~="color:yellow10"] {
+  color: #f57f17;
+}
+
+[general~="color:yellow10:hover"]:hover {
+  color: #f57f17;
+}
+
+[general~="color:yellow10:focus"]:focus {
+  color: #f57f17;
+}
+
+[general~="bg:yellow10"] {
+  background-color: #f57f17;
+}
+
+[general~="bg:yellow10:hover"]:hover {
+  background-color: #f57f17;
+}
+
+[general~="bg:yellow10:focus"]:focus {
+  background-color: #f57f17;
+}
+
+[general~="brc:yellow10"] {
+  border-color: #f57f17;
+}
+
+[general~="brc:yellow10:hover"]:hover {
+  border-color: #f57f17;
+}
+
+[general~="brc:yellow10:focus"]:focus {
+  border-color: #f57f17;
+}
+
+[general~="color:orange"] {
+  color: #ff9800;
+}
+
+[general~="color:orange:hover"]:hover {
+  color: #ff9800;
+}
+
+[general~="color:orange:focus"]:focus {
+  color: #ff9800;
+}
+
+[general~="bg:orange"] {
+  background-color: #ff9800;
+}
+
+[general~="bg:orange:hover"]:hover {
+  background-color: #ff9800;
+}
+
+[general~="bg:orange:focus"]:focus {
+  background-color: #ff9800;
+}
+
+[general~="brc:orange"] {
+  border-color: #ff9800;
+}
+
+[general~="brc:orange:hover"]:hover {
+  border-color: #ff9800;
+}
+
+[general~="brc:orange:focus"]:focus {
+  border-color: #ff9800;
+}
+
+[general~="color:orange6"] {
+  color: orange;
+}
+
+[general~="color:orange6:hover"]:hover {
+  color: orange;
+}
+
+[general~="color:orange6:focus"]:focus {
+  color: orange;
+}
+
+[general~="bg:orange6"] {
+  background-color: orange;
+}
+
+[general~="bg:orange6:hover"]:hover {
+  background-color: orange;
+}
+
+[general~="bg:orange6:focus"]:focus {
+  background-color: orange;
+}
+
+[general~="brc:orange6"] {
+  border-color: orange;
+}
+
+[general~="brc:orange6:hover"]:hover {
+  border-color: orange;
+}
+
+[general~="brc:orange6:focus"]:focus {
+  border-color: orange;
+}
+
+[general~="color:orange2"] {
+  color: #ffe0b2;
+}
+
+[general~="color:orange2:hover"]:hover {
+  color: #ffe0b2;
+}
+
+[general~="color:orange2:focus"]:focus {
+  color: #ffe0b2;
+}
+
+[general~="bg:orange2"] {
+  background-color: #ffe0b2;
+}
+
+[general~="bg:orange2:hover"]:hover {
+  background-color: #ffe0b2;
+}
+
+[general~="bg:orange2:focus"]:focus {
+  background-color: #ffe0b2;
+}
+
+[general~="brc:orange2"] {
+  border-color: #ffe0b2;
+}
+
+[general~="brc:orange2:hover"]:hover {
+  border-color: #ffe0b2;
+}
+
+[general~="brc:orange2:focus"]:focus {
+  border-color: #ffe0b2;
+}
+
+[general~="color:orange3"] {
+  color: #ffcc80;
+}
+
+[general~="color:orange3:hover"]:hover {
+  color: #ffcc80;
+}
+
+[general~="color:orange3:focus"]:focus {
+  color: #ffcc80;
+}
+
+[general~="bg:orange3"] {
+  background-color: #ffcc80;
+}
+
+[general~="bg:orange3:hover"]:hover {
+  background-color: #ffcc80;
+}
+
+[general~="bg:orange3:focus"]:focus {
+  background-color: #ffcc80;
+}
+
+[general~="brc:orange3"] {
+  border-color: #ffcc80;
+}
+
+[general~="brc:orange3:hover"]:hover {
+  border-color: #ffcc80;
+}
+
+[general~="brc:orange3:focus"]:focus {
+  border-color: #ffcc80;
+}
+
+[general~="color:orange4"] {
+  color: #ffb74d;
+}
+
+[general~="color:orange4:hover"]:hover {
+  color: #ffb74d;
+}
+
+[general~="color:orange4:focus"]:focus {
+  color: #ffb74d;
+}
+
+[general~="bg:orange4"] {
+  background-color: #ffb74d;
+}
+
+[general~="bg:orange4:hover"]:hover {
+  background-color: #ffb74d;
+}
+
+[general~="bg:orange4:focus"]:focus {
+  background-color: #ffb74d;
+}
+
+[general~="brc:orange4"] {
+  border-color: #ffb74d;
+}
+
+[general~="brc:orange4:hover"]:hover {
+  border-color: #ffb74d;
+}
+
+[general~="brc:orange4:focus"]:focus {
+  border-color: #ffb74d;
+}
+
+[general~="color:orange5"] {
+  color: #ffa726;
+}
+
+[general~="color:orange5:hover"]:hover {
+  color: #ffa726;
+}
+
+[general~="color:orange5:focus"]:focus {
+  color: #ffa726;
+}
+
+[general~="bg:orange5"] {
+  background-color: #ffa726;
+}
+
+[general~="bg:orange5:hover"]:hover {
+  background-color: #ffa726;
+}
+
+[general~="bg:orange5:focus"]:focus {
+  background-color: #ffa726;
+}
+
+[general~="brc:orange5"] {
+  border-color: #ffa726;
+}
+
+[general~="brc:orange5:hover"]:hover {
+  border-color: #ffa726;
+}
+
+[general~="brc:orange5:focus"]:focus {
+  border-color: #ffa726;
+}
+
+[general~="color:orange7"] {
+  color: #fb8c00;
+}
+
+[general~="color:orange7:hover"]:hover {
+  color: #fb8c00;
+}
+
+[general~="color:orange7:focus"]:focus {
+  color: #fb8c00;
+}
+
+[general~="bg:orange7"] {
+  background-color: #fb8c00;
+}
+
+[general~="bg:orange7:hover"]:hover {
+  background-color: #fb8c00;
+}
+
+[general~="bg:orange7:focus"]:focus {
+  background-color: #fb8c00;
+}
+
+[general~="brc:orange7"] {
+  border-color: #fb8c00;
+}
+
+[general~="brc:orange7:hover"]:hover {
+  border-color: #fb8c00;
+}
+
+[general~="brc:orange7:focus"]:focus {
+  border-color: #fb8c00;
+}
+
+[general~="color:orange8"] {
+  color: #f57c00;
+}
+
+[general~="color:orange8:hover"]:hover {
+  color: #f57c00;
+}
+
+[general~="color:orange8:focus"]:focus {
+  color: #f57c00;
+}
+
+[general~="bg:orange8"] {
+  background-color: #f57c00;
+}
+
+[general~="bg:orange8:hover"]:hover {
+  background-color: #f57c00;
+}
+
+[general~="bg:orange8:focus"]:focus {
+  background-color: #f57c00;
+}
+
+[general~="brc:orange8"] {
+  border-color: #f57c00;
+}
+
+[general~="brc:orange8:hover"]:hover {
+  border-color: #f57c00;
+}
+
+[general~="brc:orange8:focus"]:focus {
+  border-color: #f57c00;
+}
+
+[general~="color:orange9"] {
+  color: #ef6c00;
+}
+
+[general~="color:orange9:hover"]:hover {
+  color: #ef6c00;
+}
+
+[general~="color:orange9:focus"]:focus {
+  color: #ef6c00;
+}
+
+[general~="bg:orange9"] {
+  background-color: #ef6c00;
+}
+
+[general~="bg:orange9:hover"]:hover {
+  background-color: #ef6c00;
+}
+
+[general~="bg:orange9:focus"]:focus {
+  background-color: #ef6c00;
+}
+
+[general~="brc:orange9"] {
+  border-color: #ef6c00;
+}
+
+[general~="brc:orange9:hover"]:hover {
+  border-color: #ef6c00;
+}
+
+[general~="brc:orange9:focus"]:focus {
+  border-color: #ef6c00;
+}
+
+[general~="color:orange10"] {
+  color: #e65100;
+}
+
+[general~="color:orange10:hover"]:hover {
+  color: #e65100;
+}
+
+[general~="color:orange10:focus"]:focus {
+  color: #e65100;
+}
+
+[general~="bg:orange10"] {
+  background-color: #e65100;
+}
+
+[general~="bg:orange10:hover"]:hover {
+  background-color: #e65100;
+}
+
+[general~="bg:orange10:focus"]:focus {
+  background-color: #e65100;
+}
+
+[general~="brc:orange10"] {
+  border-color: #e65100;
+}
+
+[general~="brc:orange10:hover"]:hover {
+  border-color: #e65100;
+}
+
+[general~="brc:orange10:focus"]:focus {
+  border-color: #e65100;
+}
+
+[general~="color:dark-orange"] {
+  color: #ff5722;
+}
+
+[general~="color:dark-orange:hover"]:hover {
+  color: #ff5722;
+}
+
+[general~="color:dark-orange:focus"]:focus {
+  color: #ff5722;
+}
+
+[general~="bg:dark-orange"] {
+  background-color: #ff5722;
+}
+
+[general~="bg:dark-orange:hover"]:hover {
+  background-color: #ff5722;
+}
+
+[general~="bg:dark-orange:focus"]:focus {
+  background-color: #ff5722;
+}
+
+[general~="brc:dark-orange"] {
+  border-color: #ff5722;
+}
+
+[general~="brc:dark-orange:hover"]:hover {
+  border-color: #ff5722;
+}
+
+[general~="brc:dark-orange:focus"]:focus {
+  border-color: #ff5722;
+}
+
+[general~="color:dark-orange6"] {
+  color: dark-orange;
+}
+
+[general~="color:dark-orange6:hover"]:hover {
+  color: dark-orange;
+}
+
+[general~="color:dark-orange6:focus"]:focus {
+  color: dark-orange;
+}
+
+[general~="bg:dark-orange6"] {
+  background-color: dark-orange;
+}
+
+[general~="bg:dark-orange6:hover"]:hover {
+  background-color: dark-orange;
+}
+
+[general~="bg:dark-orange6:focus"]:focus {
+  background-color: dark-orange;
+}
+
+[general~="brc:dark-orange6"] {
+  border-color: dark-orange;
+}
+
+[general~="brc:dark-orange6:hover"]:hover {
+  border-color: dark-orange;
+}
+
+[general~="brc:dark-orange6:focus"]:focus {
+  border-color: dark-orange;
+}
+
+[general~="color:dark-orange2"] {
+  color: #ffccbc;
+}
+
+[general~="color:dark-orange2:hover"]:hover {
+  color: #ffccbc;
+}
+
+[general~="color:dark-orange2:focus"]:focus {
+  color: #ffccbc;
+}
+
+[general~="bg:dark-orange2"] {
+  background-color: #ffccbc;
+}
+
+[general~="bg:dark-orange2:hover"]:hover {
+  background-color: #ffccbc;
+}
+
+[general~="bg:dark-orange2:focus"]:focus {
+  background-color: #ffccbc;
+}
+
+[general~="brc:dark-orange2"] {
+  border-color: #ffccbc;
+}
+
+[general~="brc:dark-orange2:hover"]:hover {
+  border-color: #ffccbc;
+}
+
+[general~="brc:dark-orange2:focus"]:focus {
+  border-color: #ffccbc;
+}
+
+[general~="color:dark-orange3"] {
+  color: #ffab91;
+}
+
+[general~="color:dark-orange3:hover"]:hover {
+  color: #ffab91;
+}
+
+[general~="color:dark-orange3:focus"]:focus {
+  color: #ffab91;
+}
+
+[general~="bg:dark-orange3"] {
+  background-color: #ffab91;
+}
+
+[general~="bg:dark-orange3:hover"]:hover {
+  background-color: #ffab91;
+}
+
+[general~="bg:dark-orange3:focus"]:focus {
+  background-color: #ffab91;
+}
+
+[general~="brc:dark-orange3"] {
+  border-color: #ffab91;
+}
+
+[general~="brc:dark-orange3:hover"]:hover {
+  border-color: #ffab91;
+}
+
+[general~="brc:dark-orange3:focus"]:focus {
+  border-color: #ffab91;
+}
+
+[general~="color:dark-orange4"] {
+  color: #ff8a65;
+}
+
+[general~="color:dark-orange4:hover"]:hover {
+  color: #ff8a65;
+}
+
+[general~="color:dark-orange4:focus"]:focus {
+  color: #ff8a65;
+}
+
+[general~="bg:dark-orange4"] {
+  background-color: #ff8a65;
+}
+
+[general~="bg:dark-orange4:hover"]:hover {
+  background-color: #ff8a65;
+}
+
+[general~="bg:dark-orange4:focus"]:focus {
+  background-color: #ff8a65;
+}
+
+[general~="brc:dark-orange4"] {
+  border-color: #ff8a65;
+}
+
+[general~="brc:dark-orange4:hover"]:hover {
+  border-color: #ff8a65;
+}
+
+[general~="brc:dark-orange4:focus"]:focus {
+  border-color: #ff8a65;
+}
+
+[general~="color:dark-orange5"] {
+  color: #ff7043;
+}
+
+[general~="color:dark-orange5:hover"]:hover {
+  color: #ff7043;
+}
+
+[general~="color:dark-orange5:focus"]:focus {
+  color: #ff7043;
+}
+
+[general~="bg:dark-orange5"] {
+  background-color: #ff7043;
+}
+
+[general~="bg:dark-orange5:hover"]:hover {
+  background-color: #ff7043;
+}
+
+[general~="bg:dark-orange5:focus"]:focus {
+  background-color: #ff7043;
+}
+
+[general~="brc:dark-orange5"] {
+  border-color: #ff7043;
+}
+
+[general~="brc:dark-orange5:hover"]:hover {
+  border-color: #ff7043;
+}
+
+[general~="brc:dark-orange5:focus"]:focus {
+  border-color: #ff7043;
+}
+
+[general~="color:dark-orange7"] {
+  color: #f4511e;
+}
+
+[general~="color:dark-orange7:hover"]:hover {
+  color: #f4511e;
+}
+
+[general~="color:dark-orange7:focus"]:focus {
+  color: #f4511e;
+}
+
+[general~="bg:dark-orange7"] {
+  background-color: #f4511e;
+}
+
+[general~="bg:dark-orange7:hover"]:hover {
+  background-color: #f4511e;
+}
+
+[general~="bg:dark-orange7:focus"]:focus {
+  background-color: #f4511e;
+}
+
+[general~="brc:dark-orange7"] {
+  border-color: #f4511e;
+}
+
+[general~="brc:dark-orange7:hover"]:hover {
+  border-color: #f4511e;
+}
+
+[general~="brc:dark-orange7:focus"]:focus {
+  border-color: #f4511e;
+}
+
+[general~="color:dark-orange8"] {
+  color: #e64a19;
+}
+
+[general~="color:dark-orange8:hover"]:hover {
+  color: #e64a19;
+}
+
+[general~="color:dark-orange8:focus"]:focus {
+  color: #e64a19;
+}
+
+[general~="bg:dark-orange8"] {
+  background-color: #e64a19;
+}
+
+[general~="bg:dark-orange8:hover"]:hover {
+  background-color: #e64a19;
+}
+
+[general~="bg:dark-orange8:focus"]:focus {
+  background-color: #e64a19;
+}
+
+[general~="brc:dark-orange8"] {
+  border-color: #e64a19;
+}
+
+[general~="brc:dark-orange8:hover"]:hover {
+  border-color: #e64a19;
+}
+
+[general~="brc:dark-orange8:focus"]:focus {
+  border-color: #e64a19;
+}
+
+[general~="color:dark-orange9"] {
+  color: #d84315;
+}
+
+[general~="color:dark-orange9:hover"]:hover {
+  color: #d84315;
+}
+
+[general~="color:dark-orange9:focus"]:focus {
+  color: #d84315;
+}
+
+[general~="bg:dark-orange9"] {
+  background-color: #d84315;
+}
+
+[general~="bg:dark-orange9:hover"]:hover {
+  background-color: #d84315;
+}
+
+[general~="bg:dark-orange9:focus"]:focus {
+  background-color: #d84315;
+}
+
+[general~="brc:dark-orange9"] {
+  border-color: #d84315;
+}
+
+[general~="brc:dark-orange9:hover"]:hover {
+  border-color: #d84315;
+}
+
+[general~="brc:dark-orange9:focus"]:focus {
+  border-color: #d84315;
+}
+
+[general~="color:dark-orange10"] {
+  color: #bf360c;
+}
+
+[general~="color:dark-orange10:hover"]:hover {
+  color: #bf360c;
+}
+
+[general~="color:dark-orange10:focus"]:focus {
+  color: #bf360c;
+}
+
+[general~="bg:dark-orange10"] {
+  background-color: #bf360c;
+}
+
+[general~="bg:dark-orange10:hover"]:hover {
+  background-color: #bf360c;
+}
+
+[general~="bg:dark-orange10:focus"]:focus {
+  background-color: #bf360c;
+}
+
+[general~="brc:dark-orange10"] {
+  border-color: #bf360c;
+}
+
+[general~="brc:dark-orange10:hover"]:hover {
+  border-color: #bf360c;
+}
+
+[general~="brc:dark-orange10:focus"]:focus {
+  border-color: #bf360c;
+}
+
+[general~="color:red"] {
+  color: #f44336;
+}
+
+[general~="color:red:hover"]:hover {
+  color: #f44336;
+}
+
+[general~="color:red:focus"]:focus {
+  color: #f44336;
+}
+
+[general~="bg:red"] {
+  background-color: #f44336;
+}
+
+[general~="bg:red:hover"]:hover {
+  background-color: #f44336;
+}
+
+[general~="bg:red:focus"]:focus {
+  background-color: #f44336;
+}
+
+[general~="brc:red"] {
+  border-color: #f44336;
+}
+
+[general~="brc:red:hover"]:hover {
+  border-color: #f44336;
+}
+
+[general~="brc:red:focus"]:focus {
+  border-color: #f44336;
+}
+
+[general~="color:red6"] {
+  color: red;
+}
+
+[general~="color:red6:hover"]:hover {
+  color: red;
+}
+
+[general~="color:red6:focus"]:focus {
+  color: red;
+}
+
+[general~="bg:red6"] {
+  background-color: red;
+}
+
+[general~="bg:red6:hover"]:hover {
+  background-color: red;
+}
+
+[general~="bg:red6:focus"]:focus {
+  background-color: red;
+}
+
+[general~="brc:red6"] {
+  border-color: red;
+}
+
+[general~="brc:red6:hover"]:hover {
+  border-color: red;
+}
+
+[general~="brc:red6:focus"]:focus {
+  border-color: red;
+}
+
+[general~="color:red2"] {
+  color: #ffcdd2;
+}
+
+[general~="color:red2:hover"]:hover {
+  color: #ffcdd2;
+}
+
+[general~="color:red2:focus"]:focus {
+  color: #ffcdd2;
+}
+
+[general~="bg:red2"] {
+  background-color: #ffcdd2;
+}
+
+[general~="bg:red2:hover"]:hover {
+  background-color: #ffcdd2;
+}
+
+[general~="bg:red2:focus"]:focus {
+  background-color: #ffcdd2;
+}
+
+[general~="brc:red2"] {
+  border-color: #ffcdd2;
+}
+
+[general~="brc:red2:hover"]:hover {
+  border-color: #ffcdd2;
+}
+
+[general~="brc:red2:focus"]:focus {
+  border-color: #ffcdd2;
+}
+
+[general~="color:red3"] {
+  color: #ef9a9a;
+}
+
+[general~="color:red3:hover"]:hover {
+  color: #ef9a9a;
+}
+
+[general~="color:red3:focus"]:focus {
+  color: #ef9a9a;
+}
+
+[general~="bg:red3"] {
+  background-color: #ef9a9a;
+}
+
+[general~="bg:red3:hover"]:hover {
+  background-color: #ef9a9a;
+}
+
+[general~="bg:red3:focus"]:focus {
+  background-color: #ef9a9a;
+}
+
+[general~="brc:red3"] {
+  border-color: #ef9a9a;
+}
+
+[general~="brc:red3:hover"]:hover {
+  border-color: #ef9a9a;
+}
+
+[general~="brc:red3:focus"]:focus {
+  border-color: #ef9a9a;
+}
+
+[general~="color:red4"] {
+  color: #e57373;
+}
+
+[general~="color:red4:hover"]:hover {
+  color: #e57373;
+}
+
+[general~="color:red4:focus"]:focus {
+  color: #e57373;
+}
+
+[general~="bg:red4"] {
+  background-color: #e57373;
+}
+
+[general~="bg:red4:hover"]:hover {
+  background-color: #e57373;
+}
+
+[general~="bg:red4:focus"]:focus {
+  background-color: #e57373;
+}
+
+[general~="brc:red4"] {
+  border-color: #e57373;
+}
+
+[general~="brc:red4:hover"]:hover {
+  border-color: #e57373;
+}
+
+[general~="brc:red4:focus"]:focus {
+  border-color: #e57373;
+}
+
+[general~="color:red5"] {
+  color: #ef5350;
+}
+
+[general~="color:red5:hover"]:hover {
+  color: #ef5350;
+}
+
+[general~="color:red5:focus"]:focus {
+  color: #ef5350;
+}
+
+[general~="bg:red5"] {
+  background-color: #ef5350;
+}
+
+[general~="bg:red5:hover"]:hover {
+  background-color: #ef5350;
+}
+
+[general~="bg:red5:focus"]:focus {
+  background-color: #ef5350;
+}
+
+[general~="brc:red5"] {
+  border-color: #ef5350;
+}
+
+[general~="brc:red5:hover"]:hover {
+  border-color: #ef5350;
+}
+
+[general~="brc:red5:focus"]:focus {
+  border-color: #ef5350;
+}
+
+[general~="color:red7"] {
+  color: #e53935;
+}
+
+[general~="color:red7:hover"]:hover {
+  color: #e53935;
+}
+
+[general~="color:red7:focus"]:focus {
+  color: #e53935;
+}
+
+[general~="bg:red7"] {
+  background-color: #e53935;
+}
+
+[general~="bg:red7:hover"]:hover {
+  background-color: #e53935;
+}
+
+[general~="bg:red7:focus"]:focus {
+  background-color: #e53935;
+}
+
+[general~="brc:red7"] {
+  border-color: #e53935;
+}
+
+[general~="brc:red7:hover"]:hover {
+  border-color: #e53935;
+}
+
+[general~="brc:red7:focus"]:focus {
+  border-color: #e53935;
+}
+
+[general~="color:red8"] {
+  color: #d32f2f;
+}
+
+[general~="color:red8:hover"]:hover {
+  color: #d32f2f;
+}
+
+[general~="color:red8:focus"]:focus {
+  color: #d32f2f;
+}
+
+[general~="bg:red8"] {
+  background-color: #d32f2f;
+}
+
+[general~="bg:red8:hover"]:hover {
+  background-color: #d32f2f;
+}
+
+[general~="bg:red8:focus"]:focus {
+  background-color: #d32f2f;
+}
+
+[general~="brc:red8"] {
+  border-color: #d32f2f;
+}
+
+[general~="brc:red8:hover"]:hover {
+  border-color: #d32f2f;
+}
+
+[general~="brc:red8:focus"]:focus {
+  border-color: #d32f2f;
+}
+
+[general~="color:red9"] {
+  color: #c62828;
+}
+
+[general~="color:red9:hover"]:hover {
+  color: #c62828;
+}
+
+[general~="color:red9:focus"]:focus {
+  color: #c62828;
+}
+
+[general~="bg:red9"] {
+  background-color: #c62828;
+}
+
+[general~="bg:red9:hover"]:hover {
+  background-color: #c62828;
+}
+
+[general~="bg:red9:focus"]:focus {
+  background-color: #c62828;
+}
+
+[general~="brc:red9"] {
+  border-color: #c62828;
+}
+
+[general~="brc:red9:hover"]:hover {
+  border-color: #c62828;
+}
+
+[general~="brc:red9:focus"]:focus {
+  border-color: #c62828;
+}
+
+[general~="color:red10"] {
+  color: #b71c1c;
+}
+
+[general~="color:red10:hover"]:hover {
+  color: #b71c1c;
+}
+
+[general~="color:red10:focus"]:focus {
+  color: #b71c1c;
+}
+
+[general~="bg:red10"] {
+  background-color: #b71c1c;
+}
+
+[general~="bg:red10:hover"]:hover {
+  background-color: #b71c1c;
+}
+
+[general~="bg:red10:focus"]:focus {
+  background-color: #b71c1c;
+}
+
+[general~="brc:red10"] {
+  border-color: #b71c1c;
+}
+
+[general~="brc:red10:hover"]:hover {
+  border-color: #b71c1c;
+}
+
+[general~="brc:red10:focus"]:focus {
+  border-color: #b71c1c;
+}
+
+[general~="color:pink"] {
+  color: #e91e63;
+}
+
+[general~="color:pink:hover"]:hover {
+  color: #e91e63;
+}
+
+[general~="color:pink:focus"]:focus {
+  color: #e91e63;
+}
+
+[general~="bg:pink"] {
+  background-color: #e91e63;
+}
+
+[general~="bg:pink:hover"]:hover {
+  background-color: #e91e63;
+}
+
+[general~="bg:pink:focus"]:focus {
+  background-color: #e91e63;
+}
+
+[general~="brc:pink"] {
+  border-color: #e91e63;
+}
+
+[general~="brc:pink:hover"]:hover {
+  border-color: #e91e63;
+}
+
+[general~="brc:pink:focus"]:focus {
+  border-color: #e91e63;
+}
+
+[general~="color:pink6"] {
+  color: pink;
+}
+
+[general~="color:pink6:hover"]:hover {
+  color: pink;
+}
+
+[general~="color:pink6:focus"]:focus {
+  color: pink;
+}
+
+[general~="bg:pink6"] {
+  background-color: pink;
+}
+
+[general~="bg:pink6:hover"]:hover {
+  background-color: pink;
+}
+
+[general~="bg:pink6:focus"]:focus {
+  background-color: pink;
+}
+
+[general~="brc:pink6"] {
+  border-color: pink;
+}
+
+[general~="brc:pink6:hover"]:hover {
+  border-color: pink;
+}
+
+[general~="brc:pink6:focus"]:focus {
+  border-color: pink;
+}
+
+[general~="color:pink2"] {
+  color: #f8bbd0;
+}
+
+[general~="color:pink2:hover"]:hover {
+  color: #f8bbd0;
+}
+
+[general~="color:pink2:focus"]:focus {
+  color: #f8bbd0;
+}
+
+[general~="bg:pink2"] {
+  background-color: #f8bbd0;
+}
+
+[general~="bg:pink2:hover"]:hover {
+  background-color: #f8bbd0;
+}
+
+[general~="bg:pink2:focus"]:focus {
+  background-color: #f8bbd0;
+}
+
+[general~="brc:pink2"] {
+  border-color: #f8bbd0;
+}
+
+[general~="brc:pink2:hover"]:hover {
+  border-color: #f8bbd0;
+}
+
+[general~="brc:pink2:focus"]:focus {
+  border-color: #f8bbd0;
+}
+
+[general~="color:pink3"] {
+  color: #f48fb1;
+}
+
+[general~="color:pink3:hover"]:hover {
+  color: #f48fb1;
+}
+
+[general~="color:pink3:focus"]:focus {
+  color: #f48fb1;
+}
+
+[general~="bg:pink3"] {
+  background-color: #f48fb1;
+}
+
+[general~="bg:pink3:hover"]:hover {
+  background-color: #f48fb1;
+}
+
+[general~="bg:pink3:focus"]:focus {
+  background-color: #f48fb1;
+}
+
+[general~="brc:pink3"] {
+  border-color: #f48fb1;
+}
+
+[general~="brc:pink3:hover"]:hover {
+  border-color: #f48fb1;
+}
+
+[general~="brc:pink3:focus"]:focus {
+  border-color: #f48fb1;
+}
+
+[general~="color:pink4"] {
+  color: #f06292;
+}
+
+[general~="color:pink4:hover"]:hover {
+  color: #f06292;
+}
+
+[general~="color:pink4:focus"]:focus {
+  color: #f06292;
+}
+
+[general~="bg:pink4"] {
+  background-color: #f06292;
+}
+
+[general~="bg:pink4:hover"]:hover {
+  background-color: #f06292;
+}
+
+[general~="bg:pink4:focus"]:focus {
+  background-color: #f06292;
+}
+
+[general~="brc:pink4"] {
+  border-color: #f06292;
+}
+
+[general~="brc:pink4:hover"]:hover {
+  border-color: #f06292;
+}
+
+[general~="brc:pink4:focus"]:focus {
+  border-color: #f06292;
+}
+
+[general~="color:pink5"] {
+  color: #ec407a;
+}
+
+[general~="color:pink5:hover"]:hover {
+  color: #ec407a;
+}
+
+[general~="color:pink5:focus"]:focus {
+  color: #ec407a;
+}
+
+[general~="bg:pink5"] {
+  background-color: #ec407a;
+}
+
+[general~="bg:pink5:hover"]:hover {
+  background-color: #ec407a;
+}
+
+[general~="bg:pink5:focus"]:focus {
+  background-color: #ec407a;
+}
+
+[general~="brc:pink5"] {
+  border-color: #ec407a;
+}
+
+[general~="brc:pink5:hover"]:hover {
+  border-color: #ec407a;
+}
+
+[general~="brc:pink5:focus"]:focus {
+  border-color: #ec407a;
+}
+
+[general~="color:pink7"] {
+  color: #d81b60;
+}
+
+[general~="color:pink7:hover"]:hover {
+  color: #d81b60;
+}
+
+[general~="color:pink7:focus"]:focus {
+  color: #d81b60;
+}
+
+[general~="bg:pink7"] {
+  background-color: #d81b60;
+}
+
+[general~="bg:pink7:hover"]:hover {
+  background-color: #d81b60;
+}
+
+[general~="bg:pink7:focus"]:focus {
+  background-color: #d81b60;
+}
+
+[general~="brc:pink7"] {
+  border-color: #d81b60;
+}
+
+[general~="brc:pink7:hover"]:hover {
+  border-color: #d81b60;
+}
+
+[general~="brc:pink7:focus"]:focus {
+  border-color: #d81b60;
+}
+
+[general~="color:pink8"] {
+  color: #c2185b;
+}
+
+[general~="color:pink8:hover"]:hover {
+  color: #c2185b;
+}
+
+[general~="color:pink8:focus"]:focus {
+  color: #c2185b;
+}
+
+[general~="bg:pink8"] {
+  background-color: #c2185b;
+}
+
+[general~="bg:pink8:hover"]:hover {
+  background-color: #c2185b;
+}
+
+[general~="bg:pink8:focus"]:focus {
+  background-color: #c2185b;
+}
+
+[general~="brc:pink8"] {
+  border-color: #c2185b;
+}
+
+[general~="brc:pink8:hover"]:hover {
+  border-color: #c2185b;
+}
+
+[general~="brc:pink8:focus"]:focus {
+  border-color: #c2185b;
+}
+
+[general~="color:pink9"] {
+  color: #ad1457;
+}
+
+[general~="color:pink9:hover"]:hover {
+  color: #ad1457;
+}
+
+[general~="color:pink9:focus"]:focus {
+  color: #ad1457;
+}
+
+[general~="bg:pink9"] {
+  background-color: #ad1457;
+}
+
+[general~="bg:pink9:hover"]:hover {
+  background-color: #ad1457;
+}
+
+[general~="bg:pink9:focus"]:focus {
+  background-color: #ad1457;
+}
+
+[general~="brc:pink9"] {
+  border-color: #ad1457;
+}
+
+[general~="brc:pink9:hover"]:hover {
+  border-color: #ad1457;
+}
+
+[general~="brc:pink9:focus"]:focus {
+  border-color: #ad1457;
+}
+
+[general~="color:pink10"] {
+  color: #880e4f;
+}
+
+[general~="color:pink10:hover"]:hover {
+  color: #880e4f;
+}
+
+[general~="color:pink10:focus"]:focus {
+  color: #880e4f;
+}
+
+[general~="bg:pink10"] {
+  background-color: #880e4f;
+}
+
+[general~="bg:pink10:hover"]:hover {
+  background-color: #880e4f;
+}
+
+[general~="bg:pink10:focus"]:focus {
+  background-color: #880e4f;
+}
+
+[general~="brc:pink10"] {
+  border-color: #880e4f;
+}
+
+[general~="brc:pink10:hover"]:hover {
+  border-color: #880e4f;
+}
+
+[general~="brc:pink10:focus"]:focus {
+  border-color: #880e4f;
+}
+
+[general~="color:dark-purple"] {
+  color: #673ab7;
+}
+
+[general~="color:dark-purple:hover"]:hover {
+  color: #673ab7;
+}
+
+[general~="color:dark-purple:focus"]:focus {
+  color: #673ab7;
+}
+
+[general~="bg:dark-purple"] {
+  background-color: #673ab7;
+}
+
+[general~="bg:dark-purple:hover"]:hover {
+  background-color: #673ab7;
+}
+
+[general~="bg:dark-purple:focus"]:focus {
+  background-color: #673ab7;
+}
+
+[general~="brc:dark-purple"] {
+  border-color: #673ab7;
+}
+
+[general~="brc:dark-purple:hover"]:hover {
+  border-color: #673ab7;
+}
+
+[general~="brc:dark-purple:focus"]:focus {
+  border-color: #673ab7;
+}
+
+[general~="color:dark-purple6"] {
+  color: dark-purple;
+}
+
+[general~="color:dark-purple6:hover"]:hover {
+  color: dark-purple;
+}
+
+[general~="color:dark-purple6:focus"]:focus {
+  color: dark-purple;
+}
+
+[general~="bg:dark-purple6"] {
+  background-color: dark-purple;
+}
+
+[general~="bg:dark-purple6:hover"]:hover {
+  background-color: dark-purple;
+}
+
+[general~="bg:dark-purple6:focus"]:focus {
+  background-color: dark-purple;
+}
+
+[general~="brc:dark-purple6"] {
+  border-color: dark-purple;
+}
+
+[general~="brc:dark-purple6:hover"]:hover {
+  border-color: dark-purple;
+}
+
+[general~="brc:dark-purple6:focus"]:focus {
+  border-color: dark-purple;
+}
+
+[general~="color:dark-purple2"] {
+  color: #d1c4e9;
+}
+
+[general~="color:dark-purple2:hover"]:hover {
+  color: #d1c4e9;
+}
+
+[general~="color:dark-purple2:focus"]:focus {
+  color: #d1c4e9;
+}
+
+[general~="bg:dark-purple2"] {
+  background-color: #d1c4e9;
+}
+
+[general~="bg:dark-purple2:hover"]:hover {
+  background-color: #d1c4e9;
+}
+
+[general~="bg:dark-purple2:focus"]:focus {
+  background-color: #d1c4e9;
+}
+
+[general~="brc:dark-purple2"] {
+  border-color: #d1c4e9;
+}
+
+[general~="brc:dark-purple2:hover"]:hover {
+  border-color: #d1c4e9;
+}
+
+[general~="brc:dark-purple2:focus"]:focus {
+  border-color: #d1c4e9;
+}
+
+[general~="color:dark-purple3"] {
+  color: #b39ddb;
+}
+
+[general~="color:dark-purple3:hover"]:hover {
+  color: #b39ddb;
+}
+
+[general~="color:dark-purple3:focus"]:focus {
+  color: #b39ddb;
+}
+
+[general~="bg:dark-purple3"] {
+  background-color: #b39ddb;
+}
+
+[general~="bg:dark-purple3:hover"]:hover {
+  background-color: #b39ddb;
+}
+
+[general~="bg:dark-purple3:focus"]:focus {
+  background-color: #b39ddb;
+}
+
+[general~="brc:dark-purple3"] {
+  border-color: #b39ddb;
+}
+
+[general~="brc:dark-purple3:hover"]:hover {
+  border-color: #b39ddb;
+}
+
+[general~="brc:dark-purple3:focus"]:focus {
+  border-color: #b39ddb;
+}
+
+[general~="color:dark-purple4"] {
+  color: #9575cd;
+}
+
+[general~="color:dark-purple4:hover"]:hover {
+  color: #9575cd;
+}
+
+[general~="color:dark-purple4:focus"]:focus {
+  color: #9575cd;
+}
+
+[general~="bg:dark-purple4"] {
+  background-color: #9575cd;
+}
+
+[general~="bg:dark-purple4:hover"]:hover {
+  background-color: #9575cd;
+}
+
+[general~="bg:dark-purple4:focus"]:focus {
+  background-color: #9575cd;
+}
+
+[general~="brc:dark-purple4"] {
+  border-color: #9575cd;
+}
+
+[general~="brc:dark-purple4:hover"]:hover {
+  border-color: #9575cd;
+}
+
+[general~="brc:dark-purple4:focus"]:focus {
+  border-color: #9575cd;
+}
+
+[general~="color:dark-purple5"] {
+  color: #7e57c2;
+}
+
+[general~="color:dark-purple5:hover"]:hover {
+  color: #7e57c2;
+}
+
+[general~="color:dark-purple5:focus"]:focus {
+  color: #7e57c2;
+}
+
+[general~="bg:dark-purple5"] {
+  background-color: #7e57c2;
+}
+
+[general~="bg:dark-purple5:hover"]:hover {
+  background-color: #7e57c2;
+}
+
+[general~="bg:dark-purple5:focus"]:focus {
+  background-color: #7e57c2;
+}
+
+[general~="brc:dark-purple5"] {
+  border-color: #7e57c2;
+}
+
+[general~="brc:dark-purple5:hover"]:hover {
+  border-color: #7e57c2;
+}
+
+[general~="brc:dark-purple5:focus"]:focus {
+  border-color: #7e57c2;
+}
+
+[general~="color:dark-purple7"] {
+  color: #5e35b1;
+}
+
+[general~="color:dark-purple7:hover"]:hover {
+  color: #5e35b1;
+}
+
+[general~="color:dark-purple7:focus"]:focus {
+  color: #5e35b1;
+}
+
+[general~="bg:dark-purple7"] {
+  background-color: #5e35b1;
+}
+
+[general~="bg:dark-purple7:hover"]:hover {
+  background-color: #5e35b1;
+}
+
+[general~="bg:dark-purple7:focus"]:focus {
+  background-color: #5e35b1;
+}
+
+[general~="brc:dark-purple7"] {
+  border-color: #5e35b1;
+}
+
+[general~="brc:dark-purple7:hover"]:hover {
+  border-color: #5e35b1;
+}
+
+[general~="brc:dark-purple7:focus"]:focus {
+  border-color: #5e35b1;
+}
+
+[general~="color:dark-purple8"] {
+  color: #512da8;
+}
+
+[general~="color:dark-purple8:hover"]:hover {
+  color: #512da8;
+}
+
+[general~="color:dark-purple8:focus"]:focus {
+  color: #512da8;
+}
+
+[general~="bg:dark-purple8"] {
+  background-color: #512da8;
+}
+
+[general~="bg:dark-purple8:hover"]:hover {
+  background-color: #512da8;
+}
+
+[general~="bg:dark-purple8:focus"]:focus {
+  background-color: #512da8;
+}
+
+[general~="brc:dark-purple8"] {
+  border-color: #512da8;
+}
+
+[general~="brc:dark-purple8:hover"]:hover {
+  border-color: #512da8;
+}
+
+[general~="brc:dark-purple8:focus"]:focus {
+  border-color: #512da8;
+}
+
+[general~="color:dark-purple9"] {
+  color: #4527a0;
+}
+
+[general~="color:dark-purple9:hover"]:hover {
+  color: #4527a0;
+}
+
+[general~="color:dark-purple9:focus"]:focus {
+  color: #4527a0;
+}
+
+[general~="bg:dark-purple9"] {
+  background-color: #4527a0;
+}
+
+[general~="bg:dark-purple9:hover"]:hover {
+  background-color: #4527a0;
+}
+
+[general~="bg:dark-purple9:focus"]:focus {
+  background-color: #4527a0;
+}
+
+[general~="brc:dark-purple9"] {
+  border-color: #4527a0;
+}
+
+[general~="brc:dark-purple9:hover"]:hover {
+  border-color: #4527a0;
+}
+
+[general~="brc:dark-purple9:focus"]:focus {
+  border-color: #4527a0;
+}
+
+[general~="color:dark-purple10"] {
+  color: #311b92;
+}
+
+[general~="color:dark-purple10:hover"]:hover {
+  color: #311b92;
+}
+
+[general~="color:dark-purple10:focus"]:focus {
+  color: #311b92;
+}
+
+[general~="bg:dark-purple10"] {
+  background-color: #311b92;
+}
+
+[general~="bg:dark-purple10:hover"]:hover {
+  background-color: #311b92;
+}
+
+[general~="bg:dark-purple10:focus"]:focus {
+  background-color: #311b92;
+}
+
+[general~="brc:dark-purple10"] {
+  border-color: #311b92;
+}
+
+[general~="brc:dark-purple10:hover"]:hover {
+  border-color: #311b92;
+}
+
+[general~="brc:dark-purple10:focus"]:focus {
+  border-color: #311b92;
+}
+
+[general~="color:blue"] {
+  color: #2196f3;
+}
+
+[general~="color:blue:hover"]:hover {
+  color: #2196f3;
+}
+
+[general~="color:blue:focus"]:focus {
+  color: #2196f3;
+}
+
+[general~="bg:blue"] {
+  background-color: #2196f3;
+}
+
+[general~="bg:blue:hover"]:hover {
+  background-color: #2196f3;
+}
+
+[general~="bg:blue:focus"]:focus {
+  background-color: #2196f3;
+}
+
+[general~="brc:blue"] {
+  border-color: #2196f3;
+}
+
+[general~="brc:blue:hover"]:hover {
+  border-color: #2196f3;
+}
+
+[general~="brc:blue:focus"]:focus {
+  border-color: #2196f3;
+}
+
+[general~="color:blue6"] {
+  color: blue;
+}
+
+[general~="color:blue6:hover"]:hover {
+  color: blue;
+}
+
+[general~="color:blue6:focus"]:focus {
+  color: blue;
+}
+
+[general~="bg:blue6"] {
+  background-color: blue;
+}
+
+[general~="bg:blue6:hover"]:hover {
+  background-color: blue;
+}
+
+[general~="bg:blue6:focus"]:focus {
+  background-color: blue;
+}
+
+[general~="brc:blue6"] {
+  border-color: blue;
+}
+
+[general~="brc:blue6:hover"]:hover {
+  border-color: blue;
+}
+
+[general~="brc:blue6:focus"]:focus {
+  border-color: blue;
+}
+
+[general~="color:blue2"] {
+  color: #bbdefb;
+}
+
+[general~="color:blue2:hover"]:hover {
+  color: #bbdefb;
+}
+
+[general~="color:blue2:focus"]:focus {
+  color: #bbdefb;
+}
+
+[general~="bg:blue2"] {
+  background-color: #bbdefb;
+}
+
+[general~="bg:blue2:hover"]:hover {
+  background-color: #bbdefb;
+}
+
+[general~="bg:blue2:focus"]:focus {
+  background-color: #bbdefb;
+}
+
+[general~="brc:blue2"] {
+  border-color: #bbdefb;
+}
+
+[general~="brc:blue2:hover"]:hover {
+  border-color: #bbdefb;
+}
+
+[general~="brc:blue2:focus"]:focus {
+  border-color: #bbdefb;
+}
+
+[general~="color:blue3"] {
+  color: #90caf9;
+}
+
+[general~="color:blue3:hover"]:hover {
+  color: #90caf9;
+}
+
+[general~="color:blue3:focus"]:focus {
+  color: #90caf9;
+}
+
+[general~="bg:blue3"] {
+  background-color: #90caf9;
+}
+
+[general~="bg:blue3:hover"]:hover {
+  background-color: #90caf9;
+}
+
+[general~="bg:blue3:focus"]:focus {
+  background-color: #90caf9;
+}
+
+[general~="brc:blue3"] {
+  border-color: #90caf9;
+}
+
+[general~="brc:blue3:hover"]:hover {
+  border-color: #90caf9;
+}
+
+[general~="brc:blue3:focus"]:focus {
+  border-color: #90caf9;
+}
+
+[general~="color:blue4"] {
+  color: #64b5f6;
+}
+
+[general~="color:blue4:hover"]:hover {
+  color: #64b5f6;
+}
+
+[general~="color:blue4:focus"]:focus {
+  color: #64b5f6;
+}
+
+[general~="bg:blue4"] {
+  background-color: #64b5f6;
+}
+
+[general~="bg:blue4:hover"]:hover {
+  background-color: #64b5f6;
+}
+
+[general~="bg:blue4:focus"]:focus {
+  background-color: #64b5f6;
+}
+
+[general~="brc:blue4"] {
+  border-color: #64b5f6;
+}
+
+[general~="brc:blue4:hover"]:hover {
+  border-color: #64b5f6;
+}
+
+[general~="brc:blue4:focus"]:focus {
+  border-color: #64b5f6;
+}
+
+[general~="color:blue5"] {
+  color: #42a5f5;
+}
+
+[general~="color:blue5:hover"]:hover {
+  color: #42a5f5;
+}
+
+[general~="color:blue5:focus"]:focus {
+  color: #42a5f5;
+}
+
+[general~="bg:blue5"] {
+  background-color: #42a5f5;
+}
+
+[general~="bg:blue5:hover"]:hover {
+  background-color: #42a5f5;
+}
+
+[general~="bg:blue5:focus"]:focus {
+  background-color: #42a5f5;
+}
+
+[general~="brc:blue5"] {
+  border-color: #42a5f5;
+}
+
+[general~="brc:blue5:hover"]:hover {
+  border-color: #42a5f5;
+}
+
+[general~="brc:blue5:focus"]:focus {
+  border-color: #42a5f5;
+}
+
+[general~="color:blue7"] {
+  color: #1e88e5;
+}
+
+[general~="color:blue7:hover"]:hover {
+  color: #1e88e5;
+}
+
+[general~="color:blue7:focus"]:focus {
+  color: #1e88e5;
+}
+
+[general~="bg:blue7"] {
+  background-color: #1e88e5;
+}
+
+[general~="bg:blue7:hover"]:hover {
+  background-color: #1e88e5;
+}
+
+[general~="bg:blue7:focus"]:focus {
+  background-color: #1e88e5;
+}
+
+[general~="brc:blue7"] {
+  border-color: #1e88e5;
+}
+
+[general~="brc:blue7:hover"]:hover {
+  border-color: #1e88e5;
+}
+
+[general~="brc:blue7:focus"]:focus {
+  border-color: #1e88e5;
+}
+
+[general~="color:blue8"] {
+  color: #1976d2;
+}
+
+[general~="color:blue8:hover"]:hover {
+  color: #1976d2;
+}
+
+[general~="color:blue8:focus"]:focus {
+  color: #1976d2;
+}
+
+[general~="bg:blue8"] {
+  background-color: #1976d2;
+}
+
+[general~="bg:blue8:hover"]:hover {
+  background-color: #1976d2;
+}
+
+[general~="bg:blue8:focus"]:focus {
+  background-color: #1976d2;
+}
+
+[general~="brc:blue8"] {
+  border-color: #1976d2;
+}
+
+[general~="brc:blue8:hover"]:hover {
+  border-color: #1976d2;
+}
+
+[general~="brc:blue8:focus"]:focus {
+  border-color: #1976d2;
+}
+
+[general~="color:blue9"] {
+  color: #1565c0;
+}
+
+[general~="color:blue9:hover"]:hover {
+  color: #1565c0;
+}
+
+[general~="color:blue9:focus"]:focus {
+  color: #1565c0;
+}
+
+[general~="bg:blue9"] {
+  background-color: #1565c0;
+}
+
+[general~="bg:blue9:hover"]:hover {
+  background-color: #1565c0;
+}
+
+[general~="bg:blue9:focus"]:focus {
+  background-color: #1565c0;
+}
+
+[general~="brc:blue9"] {
+  border-color: #1565c0;
+}
+
+[general~="brc:blue9:hover"]:hover {
+  border-color: #1565c0;
+}
+
+[general~="brc:blue9:focus"]:focus {
+  border-color: #1565c0;
+}
+
+[general~="color:blue10"] {
+  color: #0d47a1;
+}
+
+[general~="color:blue10:hover"]:hover {
+  color: #0d47a1;
+}
+
+[general~="color:blue10:focus"]:focus {
+  color: #0d47a1;
+}
+
+[general~="bg:blue10"] {
+  background-color: #0d47a1;
+}
+
+[general~="bg:blue10:hover"]:hover {
+  background-color: #0d47a1;
+}
+
+[general~="bg:blue10:focus"]:focus {
+  background-color: #0d47a1;
+}
+
+[general~="brc:blue10"] {
+  border-color: #0d47a1;
+}
+
+[general~="brc:blue10:hover"]:hover {
+  border-color: #0d47a1;
+}
+
+[general~="brc:blue10:focus"]:focus {
+  border-color: #0d47a1;
+}
+
+[general~="color:light-blue"] {
+  color: #03a9f4;
+}
+
+[general~="color:light-blue:hover"]:hover {
+  color: #03a9f4;
+}
+
+[general~="color:light-blue:focus"]:focus {
+  color: #03a9f4;
+}
+
+[general~="bg:light-blue"] {
+  background-color: #03a9f4;
+}
+
+[general~="bg:light-blue:hover"]:hover {
+  background-color: #03a9f4;
+}
+
+[general~="bg:light-blue:focus"]:focus {
+  background-color: #03a9f4;
+}
+
+[general~="brc:light-blue"] {
+  border-color: #03a9f4;
+}
+
+[general~="brc:light-blue:hover"]:hover {
+  border-color: #03a9f4;
+}
+
+[general~="brc:light-blue:focus"]:focus {
+  border-color: #03a9f4;
+}
+
+[general~="color:light-blue6"] {
+  color: light-blue;
+}
+
+[general~="color:light-blue6:hover"]:hover {
+  color: light-blue;
+}
+
+[general~="color:light-blue6:focus"]:focus {
+  color: light-blue;
+}
+
+[general~="bg:light-blue6"] {
+  background-color: light-blue;
+}
+
+[general~="bg:light-blue6:hover"]:hover {
+  background-color: light-blue;
+}
+
+[general~="bg:light-blue6:focus"]:focus {
+  background-color: light-blue;
+}
+
+[general~="brc:light-blue6"] {
+  border-color: light-blue;
+}
+
+[general~="brc:light-blue6:hover"]:hover {
+  border-color: light-blue;
+}
+
+[general~="brc:light-blue6:focus"]:focus {
+  border-color: light-blue;
+}
+
+[general~="color:light-blue2"] {
+  color: #b3e5fc;
+}
+
+[general~="color:light-blue2:hover"]:hover {
+  color: #b3e5fc;
+}
+
+[general~="color:light-blue2:focus"]:focus {
+  color: #b3e5fc;
+}
+
+[general~="bg:light-blue2"] {
+  background-color: #b3e5fc;
+}
+
+[general~="bg:light-blue2:hover"]:hover {
+  background-color: #b3e5fc;
+}
+
+[general~="bg:light-blue2:focus"]:focus {
+  background-color: #b3e5fc;
+}
+
+[general~="brc:light-blue2"] {
+  border-color: #b3e5fc;
+}
+
+[general~="brc:light-blue2:hover"]:hover {
+  border-color: #b3e5fc;
+}
+
+[general~="brc:light-blue2:focus"]:focus {
+  border-color: #b3e5fc;
+}
+
+[general~="color:light-blue3"] {
+  color: #81d4fa;
+}
+
+[general~="color:light-blue3:hover"]:hover {
+  color: #81d4fa;
+}
+
+[general~="color:light-blue3:focus"]:focus {
+  color: #81d4fa;
+}
+
+[general~="bg:light-blue3"] {
+  background-color: #81d4fa;
+}
+
+[general~="bg:light-blue3:hover"]:hover {
+  background-color: #81d4fa;
+}
+
+[general~="bg:light-blue3:focus"]:focus {
+  background-color: #81d4fa;
+}
+
+[general~="brc:light-blue3"] {
+  border-color: #81d4fa;
+}
+
+[general~="brc:light-blue3:hover"]:hover {
+  border-color: #81d4fa;
+}
+
+[general~="brc:light-blue3:focus"]:focus {
+  border-color: #81d4fa;
+}
+
+[general~="color:light-blue4"] {
+  color: #4fc3f7;
+}
+
+[general~="color:light-blue4:hover"]:hover {
+  color: #4fc3f7;
+}
+
+[general~="color:light-blue4:focus"]:focus {
+  color: #4fc3f7;
+}
+
+[general~="bg:light-blue4"] {
+  background-color: #4fc3f7;
+}
+
+[general~="bg:light-blue4:hover"]:hover {
+  background-color: #4fc3f7;
+}
+
+[general~="bg:light-blue4:focus"]:focus {
+  background-color: #4fc3f7;
+}
+
+[general~="brc:light-blue4"] {
+  border-color: #4fc3f7;
+}
+
+[general~="brc:light-blue4:hover"]:hover {
+  border-color: #4fc3f7;
+}
+
+[general~="brc:light-blue4:focus"]:focus {
+  border-color: #4fc3f7;
+}
+
+[general~="color:light-blue5"] {
+  color: #29b6f6;
+}
+
+[general~="color:light-blue5:hover"]:hover {
+  color: #29b6f6;
+}
+
+[general~="color:light-blue5:focus"]:focus {
+  color: #29b6f6;
+}
+
+[general~="bg:light-blue5"] {
+  background-color: #29b6f6;
+}
+
+[general~="bg:light-blue5:hover"]:hover {
+  background-color: #29b6f6;
+}
+
+[general~="bg:light-blue5:focus"]:focus {
+  background-color: #29b6f6;
+}
+
+[general~="brc:light-blue5"] {
+  border-color: #29b6f6;
+}
+
+[general~="brc:light-blue5:hover"]:hover {
+  border-color: #29b6f6;
+}
+
+[general~="brc:light-blue5:focus"]:focus {
+  border-color: #29b6f6;
+}
+
+[general~="color:light-blue7"] {
+  color: #039be5;
+}
+
+[general~="color:light-blue7:hover"]:hover {
+  color: #039be5;
+}
+
+[general~="color:light-blue7:focus"]:focus {
+  color: #039be5;
+}
+
+[general~="bg:light-blue7"] {
+  background-color: #039be5;
+}
+
+[general~="bg:light-blue7:hover"]:hover {
+  background-color: #039be5;
+}
+
+[general~="bg:light-blue7:focus"]:focus {
+  background-color: #039be5;
+}
+
+[general~="brc:light-blue7"] {
+  border-color: #039be5;
+}
+
+[general~="brc:light-blue7:hover"]:hover {
+  border-color: #039be5;
+}
+
+[general~="brc:light-blue7:focus"]:focus {
+  border-color: #039be5;
+}
+
+[general~="color:light-blue8"] {
+  color: #0288d1;
+}
+
+[general~="color:light-blue8:hover"]:hover {
+  color: #0288d1;
+}
+
+[general~="color:light-blue8:focus"]:focus {
+  color: #0288d1;
+}
+
+[general~="bg:light-blue8"] {
+  background-color: #0288d1;
+}
+
+[general~="bg:light-blue8:hover"]:hover {
+  background-color: #0288d1;
+}
+
+[general~="bg:light-blue8:focus"]:focus {
+  background-color: #0288d1;
+}
+
+[general~="brc:light-blue8"] {
+  border-color: #0288d1;
+}
+
+[general~="brc:light-blue8:hover"]:hover {
+  border-color: #0288d1;
+}
+
+[general~="brc:light-blue8:focus"]:focus {
+  border-color: #0288d1;
+}
+
+[general~="color:light-blue9"] {
+  color: #0277bd;
+}
+
+[general~="color:light-blue9:hover"]:hover {
+  color: #0277bd;
+}
+
+[general~="color:light-blue9:focus"]:focus {
+  color: #0277bd;
+}
+
+[general~="bg:light-blue9"] {
+  background-color: #0277bd;
+}
+
+[general~="bg:light-blue9:hover"]:hover {
+  background-color: #0277bd;
+}
+
+[general~="bg:light-blue9:focus"]:focus {
+  background-color: #0277bd;
+}
+
+[general~="brc:light-blue9"] {
+  border-color: #0277bd;
+}
+
+[general~="brc:light-blue9:hover"]:hover {
+  border-color: #0277bd;
+}
+
+[general~="brc:light-blue9:focus"]:focus {
+  border-color: #0277bd;
+}
+
+[general~="color:light-blue10"] {
+  color: #01579b;
+}
+
+[general~="color:light-blue10:hover"]:hover {
+  color: #01579b;
+}
+
+[general~="color:light-blue10:focus"]:focus {
+  color: #01579b;
+}
+
+[general~="bg:light-blue10"] {
+  background-color: #01579b;
+}
+
+[general~="bg:light-blue10:hover"]:hover {
+  background-color: #01579b;
+}
+
+[general~="bg:light-blue10:focus"]:focus {
+  background-color: #01579b;
+}
+
+[general~="brc:light-blue10"] {
+  border-color: #01579b;
+}
+
+[general~="brc:light-blue10:hover"]:hover {
+  border-color: #01579b;
+}
+
+[general~="brc:light-blue10:focus"]:focus {
+  border-color: #01579b;
+}
+
+[general~="color:turquoise"] {
+  color: #1ac5b8;
+}
+
+[general~="color:turquoise:hover"]:hover {
+  color: #1ac5b8;
+}
+
+[general~="color:turquoise:focus"]:focus {
+  color: #1ac5b8;
+}
+
+[general~="bg:turquoise"] {
+  background-color: #1ac5b8;
+}
+
+[general~="bg:turquoise:hover"]:hover {
+  background-color: #1ac5b8;
+}
+
+[general~="bg:turquoise:focus"]:focus {
+  background-color: #1ac5b8;
+}
+
+[general~="brc:turquoise"] {
+  border-color: #1ac5b8;
+}
+
+[general~="brc:turquoise:hover"]:hover {
+  border-color: #1ac5b8;
+}
+
+[general~="brc:turquoise:focus"]:focus {
+  border-color: #1ac5b8;
+}
+
+[general~="color:turquoise6"] {
+  color: turquoise;
+}
+
+[general~="color:turquoise6:hover"]:hover {
+  color: turquoise;
+}
+
+[general~="color:turquoise6:focus"]:focus {
+  color: turquoise;
+}
+
+[general~="bg:turquoise6"] {
+  background-color: turquoise;
+}
+
+[general~="bg:turquoise6:hover"]:hover {
+  background-color: turquoise;
+}
+
+[general~="bg:turquoise6:focus"]:focus {
+  background-color: turquoise;
+}
+
+[general~="brc:turquoise6"] {
+  border-color: turquoise;
+}
+
+[general~="brc:turquoise6:hover"]:hover {
+  border-color: turquoise;
+}
+
+[general~="brc:turquoise6:focus"]:focus {
+  border-color: turquoise;
+}
+
+[general~="color:turquoise2"] {
+  color: #c1fdf8;
+}
+
+[general~="color:turquoise2:hover"]:hover {
+  color: #c1fdf8;
+}
+
+[general~="color:turquoise2:focus"]:focus {
+  color: #c1fdf8;
+}
+
+[general~="bg:turquoise2"] {
+  background-color: #c1fdf8;
+}
+
+[general~="bg:turquoise2:hover"]:hover {
+  background-color: #c1fdf8;
+}
+
+[general~="bg:turquoise2:focus"]:focus {
+  background-color: #c1fdf8;
+}
+
+[general~="brc:turquoise2"] {
+  border-color: #c1fdf8;
+}
+
+[general~="brc:turquoise2:hover"]:hover {
+  border-color: #c1fdf8;
+}
+
+[general~="brc:turquoise2:focus"]:focus {
+  border-color: #c1fdf8;
+}
+
+[general~="color:turquoise3"] {
+  color: #56f7eb;
+}
+
+[general~="color:turquoise3:hover"]:hover {
+  color: #56f7eb;
+}
+
+[general~="color:turquoise3:focus"]:focus {
+  color: #56f7eb;
+}
+
+[general~="bg:turquoise3"] {
+  background-color: #56f7eb;
+}
+
+[general~="bg:turquoise3:hover"]:hover {
+  background-color: #56f7eb;
+}
+
+[general~="bg:turquoise3:focus"]:focus {
+  background-color: #56f7eb;
+}
+
+[general~="brc:turquoise3"] {
+  border-color: #56f7eb;
+}
+
+[general~="brc:turquoise3:hover"]:hover {
+  border-color: #56f7eb;
+}
+
+[general~="brc:turquoise3:focus"]:focus {
+  border-color: #56f7eb;
+}
+
+[general~="color:turquoise4"] {
+  color: #36eadd;
+}
+
+[general~="color:turquoise4:hover"]:hover {
+  color: #36eadd;
+}
+
+[general~="color:turquoise4:focus"]:focus {
+  color: #36eadd;
+}
+
+[general~="bg:turquoise4"] {
+  background-color: #36eadd;
+}
+
+[general~="bg:turquoise4:hover"]:hover {
+  background-color: #36eadd;
+}
+
+[general~="bg:turquoise4:focus"]:focus {
+  background-color: #36eadd;
+}
+
+[general~="brc:turquoise4"] {
+  border-color: #36eadd;
+}
+
+[general~="brc:turquoise4:hover"]:hover {
+  border-color: #36eadd;
+}
+
+[general~="brc:turquoise4:focus"]:focus {
+  border-color: #36eadd;
+}
+
+[general~="color:turquoise5"] {
+  color: #2ed8cb;
+}
+
+[general~="color:turquoise5:hover"]:hover {
+  color: #2ed8cb;
+}
+
+[general~="color:turquoise5:focus"]:focus {
+  color: #2ed8cb;
+}
+
+[general~="bg:turquoise5"] {
+  background-color: #2ed8cb;
+}
+
+[general~="bg:turquoise5:hover"]:hover {
+  background-color: #2ed8cb;
+}
+
+[general~="bg:turquoise5:focus"]:focus {
+  background-color: #2ed8cb;
+}
+
+[general~="brc:turquoise5"] {
+  border-color: #2ed8cb;
+}
+
+[general~="brc:turquoise5:hover"]:hover {
+  border-color: #2ed8cb;
+}
+
+[general~="brc:turquoise5:focus"]:focus {
+  border-color: #2ed8cb;
+}
+
+[general~="color:turquoise7"] {
+  color: #12b9ac;
+}
+
+[general~="color:turquoise7:hover"]:hover {
+  color: #12b9ac;
+}
+
+[general~="color:turquoise7:focus"]:focus {
+  color: #12b9ac;
+}
+
+[general~="bg:turquoise7"] {
+  background-color: #12b9ac;
+}
+
+[general~="bg:turquoise7:hover"]:hover {
+  background-color: #12b9ac;
+}
+
+[general~="bg:turquoise7:focus"]:focus {
+  background-color: #12b9ac;
+}
+
+[general~="brc:turquoise7"] {
+  border-color: #12b9ac;
+}
+
+[general~="brc:turquoise7:hover"]:hover {
+  border-color: #12b9ac;
+}
+
+[general~="brc:turquoise7:focus"]:focus {
+  border-color: #12b9ac;
+}
+
+[general~="color:turquoise8"] {
+  color: #0cab9e;
+}
+
+[general~="color:turquoise8:hover"]:hover {
+  color: #0cab9e;
+}
+
+[general~="color:turquoise8:focus"]:focus {
+  color: #0cab9e;
+}
+
+[general~="bg:turquoise8"] {
+  background-color: #0cab9e;
+}
+
+[general~="bg:turquoise8:hover"]:hover {
+  background-color: #0cab9e;
+}
+
+[general~="bg:turquoise8:focus"]:focus {
+  background-color: #0cab9e;
+}
+
+[general~="brc:turquoise8"] {
+  border-color: #0cab9e;
+}
+
+[general~="brc:turquoise8:hover"]:hover {
+  border-color: #0cab9e;
+}
+
+[general~="brc:turquoise8:focus"]:focus {
+  border-color: #0cab9e;
+}
+
+[general~="color:turquoise9"] {
+  color: #03968a;
+}
+
+[general~="color:turquoise9:hover"]:hover {
+  color: #03968a;
+}
+
+[general~="color:turquoise9:focus"]:focus {
+  color: #03968a;
+}
+
+[general~="bg:turquoise9"] {
+  background-color: #03968a;
+}
+
+[general~="bg:turquoise9:hover"]:hover {
+  background-color: #03968a;
+}
+
+[general~="bg:turquoise9:focus"]:focus {
+  background-color: #03968a;
+}
+
+[general~="brc:turquoise9"] {
+  border-color: #03968a;
+}
+
+[general~="brc:turquoise9:hover"]:hover {
+  border-color: #03968a;
+}
+
+[general~="brc:turquoise9:focus"]:focus {
+  border-color: #03968a;
+}
+
+[general~="color:turquoise10"] {
+  color: #038075;
+}
+
+[general~="color:turquoise10:hover"]:hover {
+  color: #038075;
+}
+
+[general~="color:turquoise10:focus"]:focus {
+  color: #038075;
+}
+
+[general~="bg:turquoise10"] {
+  background-color: #038075;
+}
+
+[general~="bg:turquoise10:hover"]:hover {
+  background-color: #038075;
+}
+
+[general~="bg:turquoise10:focus"]:focus {
+  background-color: #038075;
+}
+
+[general~="brc:turquoise10"] {
+  border-color: #038075;
+}
+
+[general~="brc:turquoise10:hover"]:hover {
+  border-color: #038075;
+}
+
+[general~="brc:turquoise10:focus"]:focus {
+  border-color: #038075;
+}
+
+[general~="color:green"] {
+  color: #4caf50;
+}
+
+[general~="color:green:hover"]:hover {
+  color: #4caf50;
+}
+
+[general~="color:green:focus"]:focus {
+  color: #4caf50;
+}
+
+[general~="bg:green"] {
+  background-color: #4caf50;
+}
+
+[general~="bg:green:hover"]:hover {
+  background-color: #4caf50;
+}
+
+[general~="bg:green:focus"]:focus {
+  background-color: #4caf50;
+}
+
+[general~="brc:green"] {
+  border-color: #4caf50;
+}
+
+[general~="brc:green:hover"]:hover {
+  border-color: #4caf50;
+}
+
+[general~="brc:green:focus"]:focus {
+  border-color: #4caf50;
+}
+
+[general~="color:green6"] {
+  color: green;
+}
+
+[general~="color:green6:hover"]:hover {
+  color: green;
+}
+
+[general~="color:green6:focus"]:focus {
+  color: green;
+}
+
+[general~="bg:green6"] {
+  background-color: green;
+}
+
+[general~="bg:green6:hover"]:hover {
+  background-color: green;
+}
+
+[general~="bg:green6:focus"]:focus {
+  background-color: green;
+}
+
+[general~="brc:green6"] {
+  border-color: green;
+}
+
+[general~="brc:green6:hover"]:hover {
+  border-color: green;
+}
+
+[general~="brc:green6:focus"]:focus {
+  border-color: green;
+}
+
+[general~="color:green2"] {
+  color: #c8e6c9;
+}
+
+[general~="color:green2:hover"]:hover {
+  color: #c8e6c9;
+}
+
+[general~="color:green2:focus"]:focus {
+  color: #c8e6c9;
+}
+
+[general~="bg:green2"] {
+  background-color: #c8e6c9;
+}
+
+[general~="bg:green2:hover"]:hover {
+  background-color: #c8e6c9;
+}
+
+[general~="bg:green2:focus"]:focus {
+  background-color: #c8e6c9;
+}
+
+[general~="brc:green2"] {
+  border-color: #c8e6c9;
+}
+
+[general~="brc:green2:hover"]:hover {
+  border-color: #c8e6c9;
+}
+
+[general~="brc:green2:focus"]:focus {
+  border-color: #c8e6c9;
+}
+
+[general~="color:green3"] {
+  color: #a5d6a7;
+}
+
+[general~="color:green3:hover"]:hover {
+  color: #a5d6a7;
+}
+
+[general~="color:green3:focus"]:focus {
+  color: #a5d6a7;
+}
+
+[general~="bg:green3"] {
+  background-color: #a5d6a7;
+}
+
+[general~="bg:green3:hover"]:hover {
+  background-color: #a5d6a7;
+}
+
+[general~="bg:green3:focus"]:focus {
+  background-color: #a5d6a7;
+}
+
+[general~="brc:green3"] {
+  border-color: #a5d6a7;
+}
+
+[general~="brc:green3:hover"]:hover {
+  border-color: #a5d6a7;
+}
+
+[general~="brc:green3:focus"]:focus {
+  border-color: #a5d6a7;
+}
+
+[general~="color:green4"] {
+  color: #81c784;
+}
+
+[general~="color:green4:hover"]:hover {
+  color: #81c784;
+}
+
+[general~="color:green4:focus"]:focus {
+  color: #81c784;
+}
+
+[general~="bg:green4"] {
+  background-color: #81c784;
+}
+
+[general~="bg:green4:hover"]:hover {
+  background-color: #81c784;
+}
+
+[general~="bg:green4:focus"]:focus {
+  background-color: #81c784;
+}
+
+[general~="brc:green4"] {
+  border-color: #81c784;
+}
+
+[general~="brc:green4:hover"]:hover {
+  border-color: #81c784;
+}
+
+[general~="brc:green4:focus"]:focus {
+  border-color: #81c784;
+}
+
+[general~="color:green5"] {
+  color: #66bb6a;
+}
+
+[general~="color:green5:hover"]:hover {
+  color: #66bb6a;
+}
+
+[general~="color:green5:focus"]:focus {
+  color: #66bb6a;
+}
+
+[general~="bg:green5"] {
+  background-color: #66bb6a;
+}
+
+[general~="bg:green5:hover"]:hover {
+  background-color: #66bb6a;
+}
+
+[general~="bg:green5:focus"]:focus {
+  background-color: #66bb6a;
+}
+
+[general~="brc:green5"] {
+  border-color: #66bb6a;
+}
+
+[general~="brc:green5:hover"]:hover {
+  border-color: #66bb6a;
+}
+
+[general~="brc:green5:focus"]:focus {
+  border-color: #66bb6a;
+}
+
+[general~="color:green7"] {
+  color: #43a047;
+}
+
+[general~="color:green7:hover"]:hover {
+  color: #43a047;
+}
+
+[general~="color:green7:focus"]:focus {
+  color: #43a047;
+}
+
+[general~="bg:green7"] {
+  background-color: #43a047;
+}
+
+[general~="bg:green7:hover"]:hover {
+  background-color: #43a047;
+}
+
+[general~="bg:green7:focus"]:focus {
+  background-color: #43a047;
+}
+
+[general~="brc:green7"] {
+  border-color: #43a047;
+}
+
+[general~="brc:green7:hover"]:hover {
+  border-color: #43a047;
+}
+
+[general~="brc:green7:focus"]:focus {
+  border-color: #43a047;
+}
+
+[general~="color:green8"] {
+  color: #388e3c;
+}
+
+[general~="color:green8:hover"]:hover {
+  color: #388e3c;
+}
+
+[general~="color:green8:focus"]:focus {
+  color: #388e3c;
+}
+
+[general~="bg:green8"] {
+  background-color: #388e3c;
+}
+
+[general~="bg:green8:hover"]:hover {
+  background-color: #388e3c;
+}
+
+[general~="bg:green8:focus"]:focus {
+  background-color: #388e3c;
+}
+
+[general~="brc:green8"] {
+  border-color: #388e3c;
+}
+
+[general~="brc:green8:hover"]:hover {
+  border-color: #388e3c;
+}
+
+[general~="brc:green8:focus"]:focus {
+  border-color: #388e3c;
+}
+
+[general~="color:green9"] {
+  color: #2e7d32;
+}
+
+[general~="color:green9:hover"]:hover {
+  color: #2e7d32;
+}
+
+[general~="color:green9:focus"]:focus {
+  color: #2e7d32;
+}
+
+[general~="bg:green9"] {
+  background-color: #2e7d32;
+}
+
+[general~="bg:green9:hover"]:hover {
+  background-color: #2e7d32;
+}
+
+[general~="bg:green9:focus"]:focus {
+  background-color: #2e7d32;
+}
+
+[general~="brc:green9"] {
+  border-color: #2e7d32;
+}
+
+[general~="brc:green9:hover"]:hover {
+  border-color: #2e7d32;
+}
+
+[general~="brc:green9:focus"]:focus {
+  border-color: #2e7d32;
+}
+
+[general~="color:green10"] {
+  color: #1b5e20;
+}
+
+[general~="color:green10:hover"]:hover {
+  color: #1b5e20;
+}
+
+[general~="color:green10:focus"]:focus {
+  color: #1b5e20;
+}
+
+[general~="bg:green10"] {
+  background-color: #1b5e20;
+}
+
+[general~="bg:green10:hover"]:hover {
+  background-color: #1b5e20;
+}
+
+[general~="bg:green10:focus"]:focus {
+  background-color: #1b5e20;
+}
+
+[general~="brc:green10"] {
+  border-color: #1b5e20;
+}
+
+[general~="brc:green10:hover"]:hover {
+  border-color: #1b5e20;
+}
+
+[general~="brc:green10:focus"]:focus {
+  border-color: #1b5e20;
+}
+
+[general~="color:light-green"] {
+  color: #8bc34a;
+}
+
+[general~="color:light-green:hover"]:hover {
+  color: #8bc34a;
+}
+
+[general~="color:light-green:focus"]:focus {
+  color: #8bc34a;
+}
+
+[general~="bg:light-green"] {
+  background-color: #8bc34a;
+}
+
+[general~="bg:light-green:hover"]:hover {
+  background-color: #8bc34a;
+}
+
+[general~="bg:light-green:focus"]:focus {
+  background-color: #8bc34a;
+}
+
+[general~="brc:light-green"] {
+  border-color: #8bc34a;
+}
+
+[general~="brc:light-green:hover"]:hover {
+  border-color: #8bc34a;
+}
+
+[general~="brc:light-green:focus"]:focus {
+  border-color: #8bc34a;
+}
+
+[general~="color:light-green6"] {
+  color: light-green;
+}
+
+[general~="color:light-green6:hover"]:hover {
+  color: light-green;
+}
+
+[general~="color:light-green6:focus"]:focus {
+  color: light-green;
+}
+
+[general~="bg:light-green6"] {
+  background-color: light-green;
+}
+
+[general~="bg:light-green6:hover"]:hover {
+  background-color: light-green;
+}
+
+[general~="bg:light-green6:focus"]:focus {
+  background-color: light-green;
+}
+
+[general~="brc:light-green6"] {
+  border-color: light-green;
+}
+
+[general~="brc:light-green6:hover"]:hover {
+  border-color: light-green;
+}
+
+[general~="brc:light-green6:focus"]:focus {
+  border-color: light-green;
+}
+
+[general~="color:light-green2"] {
+  color: #dcedc8;
+}
+
+[general~="color:light-green2:hover"]:hover {
+  color: #dcedc8;
+}
+
+[general~="color:light-green2:focus"]:focus {
+  color: #dcedc8;
+}
+
+[general~="bg:light-green2"] {
+  background-color: #dcedc8;
+}
+
+[general~="bg:light-green2:hover"]:hover {
+  background-color: #dcedc8;
+}
+
+[general~="bg:light-green2:focus"]:focus {
+  background-color: #dcedc8;
+}
+
+[general~="brc:light-green2"] {
+  border-color: #dcedc8;
+}
+
+[general~="brc:light-green2:hover"]:hover {
+  border-color: #dcedc8;
+}
+
+[general~="brc:light-green2:focus"]:focus {
+  border-color: #dcedc8;
+}
+
+[general~="color:light-green3"] {
+  color: #c5e1a5;
+}
+
+[general~="color:light-green3:hover"]:hover {
+  color: #c5e1a5;
+}
+
+[general~="color:light-green3:focus"]:focus {
+  color: #c5e1a5;
+}
+
+[general~="bg:light-green3"] {
+  background-color: #c5e1a5;
+}
+
+[general~="bg:light-green3:hover"]:hover {
+  background-color: #c5e1a5;
+}
+
+[general~="bg:light-green3:focus"]:focus {
+  background-color: #c5e1a5;
+}
+
+[general~="brc:light-green3"] {
+  border-color: #c5e1a5;
+}
+
+[general~="brc:light-green3:hover"]:hover {
+  border-color: #c5e1a5;
+}
+
+[general~="brc:light-green3:focus"]:focus {
+  border-color: #c5e1a5;
+}
+
+[general~="color:light-green4"] {
+  color: #aed581;
+}
+
+[general~="color:light-green4:hover"]:hover {
+  color: #aed581;
+}
+
+[general~="color:light-green4:focus"]:focus {
+  color: #aed581;
+}
+
+[general~="bg:light-green4"] {
+  background-color: #aed581;
+}
+
+[general~="bg:light-green4:hover"]:hover {
+  background-color: #aed581;
+}
+
+[general~="bg:light-green4:focus"]:focus {
+  background-color: #aed581;
+}
+
+[general~="brc:light-green4"] {
+  border-color: #aed581;
+}
+
+[general~="brc:light-green4:hover"]:hover {
+  border-color: #aed581;
+}
+
+[general~="brc:light-green4:focus"]:focus {
+  border-color: #aed581;
+}
+
+[general~="color:light-green5"] {
+  color: #9ccc65;
+}
+
+[general~="color:light-green5:hover"]:hover {
+  color: #9ccc65;
+}
+
+[general~="color:light-green5:focus"]:focus {
+  color: #9ccc65;
+}
+
+[general~="bg:light-green5"] {
+  background-color: #9ccc65;
+}
+
+[general~="bg:light-green5:hover"]:hover {
+  background-color: #9ccc65;
+}
+
+[general~="bg:light-green5:focus"]:focus {
+  background-color: #9ccc65;
+}
+
+[general~="brc:light-green5"] {
+  border-color: #9ccc65;
+}
+
+[general~="brc:light-green5:hover"]:hover {
+  border-color: #9ccc65;
+}
+
+[general~="brc:light-green5:focus"]:focus {
+  border-color: #9ccc65;
+}
+
+[general~="color:light-green7"] {
+  color: #7cb342;
+}
+
+[general~="color:light-green7:hover"]:hover {
+  color: #7cb342;
+}
+
+[general~="color:light-green7:focus"]:focus {
+  color: #7cb342;
+}
+
+[general~="bg:light-green7"] {
+  background-color: #7cb342;
+}
+
+[general~="bg:light-green7:hover"]:hover {
+  background-color: #7cb342;
+}
+
+[general~="bg:light-green7:focus"]:focus {
+  background-color: #7cb342;
+}
+
+[general~="brc:light-green7"] {
+  border-color: #7cb342;
+}
+
+[general~="brc:light-green7:hover"]:hover {
+  border-color: #7cb342;
+}
+
+[general~="brc:light-green7:focus"]:focus {
+  border-color: #7cb342;
+}
+
+[general~="color:light-green8"] {
+  color: #689f38;
+}
+
+[general~="color:light-green8:hover"]:hover {
+  color: #689f38;
+}
+
+[general~="color:light-green8:focus"]:focus {
+  color: #689f38;
+}
+
+[general~="bg:light-green8"] {
+  background-color: #689f38;
+}
+
+[general~="bg:light-green8:hover"]:hover {
+  background-color: #689f38;
+}
+
+[general~="bg:light-green8:focus"]:focus {
+  background-color: #689f38;
+}
+
+[general~="brc:light-green8"] {
+  border-color: #689f38;
+}
+
+[general~="brc:light-green8:hover"]:hover {
+  border-color: #689f38;
+}
+
+[general~="brc:light-green8:focus"]:focus {
+  border-color: #689f38;
+}
+
+[general~="color:light-green9"] {
+  color: #558b2f;
+}
+
+[general~="color:light-green9:hover"]:hover {
+  color: #558b2f;
+}
+
+[general~="color:light-green9:focus"]:focus {
+  color: #558b2f;
+}
+
+[general~="bg:light-green9"] {
+  background-color: #558b2f;
+}
+
+[general~="bg:light-green9:hover"]:hover {
+  background-color: #558b2f;
+}
+
+[general~="bg:light-green9:focus"]:focus {
+  background-color: #558b2f;
+}
+
+[general~="brc:light-green9"] {
+  border-color: #558b2f;
+}
+
+[general~="brc:light-green9:hover"]:hover {
+  border-color: #558b2f;
+}
+
+[general~="brc:light-green9:focus"]:focus {
+  border-color: #558b2f;
+}
+
+[general~="color:light-green10"] {
+  color: #33691e;
+}
+
+[general~="color:light-green10:hover"]:hover {
+  color: #33691e;
+}
+
+[general~="color:light-green10:focus"]:focus {
+  color: #33691e;
+}
+
+[general~="bg:light-green10"] {
+  background-color: #33691e;
+}
+
+[general~="bg:light-green10:hover"]:hover {
+  background-color: #33691e;
+}
+
+[general~="bg:light-green10:focus"]:focus {
+  background-color: #33691e;
+}
+
+[general~="brc:light-green10"] {
+  border-color: #33691e;
+}
+
+[general~="brc:light-green10:hover"]:hover {
+  border-color: #33691e;
+}
+
+[general~="brc:light-green10:focus"]:focus {
+  border-color: #33691e;
+}
+
+[general~="color:brown"] {
+  color: #795548;
+}
+
+[general~="color:brown:hover"]:hover {
+  color: #795548;
+}
+
+[general~="color:brown:focus"]:focus {
+  color: #795548;
+}
+
+[general~="bg:brown"] {
+  background-color: #795548;
+}
+
+[general~="bg:brown:hover"]:hover {
+  background-color: #795548;
+}
+
+[general~="bg:brown:focus"]:focus {
+  background-color: #795548;
+}
+
+[general~="brc:brown"] {
+  border-color: #795548;
+}
+
+[general~="brc:brown:hover"]:hover {
+  border-color: #795548;
+}
+
+[general~="brc:brown:focus"]:focus {
+  border-color: #795548;
+}
+
+[general~="color:brown6"] {
+  color: brown;
+}
+
+[general~="color:brown6:hover"]:hover {
+  color: brown;
+}
+
+[general~="color:brown6:focus"]:focus {
+  color: brown;
+}
+
+[general~="bg:brown6"] {
+  background-color: brown;
+}
+
+[general~="bg:brown6:hover"]:hover {
+  background-color: brown;
+}
+
+[general~="bg:brown6:focus"]:focus {
+  background-color: brown;
+}
+
+[general~="brc:brown6"] {
+  border-color: brown;
+}
+
+[general~="brc:brown6:hover"]:hover {
+  border-color: brown;
+}
+
+[general~="brc:brown6:focus"]:focus {
+  border-color: brown;
+}
+
+[general~="color:brown2"] {
+  color: #d7ccc8;
+}
+
+[general~="color:brown2:hover"]:hover {
+  color: #d7ccc8;
+}
+
+[general~="color:brown2:focus"]:focus {
+  color: #d7ccc8;
+}
+
+[general~="bg:brown2"] {
+  background-color: #d7ccc8;
+}
+
+[general~="bg:brown2:hover"]:hover {
+  background-color: #d7ccc8;
+}
+
+[general~="bg:brown2:focus"]:focus {
+  background-color: #d7ccc8;
+}
+
+[general~="brc:brown2"] {
+  border-color: #d7ccc8;
+}
+
+[general~="brc:brown2:hover"]:hover {
+  border-color: #d7ccc8;
+}
+
+[general~="brc:brown2:focus"]:focus {
+  border-color: #d7ccc8;
+}
+
+[general~="color:brown3"] {
+  color: #bcaaa4;
+}
+
+[general~="color:brown3:hover"]:hover {
+  color: #bcaaa4;
+}
+
+[general~="color:brown3:focus"]:focus {
+  color: #bcaaa4;
+}
+
+[general~="bg:brown3"] {
+  background-color: #bcaaa4;
+}
+
+[general~="bg:brown3:hover"]:hover {
+  background-color: #bcaaa4;
+}
+
+[general~="bg:brown3:focus"]:focus {
+  background-color: #bcaaa4;
+}
+
+[general~="brc:brown3"] {
+  border-color: #bcaaa4;
+}
+
+[general~="brc:brown3:hover"]:hover {
+  border-color: #bcaaa4;
+}
+
+[general~="brc:brown3:focus"]:focus {
+  border-color: #bcaaa4;
+}
+
+[general~="color:brown4"] {
+  color: #a1887f;
+}
+
+[general~="color:brown4:hover"]:hover {
+  color: #a1887f;
+}
+
+[general~="color:brown4:focus"]:focus {
+  color: #a1887f;
+}
+
+[general~="bg:brown4"] {
+  background-color: #a1887f;
+}
+
+[general~="bg:brown4:hover"]:hover {
+  background-color: #a1887f;
+}
+
+[general~="bg:brown4:focus"]:focus {
+  background-color: #a1887f;
+}
+
+[general~="brc:brown4"] {
+  border-color: #a1887f;
+}
+
+[general~="brc:brown4:hover"]:hover {
+  border-color: #a1887f;
+}
+
+[general~="brc:brown4:focus"]:focus {
+  border-color: #a1887f;
+}
+
+[general~="color:brown5"] {
+  color: #8d6e63;
+}
+
+[general~="color:brown5:hover"]:hover {
+  color: #8d6e63;
+}
+
+[general~="color:brown5:focus"]:focus {
+  color: #8d6e63;
+}
+
+[general~="bg:brown5"] {
+  background-color: #8d6e63;
+}
+
+[general~="bg:brown5:hover"]:hover {
+  background-color: #8d6e63;
+}
+
+[general~="bg:brown5:focus"]:focus {
+  background-color: #8d6e63;
+}
+
+[general~="brc:brown5"] {
+  border-color: #8d6e63;
+}
+
+[general~="brc:brown5:hover"]:hover {
+  border-color: #8d6e63;
+}
+
+[general~="brc:brown5:focus"]:focus {
+  border-color: #8d6e63;
+}
+
+[general~="color:brown7"] {
+  color: #6d4c41;
+}
+
+[general~="color:brown7:hover"]:hover {
+  color: #6d4c41;
+}
+
+[general~="color:brown7:focus"]:focus {
+  color: #6d4c41;
+}
+
+[general~="bg:brown7"] {
+  background-color: #6d4c41;
+}
+
+[general~="bg:brown7:hover"]:hover {
+  background-color: #6d4c41;
+}
+
+[general~="bg:brown7:focus"]:focus {
+  background-color: #6d4c41;
+}
+
+[general~="brc:brown7"] {
+  border-color: #6d4c41;
+}
+
+[general~="brc:brown7:hover"]:hover {
+  border-color: #6d4c41;
+}
+
+[general~="brc:brown7:focus"]:focus {
+  border-color: #6d4c41;
+}
+
+[general~="color:brown8"] {
+  color: #5d4037;
+}
+
+[general~="color:brown8:hover"]:hover {
+  color: #5d4037;
+}
+
+[general~="color:brown8:focus"]:focus {
+  color: #5d4037;
+}
+
+[general~="bg:brown8"] {
+  background-color: #5d4037;
+}
+
+[general~="bg:brown8:hover"]:hover {
+  background-color: #5d4037;
+}
+
+[general~="bg:brown8:focus"]:focus {
+  background-color: #5d4037;
+}
+
+[general~="brc:brown8"] {
+  border-color: #5d4037;
+}
+
+[general~="brc:brown8:hover"]:hover {
+  border-color: #5d4037;
+}
+
+[general~="brc:brown8:focus"]:focus {
+  border-color: #5d4037;
+}
+
+[general~="color:brown9"] {
+  color: #4e342e;
+}
+
+[general~="color:brown9:hover"]:hover {
+  color: #4e342e;
+}
+
+[general~="color:brown9:focus"]:focus {
+  color: #4e342e;
+}
+
+[general~="bg:brown9"] {
+  background-color: #4e342e;
+}
+
+[general~="bg:brown9:hover"]:hover {
+  background-color: #4e342e;
+}
+
+[general~="bg:brown9:focus"]:focus {
+  background-color: #4e342e;
+}
+
+[general~="brc:brown9"] {
+  border-color: #4e342e;
+}
+
+[general~="brc:brown9:hover"]:hover {
+  border-color: #4e342e;
+}
+
+[general~="brc:brown9:focus"]:focus {
+  border-color: #4e342e;
+}
+
+[general~="color:brown10"] {
+  color: #3e2723;
+}
+
+[general~="color:brown10:hover"]:hover {
+  color: #3e2723;
+}
+
+[general~="color:brown10:focus"]:focus {
+  color: #3e2723;
+}
+
+[general~="bg:brown10"] {
+  background-color: #3e2723;
+}
+
+[general~="bg:brown10:hover"]:hover {
+  background-color: #3e2723;
+}
+
+[general~="bg:brown10:focus"]:focus {
+  background-color: #3e2723;
+}
+
+[general~="brc:brown10"] {
+  border-color: #3e2723;
+}
+
+[general~="brc:brown10:hover"]:hover {
+  border-color: #3e2723;
+}
+
+[general~="brc:brown10:focus"]:focus {
+  border-color: #3e2723;
+}
+
+[general~="color:grey"] {
+  color: #9e9e9e;
+}
+
+[general~="color:grey:hover"]:hover {
+  color: #9e9e9e;
+}
+
+[general~="color:grey:focus"]:focus {
+  color: #9e9e9e;
+}
+
+[general~="bg:grey"] {
+  background-color: #9e9e9e;
+}
+
+[general~="bg:grey:hover"]:hover {
+  background-color: #9e9e9e;
+}
+
+[general~="bg:grey:focus"]:focus {
+  background-color: #9e9e9e;
+}
+
+[general~="brc:grey"] {
+  border-color: #9e9e9e;
+}
+
+[general~="brc:grey:hover"]:hover {
+  border-color: #9e9e9e;
+}
+
+[general~="brc:grey:focus"]:focus {
+  border-color: #9e9e9e;
+}
+
+[general~="color:grey6"] {
+  color: grey;
+}
+
+[general~="color:grey6:hover"]:hover {
+  color: grey;
+}
+
+[general~="color:grey6:focus"]:focus {
+  color: grey;
+}
+
+[general~="bg:grey6"] {
+  background-color: grey;
+}
+
+[general~="bg:grey6:hover"]:hover {
+  background-color: grey;
+}
+
+[general~="bg:grey6:focus"]:focus {
+  background-color: grey;
+}
+
+[general~="brc:grey6"] {
+  border-color: grey;
+}
+
+[general~="brc:grey6:hover"]:hover {
+  border-color: grey;
+}
+
+[general~="brc:grey6:focus"]:focus {
+  border-color: grey;
+}
+
+[general~="color:grey2"] {
+  color: #f5f5f5;
+}
+
+[general~="color:grey2:hover"]:hover {
+  color: #f5f5f5;
+}
+
+[general~="color:grey2:focus"]:focus {
+  color: #f5f5f5;
+}
+
+[general~="bg:grey2"] {
+  background-color: #f5f5f5;
+}
+
+[general~="bg:grey2:hover"]:hover {
+  background-color: #f5f5f5;
+}
+
+[general~="bg:grey2:focus"]:focus {
+  background-color: #f5f5f5;
+}
+
+[general~="brc:grey2"] {
+  border-color: #f5f5f5;
+}
+
+[general~="brc:grey2:hover"]:hover {
+  border-color: #f5f5f5;
+}
+
+[general~="brc:grey2:focus"]:focus {
+  border-color: #f5f5f5;
+}
+
+[general~="color:grey3"] {
+  color: #eeeeee;
+}
+
+[general~="color:grey3:hover"]:hover {
+  color: #eeeeee;
+}
+
+[general~="color:grey3:focus"]:focus {
+  color: #eeeeee;
+}
+
+[general~="bg:grey3"] {
+  background-color: #eeeeee;
+}
+
+[general~="bg:grey3:hover"]:hover {
+  background-color: #eeeeee;
+}
+
+[general~="bg:grey3:focus"]:focus {
+  background-color: #eeeeee;
+}
+
+[general~="brc:grey3"] {
+  border-color: #eeeeee;
+}
+
+[general~="brc:grey3:hover"]:hover {
+  border-color: #eeeeee;
+}
+
+[general~="brc:grey3:focus"]:focus {
+  border-color: #eeeeee;
+}
+
+[general~="color:grey4"] {
+  color: #e0e0e0;
+}
+
+[general~="color:grey4:hover"]:hover {
+  color: #e0e0e0;
+}
+
+[general~="color:grey4:focus"]:focus {
+  color: #e0e0e0;
+}
+
+[general~="bg:grey4"] {
+  background-color: #e0e0e0;
+}
+
+[general~="bg:grey4:hover"]:hover {
+  background-color: #e0e0e0;
+}
+
+[general~="bg:grey4:focus"]:focus {
+  background-color: #e0e0e0;
+}
+
+[general~="brc:grey4"] {
+  border-color: #e0e0e0;
+}
+
+[general~="brc:grey4:hover"]:hover {
+  border-color: #e0e0e0;
+}
+
+[general~="brc:grey4:focus"]:focus {
+  border-color: #e0e0e0;
+}
+
+[general~="color:grey5"] {
+  color: #bdbdbd;
+}
+
+[general~="color:grey5:hover"]:hover {
+  color: #bdbdbd;
+}
+
+[general~="color:grey5:focus"]:focus {
+  color: #bdbdbd;
+}
+
+[general~="bg:grey5"] {
+  background-color: #bdbdbd;
+}
+
+[general~="bg:grey5:hover"]:hover {
+  background-color: #bdbdbd;
+}
+
+[general~="bg:grey5:focus"]:focus {
+  background-color: #bdbdbd;
+}
+
+[general~="brc:grey5"] {
+  border-color: #bdbdbd;
+}
+
+[general~="brc:grey5:hover"]:hover {
+  border-color: #bdbdbd;
+}
+
+[general~="brc:grey5:focus"]:focus {
+  border-color: #bdbdbd;
+}
+
+[general~="color:grey7"] {
+  color: #757575;
+}
+
+[general~="color:grey7:hover"]:hover {
+  color: #757575;
+}
+
+[general~="color:grey7:focus"]:focus {
+  color: #757575;
+}
+
+[general~="bg:grey7"] {
+  background-color: #757575;
+}
+
+[general~="bg:grey7:hover"]:hover {
+  background-color: #757575;
+}
+
+[general~="bg:grey7:focus"]:focus {
+  background-color: #757575;
+}
+
+[general~="brc:grey7"] {
+  border-color: #757575;
+}
+
+[general~="brc:grey7:hover"]:hover {
+  border-color: #757575;
+}
+
+[general~="brc:grey7:focus"]:focus {
+  border-color: #757575;
+}
+
+[general~="color:grey8"] {
+  color: #4e4e4e;
+}
+
+[general~="color:grey8:hover"]:hover {
+  color: #4e4e4e;
+}
+
+[general~="color:grey8:focus"]:focus {
+  color: #4e4e4e;
+}
+
+[general~="bg:grey8"] {
+  background-color: #4e4e4e;
+}
+
+[general~="bg:grey8:hover"]:hover {
+  background-color: #4e4e4e;
+}
+
+[general~="bg:grey8:focus"]:focus {
+  background-color: #4e4e4e;
+}
+
+[general~="brc:grey8"] {
+  border-color: #4e4e4e;
+}
+
+[general~="brc:grey8:hover"]:hover {
+  border-color: #4e4e4e;
+}
+
+[general~="brc:grey8:focus"]:focus {
+  border-color: #4e4e4e;
+}
+
+[general~="color:grey9"] {
+  color: #4e342e;
+}
+
+[general~="color:grey9:hover"]:hover {
+  color: #4e342e;
+}
+
+[general~="color:grey9:focus"]:focus {
+  color: #4e342e;
+}
+
+[general~="bg:grey9"] {
+  background-color: #4e342e;
+}
+
+[general~="bg:grey9:hover"]:hover {
+  background-color: #4e342e;
+}
+
+[general~="bg:grey9:focus"]:focus {
+  background-color: #4e342e;
+}
+
+[general~="brc:grey9"] {
+  border-color: #4e342e;
+}
+
+[general~="brc:grey9:hover"]:hover {
+  border-color: #4e342e;
+}
+
+[general~="brc:grey9:focus"]:focus {
+  border-color: #4e342e;
+}
+
+[general~="color:grey10"] {
+  color: #424040;
+}
+
+[general~="color:grey10:hover"]:hover {
+  color: #424040;
+}
+
+[general~="color:grey10:focus"]:focus {
+  color: #424040;
+}
+
+[general~="bg:grey10"] {
+  background-color: #424040;
+}
+
+[general~="bg:grey10:hover"]:hover {
+  background-color: #424040;
+}
+
+[general~="bg:grey10:focus"]:focus {
+  background-color: #424040;
+}
+
+[general~="brc:grey10"] {
+  border-color: #424040;
+}
+
+[general~="brc:grey10:hover"]:hover {
+  border-color: #424040;
+}
+
+[general~="brc:grey10:focus"]:focus {
+  border-color: #424040;
+}
+
+[general~="color:black"] {
+  color: #000;
+}
+
+[general~="color:black:hover"]:hover {
+  color: #000;
+}
+
+[general~="color:black:focus"]:focus {
+  color: #000;
+}
+
+[general~="bg:black"] {
+  background-color: #000;
+}
+
+[general~="bg:black:hover"]:hover {
+  background-color: #000;
+}
+
+[general~="bg:black:focus"]:focus {
+  background-color: #000;
+}
+
+[general~="brc:black"] {
+  border-color: #000;
+}
+
+[general~="brc:black:hover"]:hover {
+  border-color: #000;
+}
+
+[general~="brc:black:focus"]:focus {
+  border-color: #000;
+}
+
+[general~="color:black2"] {
+  color: #404040;
+}
+
+[general~="color:black2:hover"]:hover {
+  color: #404040;
+}
+
+[general~="color:black2:focus"]:focus {
+  color: #404040;
+}
+
+[general~="bg:black2"] {
+  background-color: #404040;
+}
+
+[general~="bg:black2:hover"]:hover {
+  background-color: #404040;
+}
+
+[general~="bg:black2:focus"]:focus {
+  background-color: #404040;
+}
+
+[general~="brc:black2"] {
+  border-color: #404040;
+}
+
+[general~="brc:black2:hover"]:hover {
+  border-color: #404040;
+}
+
+[general~="brc:black2:focus"]:focus {
+  border-color: #404040;
+}
+
+[general~="color:black3"] {
+  color: #353535;
+}
+
+[general~="color:black3:hover"]:hover {
+  color: #353535;
+}
+
+[general~="color:black3:focus"]:focus {
+  color: #353535;
+}
+
+[general~="bg:black3"] {
+  background-color: #353535;
+}
+
+[general~="bg:black3:hover"]:hover {
+  background-color: #353535;
+}
+
+[general~="bg:black3:focus"]:focus {
+  background-color: #353535;
+}
+
+[general~="brc:black3"] {
+  border-color: #353535;
+}
+
+[general~="brc:black3:hover"]:hover {
+  border-color: #353535;
+}
+
+[general~="brc:black3:focus"]:focus {
+  border-color: #353535;
+}
+
+[general~="color:black4"] {
+  color: #303030;
+}
+
+[general~="color:black4:hover"]:hover {
+  color: #303030;
+}
+
+[general~="color:black4:focus"]:focus {
+  color: #303030;
+}
+
+[general~="bg:black4"] {
+  background-color: #303030;
+}
+
+[general~="bg:black4:hover"]:hover {
+  background-color: #303030;
+}
+
+[general~="bg:black4:focus"]:focus {
+  background-color: #303030;
+}
+
+[general~="brc:black4"] {
+  border-color: #303030;
+}
+
+[general~="brc:black4:hover"]:hover {
+  border-color: #303030;
+}
+
+[general~="brc:black4:focus"]:focus {
+  border-color: #303030;
+}
+
+[general~="color:black5"] {
+  color: #252525;
+}
+
+[general~="color:black5:hover"]:hover {
+  color: #252525;
+}
+
+[general~="color:black5:focus"]:focus {
+  color: #252525;
+}
+
+[general~="bg:black5"] {
+  background-color: #252525;
+}
+
+[general~="bg:black5:hover"]:hover {
+  background-color: #252525;
+}
+
+[general~="bg:black5:focus"]:focus {
+  background-color: #252525;
+}
+
+[general~="brc:black5"] {
+  border-color: #252525;
+}
+
+[general~="brc:black5:hover"]:hover {
+  border-color: #252525;
+}
+
+[general~="brc:black5:focus"]:focus {
+  border-color: #252525;
+}
+
+[general~="color:black6"] {
+  color: #202020;
+}
+
+[general~="color:black6:hover"]:hover {
+  color: #202020;
+}
+
+[general~="color:black6:focus"]:focus {
+  color: #202020;
+}
+
+[general~="bg:black6"] {
+  background-color: #202020;
+}
+
+[general~="bg:black6:hover"]:hover {
+  background-color: #202020;
+}
+
+[general~="bg:black6:focus"]:focus {
+  background-color: #202020;
+}
+
+[general~="brc:black6"] {
+  border-color: #202020;
+}
+
+[general~="brc:black6:hover"]:hover {
+  border-color: #202020;
+}
+
+[general~="brc:black6:focus"]:focus {
+  border-color: #202020;
+}
+
+[general~="color:black7"] {
+  color: #151515;
+}
+
+[general~="color:black7:hover"]:hover {
+  color: #151515;
+}
+
+[general~="color:black7:focus"]:focus {
+  color: #151515;
+}
+
+[general~="bg:black7"] {
+  background-color: #151515;
+}
+
+[general~="bg:black7:hover"]:hover {
+  background-color: #151515;
+}
+
+[general~="bg:black7:focus"]:focus {
+  background-color: #151515;
+}
+
+[general~="brc:black7"] {
+  border-color: #151515;
+}
+
+[general~="brc:black7:hover"]:hover {
+  border-color: #151515;
+}
+
+[general~="brc:black7:focus"]:focus {
+  border-color: #151515;
+}
+
+[general~="color:black8"] {
+  color: #101010;
+}
+
+[general~="color:black8:hover"]:hover {
+  color: #101010;
+}
+
+[general~="color:black8:focus"]:focus {
+  color: #101010;
+}
+
+[general~="bg:black8"] {
+  background-color: #101010;
+}
+
+[general~="bg:black8:hover"]:hover {
+  background-color: #101010;
+}
+
+[general~="bg:black8:focus"]:focus {
+  background-color: #101010;
+}
+
+[general~="brc:black8"] {
+  border-color: #101010;
+}
+
+[general~="brc:black8:hover"]:hover {
+  border-color: #101010;
+}
+
+[general~="brc:black8:focus"]:focus {
+  border-color: #101010;
+}
+
+[general~="color:black9"] {
+  color: #050505;
+}
+
+[general~="color:black9:hover"]:hover {
+  color: #050505;
+}
+
+[general~="color:black9:focus"]:focus {
+  color: #050505;
+}
+
+[general~="bg:black9"] {
+  background-color: #050505;
+}
+
+[general~="bg:black9:hover"]:hover {
+  background-color: #050505;
+}
+
+[general~="bg:black9:focus"]:focus {
+  background-color: #050505;
+}
+
+[general~="brc:black9"] {
+  border-color: #050505;
+}
+
+[general~="brc:black9:hover"]:hover {
+  border-color: #050505;
+}
+
+[general~="brc:black9:focus"]:focus {
+  border-color: #050505;
+}
+
+[general~="font:quicksand"] {
+  font-family: "Quicksand", sans-serif;
+}
+
+[general~="font:quicksand:hover"]:hover {
+  font-family: "Quicksand", sans-serif;
+}
+
+[general~="font:quicksand:focus"]:focus {
+  font-family: "Quicksand", sans-serif;
+}
+
+[general~="flex:fd-r"], [general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  flex-direction: row;
+}
+
+[general~="flex:fd-r:hover"]:hover {
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
+[general~="flex:fd-r:focus"]:focus {
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+}
+
+[general~="flex:ai-s"], [general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  align-items: stretch;
+}
+
+[general~="flex:ai-s:hover"]:hover {
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+}
+
+[general~="flex:ai-s:focus"]:focus {
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+}
+
+[general~="flex:ac-s"], [general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  align-content: stretch;
+}
+
+[general~="flex:ac-s:hover"]:hover {
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-align-content: stretch;
+  -o-align-content: stretch;
+  align-content: stretch;
+}
+
+[general~="flex:ac-s:focus"]:focus {
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-align-content: stretch;
+  -o-align-content: stretch;
+  align-content: stretch;
+}
+
+[general~="flex:fd-rr"] {
+  flex-direction: row-reverse;
+}
+
+[general~="flex:fd-rr:hover"]:hover {
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -o-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+[general~="flex:fd-rr:focus"]:focus {
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -o-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+[general~="flex:fd-c"] {
+  flex-direction: column;
+}
+
+[general~="flex:fd-c:hover"]:hover {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+[general~="flex:fd-c:focus"]:focus {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+[general~="flex:fd-cr"] {
+  flex-direction: column-reverse;
+}
+
+[general~="flex:fd-cr:hover"]:hover {
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+[general~="flex:fd-cr:focus"]:focus {
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+[general~="flex:fw-nw"] {
+  flex-wrap: nowrap;
+}
+
+[general~="flex:fw-nw:hover"]:hover {
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+[general~="flex:fw-nw:focus"]:focus {
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+[general~="flex:fw-w"], [general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  flex-wrap: wrap;
+}
+
+[general~="flex:fw-w:hover"]:hover {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+[general~="flex:fw-w:focus"]:focus {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+[general~="flex:fw-wr"] {
+  flex-wrap: wrap-reverse;
+}
+
+[general~="flex:fw-wr:hover"]:hover {
+  -webkit-flex-wrap: wrap-reverse;
+  -moz-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  -o-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+[general~="flex:fw-wr:focus"]:focus {
+  -webkit-flex-wrap: wrap-reverse;
+  -moz-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  -o-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+[general~="flex:jc-fe"], [general~="position:right"] {
+  justify-content: flex-end;
+}
+
+[general~="flex:jc-fe:hover"]:hover {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+[general~="flex:jc-fe:focus"]:focus {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+[general~="flex:jc-fs"], [general~="position:left"], [general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  justify-content: flex-start;
+}
+
+[general~="flex:jc-fs:hover"]:hover {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+[general~="flex:jc-fs:focus"]:focus {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+[general~="flex:jc-c"], [general~="position:ewcenter"], [general~="position:center"], [default~=form] p input, [default~=form] li input {
+  justify-content: center;
+}
+
+[general~="flex:jc-c:hover"]:hover {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+[general~="flex:jc-c:focus"]:focus {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+[general~="flex:jc-sa"] {
+  justify-content: space-around;
+}
+
+[general~="flex:jc-sa:hover"]:hover {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+
+[general~="flex:jc-sa:focus"]:focus {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+
+[general~="flex:jc-sb"] {
+  justify-content: space-between;
+}
+
+[general~="flex:jc-sb:hover"]:hover {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+[general~="flex:jc-sb:focus"]:focus {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+[general~="flex:ai-b"] {
+  align-items: baseline;
+}
+
+[general~="flex:ai-b:hover"]:hover {
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  -o-align-items: baseline;
+  align-items: baseline;
+}
+
+[general~="flex:ai-b:focus"]:focus {
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  -o-align-items: baseline;
+  align-items: baseline;
+}
+
+[general~="flex:ai-c"], [general~="position:ewcenter"] {
+  align-items: center;
+}
+
+[general~="flex:ai-c:hover"]:hover {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+[general~="flex:ai-c:focus"]:focus {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+[general~="flex:ai-fs"] {
+  align-items: flex-start;
+}
+
+[general~="flex:ai-fs:hover"]:hover {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+
+[general~="flex:ai-fs:focus"]:focus {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+
+[general~="flex:ai-fe"] {
+  align-items: flex-end;
+}
+
+[general~="flex:ai-fe:hover"]:hover {
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+}
+
+[general~="flex:ai-fe:focus"]:focus {
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+}
+
+[general~="flex:ac-c"] {
+  align-content: center;
+}
+
+[general~="flex:ac-c:hover"]:hover {
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  -o-align-content: center;
+  align-content: center;
+}
+
+[general~="flex:ac-c:focus"]:focus {
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  -o-align-content: center;
+  align-content: center;
+}
+
+[general~="flex:ac-fs"] {
+  align-content: flex-start;
+}
+
+[general~="flex:ac-fs:hover"]:hover {
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  -o-align-content: flex-start;
+  align-content: flex-start;
+}
+
+[general~="flex:ac-fs:focus"]:focus {
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  -o-align-content: flex-start;
+  align-content: flex-start;
+}
+
+[general~="flex:ac-fe"] {
+  align-content: flex-end;
+}
+
+[general~="flex:ac-fe:hover"]:hover {
+  -webkit-align-content: flex-end;
+  -moz-align-content: flex-end;
+  -ms-align-content: flex-end;
+  -o-align-content: flex-end;
+  align-content: flex-end;
+}
+
+[general~="flex:ac-fe:focus"]:focus {
+  -webkit-align-content: flex-end;
+  -moz-align-content: flex-end;
+  -ms-align-content: flex-end;
+  -o-align-content: flex-end;
+  align-content: flex-end;
+}
+
+[general~="flex:ac-a"] {
+  align-content: space-around;
+}
+
+[general~="flex:ac-a:hover"]:hover {
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
+  -o-align-content: space-around;
+  align-content: space-around;
+}
+
+[general~="flex:ac-a:focus"]:focus {
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
+  -o-align-content: space-around;
+  align-content: space-around;
+}
+
+[general~="flex:ac-b"] {
+  align-content: space-between;
+}
+
+[general~="flex:ac-b:hover"]:hover {
+  -webkit-align-content: space-between;
+  -moz-align-content: space-between;
+  -ms-align-content: space-between;
+  -o-align-content: space-between;
+  align-content: space-between;
+}
+
+[general~="flex:ac-b:focus"]:focus {
+  -webkit-align-content: space-between;
+  -moz-align-content: space-between;
+  -ms-align-content: space-between;
+  -o-align-content: space-between;
+  align-content: space-between;
+}
+
+[general~="flex:as-fs"], [default~=forminput] li label, [default~=form] li label {
+  align-self: flex-start;
+}
+
+[general~="flex:as-fs:hover"]:hover {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
+  -o-align-self: flex-start;
+  align-self: flex-start;
+}
+
+[general~="flex:as-fs:focus"]:focus {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
+  -o-align-self: flex-start;
+  align-self: flex-start;
+}
+
+[general~="flex:as-fe"] {
+  align-self: flex-end;
+}
+
+[general~="flex:as-fe:hover"]:hover {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-align-self: flex-end;
+  -o-align-self: flex-end;
+  align-self: flex-end;
+}
+
+[general~="flex:as-fe:focus"]:focus {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-align-self: flex-end;
+  -o-align-self: flex-end;
+  align-self: flex-end;
+}
+
+[general~="flex:as-c"] {
+  align-self: center;
+}
+
+[general~="flex:as-c:hover"]:hover {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  -o-align-self: center;
+  align-self: center;
+}
+
+[general~="flex:as-c:focus"]:focus {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  -o-align-self: center;
+  align-self: center;
+}
+
+[general~="flex:as-b"] {
+  align-self: baseline;
+}
+
+[general~="flex:as-b:hover"]:hover {
+  -webkit-align-self: baseline;
+  -moz-align-self: baseline;
+  -ms-align-self: baseline;
+  -o-align-self: baseline;
+  align-self: baseline;
+}
+
+[general~="flex:as-b:focus"]:focus {
+  -webkit-align-self: baseline;
+  -moz-align-self: baseline;
+  -ms-align-self: baseline;
+  -o-align-self: baseline;
+  align-self: baseline;
+}
+
+[general~="flex:as-s"] {
+  align-self: stretch;
+}
+
+[general~="flex:as-s:hover"]:hover {
+  -webkit-align-self: stretch;
+  -moz-align-self: stretch;
+  -ms-align-self: stretch;
+  -o-align-self: stretch;
+  align-self: stretch;
+}
+
+[general~="flex:as-s:focus"]:focus {
+  -webkit-align-self: stretch;
+  -moz-align-self: stretch;
+  -ms-align-self: stretch;
+  -o-align-self: stretch;
+  align-self: stretch;
+}
+
+[default~=forminput] label, [default~=form] label {
+  padding: 3px 0px;
+  margin: 3px 0px;
+}
+[default~=forminput] input, [default~=form] input, [default~=forminput] select, [default~=form] select {
+  width: 96%;
+  min-width: 200px;
+  min-height: 24px;
+  padding: 3px 0px;
+  margin: 3px 0px;
+}
+[default~=forminput] input:hover, [default~=form] input:hover, [default~=forminput] input:focus, [default~=form] input:focus, [default~=forminput] input:active, [default~=form] input:active, [default~=forminput] select:hover, [default~=form] select:hover, [default~=forminput] select:focus, [default~=form] select:focus, [default~=forminput] select:active, [default~=form] select:active {
+  border-color: #99a3a4;
+}
+[default~=forminput] input[type=submit], [default~=form] input[type=submit] {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: -ms-fit-content;
+  min-width: -o-fit-content;
+  min-width: fit-content;
+  margin-left: 6px;
+  padding: 4px 12px;
+}
+[default~=forminput] input[type=submit]:hover, [default~=form] input[type=submit]:hover, [default~=forminput] input[type=submit]:focus, [default~=form] input[type=submit]:focus {
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+  color: #fff;
+}
+[default~=forminput] input[type=submit]:active, [default~=form] input[type=submit]:active {
+  border-color: #3498db;
+  background-color: #3498db;
+}
+
+/* another settings */
+h1 {
+  font-size: 1.5em;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #222;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #444;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 500;
+  color: #666;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #888;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 300;
+  color: #999;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+[general~="width:f"], [default~=forminput] input[type=submit], [default~=form] input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
+  width: fit-content;
+}
+
+[general~="width:a"] {
+  width: -webkit-available;
+  width: -moz-available;
+  width: -ms-available;
+  width: -o-available;
+  width: available;
+}
+
+[general~="width:max"] {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: -ms-max-content;
+  width: -o-max-content;
+  width: max-content;
+}
+
+[general~="width:min"] {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: -ms-min-content;
+  width: -o-min-content;
+  width: min-content;
+}
+
+[general~=flex], [default~=forminput] li label, [default~=form] li label, [default~=form] p input, [default~=form] li input {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+
+[general~="position:center"] {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  margin: auto;
+}
+
+[general~="position:ewcenter"] {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  margin: auto;
+}
+
+[general~="position:right"] {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  margin-left: auto;
+}
+
+[general~="position:left"] {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  margin-right: auto;
+}
+
+[general~="text:unselectable"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*# sourceMappingURL=general.css.map */

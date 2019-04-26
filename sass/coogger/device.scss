@@ -1,0 +1,60 @@
+@each $name, $px in $size{
+    @include device("text:#{$name}", font-size, $px, "false", $device_name);
+  }
+  /* border */
+  @for $i from 1 to 11{
+    @include device("border:#{$i}", border ,$i+0px solid, "true", $device_name);
+  }
+  /* border-radius ayarı */
+  @for $i from 1 to 11{
+    @include device("br:#{$i}", border-radius ,$i*2px, "true", $device_name);
+  }
+  @include device("br:circle", border-radius, 50%, "true", $device_name);
+  //  opacity
+  @include device("opacity:0", opacity, 0, "true", $device_name);
+  @for $i from 1 to 11{
+    @include device("opacity:0.#{$i}", opacity ,$i/10, "true", $device_name);
+  }
+  // for width
+  @for $i from 1 to 101{
+    @include device("width:#{$i}", width, 0% + $i, "false", $device_name);
+    @include device("height:#{$i}", height, 0% + $i, "false", $device_name);
+  }
+  /* colors */
+  @each $name, $hex in $colors{
+    @include device("color:#{$name}", color, $hex, "false", $device_name);
+    @include device("bg:#{$name}", background-color, $hex, "false", $device_name);
+    @include device("brc:#{$name}", border-color, $hex, "false", $device_name);
+  }
+  //
+  @include device("font:quicksand", font-family, ('Quicksand', sans-serif), "false", $device_name);
+  // flex
+  @include device("flex:fd-r", flex-direction, row, "true", $device_name);
+  @include device("flex:ai-s", align-items, stretch, "true", $device_name);
+  @include device("flex:ac-s", align-content, stretch, "true", $device_name);
+  @include device("flex:fd-rr", flex-direction, row-reverse, "true", $device_name);
+  @include device("flex:fd-c", flex-direction, column, "true", $device_name);
+  @include device("flex:fd-cr", flex-direction, column-reverse, "true", $device_name);
+  @include device("flex:fw-nw", flex-wrap, nowrap, "true", $device_name);
+  @include device("flex:fw-w", flex-wrap, wrap, "true", $device_name);
+  @include device("flex:fw-wr", flex-wrap, wrap-reverse, "true", $device_name);
+  @include device("flex:jc-fe", justify-content, flex-end, "true", $device_name);
+  @include device("flex:jc-fs", justify-content, flex-start, "true", $device_name);
+  @include device("flex:jc-c", justify-content, center, "true", $device_name);
+  @include device("flex:jc-sa", justify-content, space-around, "true", $device_name);
+  @include device("flex:jc-sb", justify-content, space-between, "true", $device_name);
+  @include device("flex:ai-b", align-items, baseline, "true", $device_name);
+  @include device("flex:ai-c", align-items, center, "true", $device_name);
+  @include device("flex:ai-fs", align-items, flex-start, "true", $device_name);
+  @include device("flex:ai-fe", align-items, flex-end, "true", $device_name);
+  @include device("flex:ac-c", align-content, center, "true", $device_name);
+  @include device("flex:ac-fs", align-content, flex-start, "true", $device_name);
+  @include device("flex:ac-fe", align-content, flex-end, "true", $device_name);
+  @include device("flex:ac-a", align-content, space-around, "true", $device_name);
+  @include device("flex:ac-b", align-content, space-between, "true", $device_name);
+  @include device("flex:as-fs", align-self, flex-start, "true", $device_name);
+  @include device("flex:as-fe", align-self, flex-end, "true", $device_name);
+  @include device("flex:as-c", align-self, center, "true", $device_name);
+  @include device("flex:as-b", align-self, baseline, "true", $device_name);
+  @include device("flex:as-s", align-self, stretch, "true", $device_name);
+  

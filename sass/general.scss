@@ -1,4 +1,11 @@
-/* general default settings */
+@import "variable/variables.scss";
+@import "mixin/mixins.scss";
+@import "font/font.scss";
+
+$device_name: "general";
+
+@import "coogger/device.scss";
+
 [default~="forminput"]{
   label{
     @extend [general~="text:m"];
@@ -75,4 +82,49 @@ img{
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+}
+// general
+[general~="width:f"]{
+  @include reverse-prefixed(width, fit-content);
+}
+[general~="width:a"]{
+  @include reverse-prefixed(width, available);
+}
+[general~="width:max"]{
+  @include reverse-prefixed(width, max-content);
+}
+[general~="width:min"]{
+  @include reverse-prefixed(width, min-content);
+}
+[general~="flex"]{
+  @include prefixed(display, flex);
+  @extend [general~="flex:fd-r"];
+  @extend [general~="flex:fw-w"];
+  @extend [general~="flex:jc-fs"];
+  @extend [general~="flex:ai-s"];
+  @extend [general~="flex:ac-s"];
+}
+[general~="position:center"]{
+  @include prefixed(display, flex);
+  @extend [general~="flex:jc-c"];
+  margin: auto;
+}
+[general~="position:ewcenter"]{
+@include prefixed(display, flex);
+  @extend [general~="flex:jc-c"];
+  @extend [general~="flex:ai-c"];
+  margin: auto;
+}
+[general~="position:right"]{
+  @include prefixed(display, flex);
+  @extend [general~="flex:jc-fe"];
+  margin-left: auto;
+}
+[general~="position:left"]{
+  @include prefixed(display, flex);
+  @extend [general~="flex:jc-fs"];
+  margin-right: auto;
+}
+[general~="text:unselectable"]{
+  @include prefixed(user-select, none)
 }

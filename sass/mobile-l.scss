@@ -1,0 +1,7 @@
+$device_name: "mobile-l";
+$min: 376px;
+$max: 425px;
+
+@import "variable/variables.scss";
+@import "mixin/mixins.scss";
+@import "coogger/coogger.scss";

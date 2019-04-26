@@ -14,25 +14,33 @@
     }
   }
 }
-@mixin device($device_name, $key, $min, $max, $property, $value, $prefixed){
-  @if $prefixed == "true"{
-    @media screen and (min-width: $min) and (max-width: $max) {
-      [#{$device_name}~="#{$key}"]{@include prefixed($property, $value);}
-      @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
-      @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
-      @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
-    }
+@mixin device($key, $property, $value, $prefixed, $device_name){
+  @if ($device_name == "general"){
+    @include general($prefixed, $key, $property, $value)
   }
   @else{
-    @media screen and (min-width: $min) and (max-width: $max) {
-      [#{$device_name}~="#{$key}"]{#{$property}: $value;}
-      @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
-      @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
-      @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
+    $device: map-get($devices, $device_name);
+    $max: map-get($device, "max");
+    $min: map-get($device, "min");
+    @if $prefixed == "true"{
+      @media screen and (min-width: $min) and (max-width: $max) {
+        [#{$device_name}~="#{$key}"]{@include prefixed($property, $value);}
+        @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
+        @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
+        @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
+      }
+    }
+    @else{
+      @media screen and (min-width: $min) and (max-width: $max) {
+        [#{$device_name}~="#{$key}"]{#{$property}: $value;}
+        @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
+        @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
+        @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
+      }
     }
   }
 }
-@mixin devices($key, $property, $value, $prefixed){
+@mixin general($prefixed, $key, $property, $value){
   @if $prefixed == "true"{
     [general~="#{$key}"]{#{$property}:$value}
     [general~="#{$key}:hover"]{
@@ -58,12 +66,6 @@
         #{$property}:$value;
       }
     }
-  }
-
-  @each $device_name, $width in $devices{
-    $min: map-get($width, "min");
-    $max: map-get($width, "max");
-    @include device($device_name, $key, $min, $max, $property, $value, $prefixed);
   }
 }
 // prefixed

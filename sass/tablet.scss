@@ -1,0 +1,7 @@
+$device_name: "tablet";
+$min: 426px;
+$max: 768px;
+
+@import "variable/variables.scss";
+@import "mixin/mixins.scss";
+@import "coogger/coogger.scss";

@@ -1,0 +1,7 @@
+$device_name: "laptop-l";
+$min: 1025px;
+$max: 1440px;
+
+@import "variable/variables.scss";
+@import "mixin/mixins.scss";
+@import "coogger/coogger.scss";
