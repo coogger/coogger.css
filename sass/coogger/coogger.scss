@@ -8,32 +8,32 @@
   @extend [#{$device_name}~="flex:ai-s"];
   @extend [#{$device_name}~="flex:ac-s"];
 }
-@media screen and (min-width: $min) and (max-width: $max) {
-  [#{$device_name}~="position:center"]{
-    @include prefixed(display, flex);
-    @include prefixed(justify-content, center);
-    margin: auto;
+@if ($device_name != "general"){
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @include position_center($device_name);
+    @include position_ewcenter($device_name);
+    @include position_right($device_name);
+    @include position_left($device_name);
   }
 }
-@media screen and (min-width: $min) and (max-width: $max) {
-  [#{$device_name}~="position:ewcenter"]{
-    @include prefixed(display, flex);
-    @include prefixed(justify-content, center);
-    @include prefixed(align-items, center);
-    margin: auto;
-  }
+@else{
+  @include position_center($device_name);
+  @include position_ewcenter($device_name);
+  @include position_right($device_name);
+  @include position_left($device_name);
 }
-@media screen and (min-width: $min) and (max-width: $max) {
-  [#{$device_name}~="position:right"]{
-    @include prefixed(display, flex);
-    @include prefixed(justify-content, flex-end);
-    margin-left: auto;
-  }
+[#{$device_name}~="width:f"]{
+  @include reverse-prefixed(width, fit-content);
 }
-@media screen and (min-width: $min) and (max-width: $max) {
-  [#{$device_name}~="position:left"]{
-    @include prefixed(display, flex);
-    @include prefixed(justify-content, flex-start);
-    margin-right: auto;
-  }
+[#{$device_name}~="width:a"]{
+  @include reverse-prefixed(width, available);
+}
+[#{$device_name}~="width:max"]{
+  @include reverse-prefixed(width, max-content);
+}
+[#{$device_name}~="width:min"]{
+  @include reverse-prefixed(width, min-content);
+}
+[#{$device_name}~="text:unselectable"]{
+  @include prefixed(user-select, none)
 }
