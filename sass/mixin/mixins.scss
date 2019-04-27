@@ -1,74 +1,34 @@
-@mixin type($device_name, $key, $property, $value, $type, $prefixed){
+@mixin general_device($key, $property, $value, $prefixed, $device_name) {
   @if $prefixed == "true"{
-    [#{$device_name}~="#{$key}"]{
-      &:#{$type}{
-        @include prefixed($property, $value);
-      }
+    [#{$device_name}~="#{$key}"], 
+    [#{$device_name}~="#{$key}:hover"]:hover, 
+    [#{$device_name}~="#{$key}:focus"]:focus, 
+    [#{$device_name}~="#{$key}:active"]:active{
+      @include prefixed($property, $value);
     }
   }
   @else{
-    [#{$device_name}~="#{$key}"]{
-      &:#{$type}{
-        #{$property}:$value;
-      }
+    [#{$device_name}~="#{$key}"], 
+    [#{$device_name}~="#{$key}:hover"]:hover, 
+    [#{$device_name}~="#{$key}:focus"]:focus, 
+    [#{$device_name}~="#{$key}:active"]:active{
+      #{$property}:$value;
     }
   }
 }
 @mixin device($key, $property, $value, $prefixed, $device_name){
   @if ($device_name == "general"){
-    @include general($prefixed, $key, $property, $value)
+    @include general_device($key, $property, $value, $prefixed, $device_name)
   }
   @else{
     $device: map-get($devices, $device_name);
     $max: map-get($device, "max");
     $min: map-get($device, "min");
-    @if $prefixed == "true"{
-      @media screen and (min-width: $min) and (max-width: $max) {
-        [#{$device_name}~="#{$key}"]{@include prefixed($property, $value);}
-        @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
-        @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
-        @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
-      }
-    }
-    @else{
-      @media screen and (min-width: $min) and (max-width: $max) {
-        [#{$device_name}~="#{$key}"]{#{$property}: $value;}
-        @include type($device_name, "#{$key}:hover", $property, $value, hover, $prefixed);
-        @include type($device_name, "#{$key}:focus", $property, $value, focus, $prefixed);
-        @include type($device_name, "#{$key}:active", $property, $value, active, $prefixed);
-      }
+    @media screen and (min-width: $min) and (max-width: $max) {
+      @include general_device($key, $property, $value, $prefixed, $device_name)
     }
   }
 }
-@mixin general($prefixed, $key, $property, $value){
-  @if $prefixed == "true"{
-    [general~="#{$key}"]{#{$property}:$value}
-    [general~="#{$key}:hover"]{
-      &:hover{
-        @include prefixed($property, $value);
-      }
-    }
-    [general~="#{$key}:focus"]{
-      &:focus{
-        @include prefixed($property, $value);
-      }
-    }
-  }
-  @else{
-    [general~="#{$key}"]{#{$property}:$value}
-    [general~="#{$key}:hover"]{
-      &:hover{
-        #{$property}:$value;
-      }
-    }
-    [general~="#{$key}:focus"]{
-      &:focus{
-        #{$property}:$value;
-      }
-    }
-  }
-}
-// prefixed
 @mixin prefixed($property, $value) {
     -webkit-#{$property}: $value;
     -moz-#{$property}: $value;
@@ -83,7 +43,6 @@
     #{$property}: -o-#{$value};
     #{$property}: #{$value};
 }
-// border
 @mixin border($br){
   @include prefixed(border, $br);
 }
@@ -113,50 +72,36 @@
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
-//
-@mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
-	text-shadow: $string;
-}
-@mixin box-shadow($string) {
-  @include prefixed(box-shadow, $string);
-}
-@mixin drop-shadow($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
-  @include prefixed(box-shadow, $x $y $blur $spread rgba(0, 0, 0, $alpha));
-}
-@mixin inner-shadow($x: 0, $y: 1px, $blur: 2px, $spread: 0, $alpha: 0.25) {
-  @include prefixed(box-shadow, inset $x $y $blur $spread rgba(0, 0, 0, $alpha));
-}
-@mixin box-sizing($type: border-box) {
-  @include prefixed(box-sizing, $type);
-}
 @mixin opacity($opacity: 0.5) {
   @include prefixed(opacity, $opacity);
 }
-@mixin gradient($startColor: #eee, $endColor: white) {
-	background-color: $startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
-	background: -webkit-linear-gradient(top, $startColor, $endColor);
-	background: -moz-linear-gradient(top, $startColor, $endColor);
-	background: -ms-linear-gradient(top, $startColor, $endColor);
-	background: -o-linear-gradient(top, $startColor, $endColor);
+@mixin position_center($device_name){
+  [#{$device_name}~="position:center"]{
+    @include prefixed(display, flex);
+    @include prefixed(justify-content, center);
+    margin: auto;
+  }
 }
-@mixin horizontal-gradient($startColor: #eee, $endColor: white) {
- 	background-color: $startColor;
-	background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
-	background-image: -webkit-linear-gradient(left, $startColor, $endColor);
-	background-image: -moz-linear-gradient(left, $startColor, $endColor);
-	background-image: -ms-linear-gradient(left, $startColor, $endColor);
-	background-image: -o-linear-gradient(left, $startColor, $endColor);
+@mixin position_ewcenter($device_name){
+  [#{$device_name}~="position:ewcenter"]{
+    @include prefixed(display, flex);
+    @include prefixed(justify-content, center);
+    @include prefixed(align-items, center);
+    margin: auto;
+  } 
 }
-@mixin transition($transition) {
-  @include prefixed(transition, $transition);
+@mixin position_right($device_name){
+  [#{$device_name}~="position:right"]{
+    @include prefixed(display, flex);
+    @include prefixed(justify-content, flex-end);
+    margin-left: auto;
+  }
 }
-@mixin transform($string){
-  @include prefixed(transform, $string);
+@mixin position_left($device_name){
+  [#{$device_name}~="position:left"]{
+    @include prefixed(display, flex);
+    @include prefixed(justify-content, flex-start);
+    margin-right: auto;
+  }
 }
-@mixin perspective($value: 1000) {
-  @include prefixed(perspective, $value);
-}
-@mixin transform-origin($x:center, $y:center) {
-  @include prefixed(transform-origin, $x $y);
-}
+
