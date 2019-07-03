@@ -1,4 +1,4 @@
-@mixin general_device($key, $property, $value, $prefixed, $device_name) {
+@mixin device($key, $property, $value, $prefixed, $device_name) {
   @if $prefixed == "true"{
     [#{$device_name}~="#{$key}"], 
     [#{$device_name}~="#{$key}:hover"]:hover, 
@@ -13,19 +13,6 @@
     [#{$device_name}~="#{$key}:focus"]:focus, 
     [#{$device_name}~="#{$key}:active"]:active{
       #{$property}:$value;
-    }
-  }
-}
-@mixin device($key, $property, $value, $prefixed, $device_name){
-  @if ($device_name == "general"){
-    @include general_device($key, $property, $value, $prefixed, $device_name)
-  }
-  @else{
-    $device: map-get($devices, $device_name);
-    $max: map-get($device, "max");
-    $min: map-get($device, "min");
-    @media screen and (min-width: $min) and (max-width: $max) {
-      @include general_device($key, $property, $value, $prefixed, $device_name)
     }
   }
 }

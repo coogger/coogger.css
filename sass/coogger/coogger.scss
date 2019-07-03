@@ -8,15 +8,7 @@
   @extend [#{$device_name}~="flex:ai-s"];
   @extend [#{$device_name}~="flex:ac-s"];
 }
-@if ($device_name != "general"){
-  @media screen and (min-width: $min) and (max-width: $max) {
-    @include position_center($device_name);
-    @include position_ewcenter($device_name);
-    @include position_right($device_name);
-    @include position_left($device_name);
-  }
-}
-@else{
+@media screen and (max-width: $max) {
   @include position_center($device_name);
   @include position_ewcenter($device_name);
   @include position_right($device_name);

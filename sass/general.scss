@@ -1,5 +1,8 @@
 $device_name: "general";
+$max: 2560px;
 
 @import "variable/variables.scss";
 @import "mixin/mixins.scss";
-@import "coogger/coogger.scss";
+@media screen and (max-width: $max) {
+    @import "coogger/coogger.scss";
+}
