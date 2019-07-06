@@ -30,16 +30,16 @@
   @include device("font:quicksand", font-family, ('Quicksand', sans-serif), "false", $device_name);
   // flex
   @include device("flex:fd-r", flex-direction, row, "true", $device_name);
+  @include device("flex:fw-w", flex-wrap, wrap, "true", $device_name);
+  @include device("flex:jc-fs", justify-content, flex-start, "true", $device_name);
   @include device("flex:ai-s", align-items, stretch, "true", $device_name);
   @include device("flex:ac-s", align-content, stretch, "true", $device_name);
   @include device("flex:fd-rr", flex-direction, row-reverse, "true", $device_name);
   @include device("flex:fd-c", flex-direction, column, "true", $device_name);
   @include device("flex:fd-cr", flex-direction, column-reverse, "true", $device_name);
   @include device("flex:fw-nw", flex-wrap, nowrap, "true", $device_name);
-  @include device("flex:fw-w", flex-wrap, wrap, "true", $device_name);
   @include device("flex:fw-wr", flex-wrap, wrap-reverse, "true", $device_name);
   @include device("flex:jc-fe", justify-content, flex-end, "true", $device_name);
-  @include device("flex:jc-fs", justify-content, flex-start, "true", $device_name);
   @include device("flex:jc-c", justify-content, center, "true", $device_name);
   @include device("flex:jc-sa", justify-content, space-around, "true", $device_name);
   @include device("flex:jc-sb", justify-content, space-between, "true", $device_name);

@@ -1,8 +1,9 @@
 $device_name: "tablet";
+$min: 426px;
 $max: 768px;
 
 @import "variable/variables.scss";
 @import "mixin/mixins.scss";
-@media screen and (max-width: $max) {
+@media screen and (min-width: $min) and (max-width: $max) {
     @import "coogger/coogger.scss";
 }

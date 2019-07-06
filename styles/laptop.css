@@ -1,7 +1,14 @@
 @charset "UTF-8";
 /* animations op */
 /* colors */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  [laptop~="flex"] {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex; }
+
   [laptop~="text:xs"],
   [laptop~="text:xs:hover"]:hover,
   [laptop~="text:xs:focus"]:focus,
@@ -4241,6 +4248,26 @@
     -o-flex-direction: row;
     flex-direction: row; }
 
+  [laptop~="flex:fw-w"], [laptop~="flex"],
+  [laptop~="flex:fw-w:hover"]:hover,
+  [laptop~="flex:fw-w:focus"]:focus,
+  [laptop~="flex:fw-w:active"]:active {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  [laptop~="flex:jc-fs"], [laptop~="flex"],
+  [laptop~="flex:jc-fs:hover"]:hover,
+  [laptop~="flex:jc-fs:focus"]:focus,
+  [laptop~="flex:jc-fs:active"]:active {
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start; }
+
   [laptop~="flex:ai-s"], [laptop~="flex"],
   [laptop~="flex:ai-s:hover"]:hover,
   [laptop~="flex:ai-s:focus"]:focus,
@@ -4301,16 +4328,6 @@
     -o-flex-wrap: nowrap;
     flex-wrap: nowrap; }
 
-  [laptop~="flex:fw-w"], [laptop~="flex"],
-  [laptop~="flex:fw-w:hover"]:hover,
-  [laptop~="flex:fw-w:focus"]:focus,
-  [laptop~="flex:fw-w:active"]:active {
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap; }
-
   [laptop~="flex:fw-wr"],
   [laptop~="flex:fw-wr:hover"]:hover,
   [laptop~="flex:fw-wr:focus"]:focus,
@@ -4330,16 +4347,6 @@
     -ms-justify-content: flex-end;
     -o-justify-content: flex-end;
     justify-content: flex-end; }
-
-  [laptop~="flex:jc-fs"], [laptop~="flex"],
-  [laptop~="flex:jc-fs:hover"]:hover,
-  [laptop~="flex:jc-fs:focus"]:focus,
-  [laptop~="flex:jc-fs:active"]:active {
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    -o-justify-content: flex-start;
-    justify-content: flex-start; }
 
   [laptop~="flex:jc-c"],
   [laptop~="flex:jc-c:hover"]:hover,
@@ -4509,15 +4516,8 @@
     -moz-align-self: stretch;
     -ms-align-self: stretch;
     -o-align-self: stretch;
-    align-self: stretch; }
-
-  [laptop~="flex"] {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex; } }
-@media screen and (max-width: 1024px) and (max-width: 1024px) {
+    align-self: stretch; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) and (min-width: 769px) and (max-width: 1024px) {
   [laptop~="position:center"] {
     -webkit-display: flex;
     -moz-display: flex;
@@ -4574,7 +4574,7 @@
     -o-justify-content: flex-start;
     justify-content: flex-start;
     margin-right: auto; } }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   [laptop~="width:f"] {
     width: -webkit-fit-content;
     width: -moz-fit-content;

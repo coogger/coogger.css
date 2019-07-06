@@ -1,8 +1,9 @@
 $device_name: "laptop";
+$min: 769px;
 $max: 1024px;
 
 @import "variable/variables.scss";
 @import "mixin/mixins.scss";
-@media screen and (max-width: $max) {
+@media screen and (min-width: $min) and (max-width: $max) {
     @import "coogger/coogger.scss";
 }

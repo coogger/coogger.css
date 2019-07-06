@@ -1,5 +1,3 @@
-@import "device.scss";
-
 [#{$device_name}~="flex"]{
   @include prefixed(display, flex);
   @extend [#{$device_name}~="flex:fd-r"];
@@ -8,7 +6,8 @@
   @extend [#{$device_name}~="flex:ai-s"];
   @extend [#{$device_name}~="flex:ac-s"];
 }
-@media screen and (max-width: $max) {
+@import "device.scss";
+@media screen and (min-width: $min) and (max-width: $max) {
   @include position_center($device_name);
   @include position_ewcenter($device_name);
   @include position_right($device_name);
