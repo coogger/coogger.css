@@ -22,14 +22,14 @@
   </a>
 </p>
 
-### Usage
+### Documentation
 
-Documentation; https://www.coogger.com/cooggercss/@hakancelik96/
+https://www.coogger.com/cooggercss/@hakancelik96/
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/coogger/coogger/issues) if you want to contribute.
+Feel free to check [issues page](https://github.com/coogger/coogger.css/issues) if you want to contribute.
 
 ## Contributors
 No contributors.
