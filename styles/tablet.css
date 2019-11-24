@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* animations op */
 /* colors */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   [tablet~="flex"] {
     -webkit-display: flex;
     -moz-display: flex;
@@ -4517,7 +4517,7 @@
     -ms-align-self: stretch;
     -o-align-self: stretch;
     align-self: stretch; } }
-@media screen and (min-width: 426px) and (max-width: 768px) and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) and (min-width: 425px) and (max-width: 768px) {
   [tablet~="position:center"] {
     -webkit-display: flex;
     -moz-display: flex;
@@ -4574,7 +4574,7 @@
     -o-justify-content: flex-start;
     justify-content: flex-start;
     margin-right: auto; } }
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   [tablet~="width:f"] {
     width: -webkit-fit-content;
     width: -moz-fit-content;
