@@ -13,13 +13,6 @@
   <a href="https://www.codacy.com/app/hakancelik96/coogger.css?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=coogger/coogger.css&amp;utm_campaign=Badge_Grade" target="_blank">
  <img alt="Codacy Badge" title="Codacy Badge" src="https://img.shields.io/codacy/grade/a18298bc2894419f99b9c359833c1131?style=for-the-badge"/>
   </a>
-  <br>
- <a href="https://discord.gg/avmdZJa" target="_blank">
-    <img alt="discord" title="discord" src="https://img.shields.io/discord/465599004865200129.svg?label=Discord&style=for-the-badge"/>
-  </a>
- <a href="https://t.me/coogger" target="_blank">
- <img alt="telegram" title="telegram" src="https://img.shields.io/badge/chat-telegram-green.svg?style=for-the-badge"/>
-  </a>
 </p>
 
 ### Documentation
